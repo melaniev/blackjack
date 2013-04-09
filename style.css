@@ -1,0 +1,304 @@
+/* Reset */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,time,mark,audio,video { margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent; } 
+body { line-height:1; }
+ol,ul { list-style:none; }
+blockquote,q { quotes:none; }
+blockquote:before,blockquote:after,q:before,q:after { content:'';content:none; }
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+table { border-collapse:collapse;border-spacing:0; }
+a {text-decoration:none;}
+
+
+html{
+	height: 100%;
+}
+
+.button{
+	cursor: pointer;
+	display: inline-block;
+	width: 300px;
+	color:#08233e;
+	font:2em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
+	padding:14px;
+	margin: 30px;
+	background: #ffcc00;
+	border:1px solid #ffcc00;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border-bottom:1px solid #9f9f9f;
+	-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #FFEB99 0%, #FFCC00 100%);
+
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #FFEB99 0%, #FFCC00 100%);
+
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #FFEB99 0%, #FFCC00 100%);
+
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFEB99), color-stop(1, #FFCC00));
+
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #FFEB99 0%, #FFCC00 100%);
+
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #FFEB99 0%, #FFCC00 100%);
+}
+
+/* HOME PAGE *****************************************************************************************/
+#home-page{ 
+  background: url(images/homescreen.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#lobby-page{
+  background: url(images/homescreen.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;	
+}
+
+/* LOGIN */
+#home-page-login-container{
+	margin-top: 50%;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
+}
+.login-input{
+	width: 88%;
+	height: 40px;
+	display: inline-block;
+	border-radius: 10px;
+	border: 5px solid black;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+#login-username{
+	
+}
+
+.login-label{
+	width: 10%;
+	font-size: 38px;
+	font-weight: bold;
+	color: white;
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+}
+#pretty-login{
+	background: rgba(0,0,0,0.60);
+	border-radius: 15px;
+	padding: 30px;
+	width: auto;
+}
+
+/* LOBBY PAGE *****************************************************************************************/
+
+.lobby-container{
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	background: rgba(0,0,0,0.70);
+	border-radius: 15px;
+	padding: 30px;
+	margin: 30px;
+	color: white;	
+}
+.lobby-container h2{
+	font-size: 26px;
+
+}
+.lobby-container h3, p{
+	font-size: 20px;
+	margin: 10px;
+
+}
+#welcome{
+	font-size: 26px;
+	font-weight: bold;
+}
+#welcome #log-out{
+	float: right;
+	font-weight: normal;
+}
+#welcome a#log-out{
+	color: white;
+}
+/* TABLE VIEW *****************************************************************************************/
+
+#logout-lobby-controls{
+	position: absolute;
+	left: 20px;
+	top:0;
+	height: 40px;
+	background: rgba(0,0,0,0.60); 
+	width: 15%;
+	min-width: 200px;
+	text-align: center;
+	font-size: 26px;
+	-moz-border-radius-bottomright: 15px;
+	-moz-border-radius-bottomleft: 15px;
+	-webkit-border-bottom-right-radius: 15px;
+	-webkit-border-bottom-left-radius: 15px;
+}
+#logout-lobby-controls a{
+	color: white;
+}
+.card-total{
+	position: absolute;
+	right: 2px;
+	top: 0px;
+}
+.card-total .current-total{
+	font-size: 30px;
+}
+#other-players  #player1 .card-total,  #player3 .card-total{
+	left: 2px;
+}
+#table-top-page{
+	background-image: url(../images/green_felt.png);
+	height: 100%;
+	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	color: white;
+}
+#table-top{
+	border: 2px solid green;
+	height: 100%;
+	width: 84%;
+	float: right;
+}
+#side-bar{
+	border: 2px solid black;
+	height: 100%;
+	width: 12%;
+	float: right;
+}
+
+.a_player{
+	border: 2px solid purple;
+	width: 95%;
+	margin: 5px;
+	padding: 5px;
+	min-height: 150px;
+}
+#other-players{
+	border: 2px solid orange;
+	overflow: auto;
+}
+.card{
+	width: 80px;
+	height: 120px;
+	margin: 5px;
+	border: 2px solid black;
+	display: inline-block;
+	background-color: white;
+	border-radius: 5px;
+}
+
+#chat{
+	height: 45%;
+	border: 2px solid red;
+}
+#stats{
+	height: 45%;
+	border: 2px solid green;
+}
+@media screen and (min-width: 350px) {
+
+}
+@media screen and (min-width: 400px) {
+
+}
+@media screen and (min-width: 600px) {
+
+}
+@media screen and (min-width: 700px) {
+
+}
+@media screen and (min-width: 900px) {
+	.login-input{
+		width: 40%;
+	}
+	.a_player{
+		width: 45%;
+		position: relative;
+	}
+	.a_player.not-dealer{
+		float: right;
+	}
+	#dealer{
+		min-width: 80%;			
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#player5{
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		min-width: 80%;	
+	}
+	#player1 .card{
+		-webkit-transform:rotate(135deg);
+		-moz-transform:rotate(135deg);
+		-o-transform:rotate(135deg);
+		-ms-transform:rotate(135deg);
+		float: right;
+	}
+	#player2 .card, #player3 .card{
+		-webkit-transform:rotate(135deg);
+		-moz-transform:rotate(135deg);
+		-o-transform:rotate(135deg);
+		-ms-transform:rotate(135deg);
+	}
+	#player1 .card, #player4 .card{
+		-webkit-transform:rotate(45deg);
+		-moz-transform:rotate(45deg);
+		-o-transform:rotate(45deg);
+		-ms-transform:rotate(45deg);
+	}
+	#player2 .card, #player4 .card{
+		float: left;
+	}	
+	#player1 .card, #player3 .card{
+		float: right;
+	}
+	#other-players .card{
+		margin: 20px;
+	}
+	#other-players  #player1 h2.username,  #player3 h2.username{
+		text-align: right;
+	}
+	#player5 .card, #dealer .card{
+		width: 100px;
+		height: 150px;
+	}
+
+}
+@media screen and (min-width: 1200px) {
+	
+	#home-page-login-container{
+		margin-top: 30%;
+	}
+	#dealer{
+		min-width: 60%;			
+
+	}
+	#player5{
+		min-width: 60%;	
+	}
+}
+@media screen and (min-width: 1500px) {
+	#dealer{
+		min-width: 50%;			
+
+	}
+	#player5{
+		min-width: 50%;	
+	}
+}
