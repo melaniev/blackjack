@@ -1,1 +1,3 @@
 - add client side validation on forms
+
+- amount of time that lapses between client ajax requests, prevent user from controlling!!

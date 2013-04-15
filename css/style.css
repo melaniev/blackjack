@@ -209,6 +209,8 @@ html{
 #stats{
 	height: 45%;
 	min-height: 400px;
+	height: 400px;
+	overflow-y: scroll;
 }
 .text-panels{
 	background: rgba(0,0,0,0.60); 

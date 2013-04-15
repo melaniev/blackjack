@@ -9,6 +9,7 @@ User Controller Class
 
 include_once "config.php";
 require_once("/resources/Game.php");
+require_once("/resources/GameManagement.php");
 
 class BlackjackGame_Controller{
 
@@ -25,12 +26,18 @@ class BlackjackGame_Controller{
 
     }
 
-    public function createANewGame(){
+    public function createANewGame($db=NULL){
 
-        //$gmanager->requestNewGame();
+        $gmanager = new Game_Manager($db);
+        $gmanager->requestNewGame();
 
     }
+    public function joinGame($db=NULL){
 
+        $gmanager = new Game_Manager($db);
+        $gmanager->joinExistingGame();
+
+    }
 
 
 

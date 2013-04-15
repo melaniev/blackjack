@@ -68,7 +68,7 @@
 			<h2>Games</h2>
 
 			<a href='play.php?game=newgame' class='button'>New Game</a>
-			<a href='' class='button'>Join Game</a>
+			<a href='play.php?game=join' class='button'>Join Game</a>
 			<a href='' class='button'>View Past Games</a>
 
 

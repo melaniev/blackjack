@@ -15,16 +15,22 @@
 
 		$gametype = filter_input(INPUT_GET, 'game', FILTER_SANITIZE_STRING);
 
+		$newGameController = new BlackjackGame_Controller($db);
+
 		if($gametype == 'newgame'){
 
 			echo 'You want a new game!';
+			$newGameController->createANewGame();
 		}
-		$newGameController = new BlackjackGame_Controller();
-		$newGameController->createANewGame();
+		if($gametype == 'join'){
+
+			echo 'You want to join existing game!';
+			$newGameController->joinGame();
+		}		
+		
 	}
 
 ?>
-
 
 		<div id='logout-lobby-controls'>
 			<a href='logout.php' >log out |</a>
@@ -37,6 +43,10 @@
 			</div>
 			<div id='stats' class='text-panels'>
 				<h2>Stats or Whatever</h2>
+				<div id='status-feed'>
+
+				</div>
+
 			</div>
 
 
@@ -110,3 +120,26 @@
 <?php
 	require_once(TEMPLATES_PATH . "/footer.php");
 ?>
+
+<script type="text/javascript">
+
+// 	(function poll() {
+//     setTimeout(function () {
+
+//         $.ajax({
+//             type: 'POST',
+//             dataType: 'html',
+//             url: '<?php echo SITE_URL; ?>/actionlog.php',
+//             success: function (data) {
+
+//             	//$('#side-bar #stats #status-feed').append('Info from server recieved<br />');
+//             	$('#side-bar #stats #status-feed').append(data + '<br />');
+
+//                 //MyNamespace.myFunction(data); //DO ANY PROCESS HERE
+//             },
+//             complete: poll
+//         });
+//     }, 2000);
+// })();
+
+</script>

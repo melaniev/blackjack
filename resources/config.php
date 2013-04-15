@@ -59,7 +59,9 @@ try {
 global $gmanager;
 $gmanager = new Game_Manager();
 
-
-    
+//Create action log file
+$fp = fopen("actionlog.php", "w");
+fwrite($fp, "action log is open");
+//fclose($fp);
 
 ?>
