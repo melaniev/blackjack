@@ -24,7 +24,7 @@
 // 	or define("LIBRARY_PATH", realpath(dirname(__FILE__) . '/library'));
 	
 defined("SITE_URL")
-	or define("SITE_URL", 'http://localhost:8976');
+	or define("SITE_URL", 'http://localhost:36408');
 
 
 defined("TEMPLATES_PATH")

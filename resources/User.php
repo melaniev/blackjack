@@ -54,6 +54,9 @@ class BlackjackUser{
 
             $this->insertUserInfoIntoDatabase($hsh_un, $hsh_pass);
 
+            $_SESSION['Username'] = $hsh_un;
+            $_SESSION['LoggedIn'] = 1;
+
             return 1;
         }
         else{
@@ -155,6 +158,8 @@ class BlackjackUser{
 
         return $pass1;
     }
+
+
 }    
 
 ?>

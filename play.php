@@ -123,23 +123,23 @@
 
 <script type="text/javascript">
 
-// 	(function poll() {
-//     setTimeout(function () {
+	(function poll() {
+    setTimeout(function () {
 
-//         $.ajax({
-//             type: 'POST',
-//             dataType: 'html',
-//             url: '<?php echo SITE_URL; ?>/actionlog.php',
-//             success: function (data) {
+        $.ajax({
+            type: 'POST',
+            dataType: 'html',
+            url: '<?php echo SITE_URL; ?>/actionlog.php',
+            success: function (data) {
 
-//             	//$('#side-bar #stats #status-feed').append('Info from server recieved<br />');
-//             	$('#side-bar #stats #status-feed').append(data + '<br />');
+            	//$('#side-bar #stats #status-feed').append('Info from server recieved<br />');
+            	$('#side-bar #stats #status-feed').append(data + '<br />');
 
-//                 //MyNamespace.myFunction(data); //DO ANY PROCESS HERE
-//             },
-//             complete: poll
-//         });
-//     }, 2000);
-// })();
+                //MyNamespace.myFunction(data); //DO ANY PROCESS HERE
+            },
+            complete: poll
+        });
+    }, 2000);
+})();
 
 </script>

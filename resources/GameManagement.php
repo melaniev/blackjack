@@ -51,7 +51,20 @@ class Game_Manager{
         //If not, create a new game
         if ($currentGameCount < 51) {
             $newGame = new BlackjackGame();
-            $newGame->addPlayer();
+            $gameid = $newGame->getGameID();
+
+            //Add this player to the game
+            $_SESSION['GameID'] = $gameid;
+
+            //Add this to overall log
+
+            //Add to to current Game Players
+            $newGame->addPlayer($gameid);
+
+            $fp = fopen("actionlog.php", "w");
+            fwrite($fp, "from Game, returned game of id ". $gameid . 'to manager');
+            fclose($fp);
+
         }else{
             echo "Sorry, already the maximum number of games being played";
         }

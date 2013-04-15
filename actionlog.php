@@ -1,1 +1,1 @@
-New Game Created
+from Game, returned game of id to manager
