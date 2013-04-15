@@ -162,7 +162,7 @@ html{
 	left: 2px;
 }
 #table-top-page{
-	background-image: url(../images/green_felt.png);
+	background-image: url(/images/layout/green_felt.png);
 	height: 100%;
 	font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
 	color: white;
@@ -203,12 +203,30 @@ html{
 
 #chat{
 	height: 45%;
-	border: 2px solid red;
+	min-height: 400px;
+
 }
 #stats{
 	height: 45%;
-	border: 2px solid green;
+	min-height: 400px;
 }
+.text-panels{
+	background: rgba(0,0,0,0.60); 
+	-moz-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	margin: 5px;
+	padding: 3px;
+}
+.text-panels h2{
+	text-align: center;
+	font-size: 130%;
+	font-weight: normal;
+	border-bottom: 1px solid white;
+
+}
+
 @media screen and (min-width: 350px) {
 
 }
@@ -283,7 +301,7 @@ html{
 @media screen and (min-width: 1200px) {
 	
 	#home-page-login-container{
-		margin-top: 30%;
+		margin-top: 20%;
 	}
 	#dealer{
 		min-width: 60%;			

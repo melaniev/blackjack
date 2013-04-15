@@ -1,24 +1,37 @@
+<?php
 
-<!DOCTYPE html>
-<html id='home-page'>
-	<head>
-		<link rel="stylesheet" type="text/css" href="style.css">
+	$pageTitle = 'BlackJack';
+	$id = 'home-page';
+	
+	// load config
+	require_once("/resources/config.php");
+	require_once(TEMPLATES_PATH . "/header.php");
+?>
 
-	</head>
-	<body>
-		<div id='home-page-login-container'>
-			<form action=" " method="post">
 
-				<div id='pretty-login'>
-					<span class='login-label'>username: </span><input type='text' name='username' class='login-input' id='login-username'/><br />
-					<span class='login-label'>password: </span><input type='text' name='password' class='login-input' id='login-password'/>
+<?php
 
-				</div>
+	if(isset($_SESSION['LoggedIn'])){
 
-					<div style='margin-top:10px;'>
-					<input type='submit' value="Log In" name='home-log-in' class='button' style='display:block;float:right;'/>
-					</div>
-			</form>
-		</div>
-	</body>
-</html>
+		if($_SESSION['LoggedIn'] != 1){
+
+			header( 'Location:'.SITE_URL.'/login.php' );
+
+		}else{
+
+			header( 'Location:'.SITE_URL.'/lobby.php' );
+		}
+	}
+	else{
+
+		header( 'Location:'.SITE_URL.'/lobby.php' );
+	}
+
+
+
+?>
+
+
+<?php
+	require_once(TEMPLATES_PATH . "/footer.php");
+?>
