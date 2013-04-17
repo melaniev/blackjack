@@ -16,6 +16,7 @@ CREATE TABLE swe_blackjack_db.users(
 CREATE TABLE swe_blackjack_db.games(
 	gameID  INT AUTO_INCREMENT UNIQUE,
 	gameState BOOLEAN NOT NULL default 0,
+	playerCount INT,
 	PRIMARY KEY (gameID));
 
 /* Moves Table */

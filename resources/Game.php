@@ -36,14 +36,20 @@ class BlackjackGame{
             $this->_db = new PDO($dsn, DB_USER, DB_PASS);
         }
 
+    }
+
+
+    public function newBJG(){
 
         //Store this game in the database
         $nowActive = 1;
-        $sql = "INSERT INTO games(gameState)
-        VALUES(:gstate)";
+        $count = 0;
+        $sql = "INSERT INTO games(gameState, playerCount)
+        VALUES(:gstate, :pcount)";
         
         if($stmt = $this->_db->prepare($sql)) {
-            $stmt->bindParam(":gstate", $nowActive, PDO::PARAM_BOOL);;
+            $stmt->bindParam(":gstate", $nowActive, PDO::PARAM_BOOL);
+            $stmt->bindParam(":pcount", $count, PDO::PARAM_INT);
             $stmt->execute();
             $stmt->closeCursor();
         }
@@ -84,14 +90,12 @@ class BlackjackGame{
 
         echo 'Add player called';
 
-        $fp = fopen("actionlog.php", "w");
-        fwrite($fp, "Add Player Called in Game");
-        fclose($fp);
 
-
+        $incr = 1;
         $userID = $this->getUserID();
         echo 'UserId is: '.$userID;
 
+        //Add this player into the current players
         $sql = "INSERT INTO gameplayers(gameID, userID)
                 VALUES(:g, :u)";
         
@@ -102,7 +106,17 @@ class BlackjackGame{
             $stmt->closeCursor();
         }
 
+        //Update the playercount in the game
+        $sql = "UPDATE games
+                SET playerCount = playerCount + :incr
+                WHERE gameID=:gID";
 
+        if($stmt = $this->_db->prepare($sql)) {      
+            $stmt->bindParam(":gID", $gid , PDO::PARAM_INT);
+            $stmt->bindParam(":incr", $incr , PDO::PARAM_INT);
+            $stmt->execute();
+            $stmt->closeCursor();
+        }
     }
     public function removePlayer(){
 

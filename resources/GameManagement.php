@@ -11,7 +11,6 @@ require_once("/resources/Game.php");
 
 class Game_Manager{
 
-
     private static $counter = 0;
     private static $game_holder = array(50);
     
@@ -41,6 +40,9 @@ class Game_Manager{
 
    public function requestNewGame(){
 
+        //Remove them from current Game
+        $this->removePlayerFromGame();
+
         $fp = fopen("actionlog.php", "w");
         fwrite($fp, "requestNewGame() in Game Management called");
         fclose($fp);
@@ -51,6 +53,7 @@ class Game_Manager{
         //If not, create a new game
         if ($currentGameCount < 51) {
             $newGame = new BlackjackGame();
+            $newGame->newBJG();
             $gameid = $newGame->getGameID();
 
             //Add this player to the game
@@ -73,13 +76,36 @@ class Game_Manager{
 
    public function joinExistingGame(){
 
+        $this->removePlayerFromGame();
+
         $fp = fopen("actionlog.php", "w");
         fwrite($fp, "joinExistingGame() in Game Management called");
         fclose($fp);
 
         //Find the first game with an available spot
+        //Check and make sure there is at least one active game
+        $currentGameCount = $this->checkGameCount();
 
-        //Add new player to the Game Players
+        if ($currentGameCount > 0) {
+
+            $gameid = $this->findGameWithLessThanMaxPlayers();
+            //Add new player to the Game Players
+            $oldGame = new BlackjackGame();
+            $oldGame->addPlayer($gameid);
+
+            //Add this player to the game
+            $_SESSION['GameID'] = $gameid;
+
+            //Add this to overall log
+
+        }else{
+            //Sorry... No available spots
+            $this->requestNewGame();
+
+        }
+
+
+        
     }
 
     private function retrieveCurrentGames(){
@@ -90,11 +116,15 @@ class Game_Manager{
         fclose($fp);
     }
 
-    private function removePlayerFromGAme(){
+    private function removePlayerFromGame(){
 
-        $fp = fopen("actionlog.php", "w");
-        fwrite($fp, "removePlayerFromGAme() in Game Management called");
-        fclose($fp);
+        if($_SESSION['GameID']){
+
+            //FILTER FILTER FILTER!!
+            $old_game_id = $_SESSION['GameID'];
+        }
+
+
 
         //Remove this player from the Game Players
     }
@@ -127,6 +157,31 @@ class Game_Manager{
         }
 
         fclose($fp);
+    }
+
+    //Returns first Game ID where number of players is not at MAX
+    private function findGameWithLessThanMaxPlayers(){
+
+        $max = 5;
+
+        $sql = "SELECT gameID
+                FROM games
+                WHERE playerCount <:Max
+                LIMIT 1";
+
+        if($stmt = $this->_db->prepare($sql)) {
+            $stmt->bindParam(":Max", $max, PDO::PARAM_INT);
+            $stmt->execute();
+            $row = $stmt->fetch();
+            $gameidtoJoin = $row['gameID'];
+
+            echo $row.'<br />array: ';
+            print_r($row);
+
+            $stmt->closeCursor();
+
+            return $gameidtoJoin;
+        }
     }
 }
 
