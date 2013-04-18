@@ -1,1 +1,1 @@
-action log is open
+from Game, returned game of id 12to manager

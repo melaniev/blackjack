@@ -122,6 +122,9 @@ class Game_Manager{
 
             //FILTER FILTER FILTER!!
             $old_game_id = $_SESSION['GameID'];
+ 
+            $oldGame = new BlackjackGame();
+            $oldGame->removePlayer($old_game_id);
         }
 
 
