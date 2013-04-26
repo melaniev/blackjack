@@ -11,15 +11,19 @@ require_once("/resources/Game.php");
 
 class Game_Manager{
 
-    private static $counter = 0;
-    private static $game_holder = array(50);
-    
-    final public function __construct($db=NULL) {
+    private $game_holder = array(50);
+    public $_db;
 
-        // if (self::$counter) {
-        //     throw new Exception('Cannot be instantiated more than once');
-        // }
-        // self::$counter++;
+    public static function Instance()
+    {
+        static $inst = null;
+        if ($inst === null) {
+            $inst = new Game_Manager();
+        }
+        return $inst;
+    }
+    
+    private function __construct($db=NULL) {
         
         //Create database object if not already created
         if(is_object($db))
@@ -32,20 +36,27 @@ class Game_Manager{
             $this->_db = new PDO($dsn, DB_USER, DB_PASS);
         }
 
-        //Create action log file
-        $fp = fopen("actionlog.php", "w");
-        fwrite($fp, "Game Management Object Created");
-        fclose($fp);
+        $games = $this->retrieveCurrentGames();
+
+        print_r($games);
+
+        foreach ($games as $game) {
+
+            $gameid = $game['gameID'];
+            $newGame = new BlackjackGame($this->_db, $gameid);
+
+          //  echo 'Type: '.gettype($newGame). '<br />';
+
+            //store the game
+        array_push($this->game_holder, $newGame);
+      
+        }
     }
 
    public function requestNewGame(){
 
         //Remove them from current Game
         $this->removePlayerFromGame();
-
-        $fp = fopen("actionlog.php", "w");
-        fwrite($fp, "requestNewGame() in Game Management called");
-        fclose($fp);
 
         //Check and make sure the amount of live games isn't at the current limit
         $currentGameCount = $this->checkGameCount();
@@ -56,6 +67,8 @@ class Game_Manager{
             $newGame->newBJG();
             $gameid = $newGame->getGameID();
 
+            array_push($this->game_holder, $newGame);
+
             //Add this player to the game
             $_SESSION['GameID'] = $gameid;
 
@@ -63,10 +76,7 @@ class Game_Manager{
 
             //Add to to current Game Players
             $newGame->addPlayer($gameid);
-
-            $fp = fopen("actionlog.php", "w");
-            fwrite($fp, "from Game, returned game of id ". $gameid . 'to manager');
-            fclose($fp);
+            $newGame->playRound();
 
         }else{
             echo "Sorry, already the maximum number of games being played";
@@ -78,11 +88,8 @@ class Game_Manager{
 
         $this->removePlayerFromGame();
 
-        $fp = fopen("actionlog.php", "w");
-        fwrite($fp, "joinExistingGame() in Game Management called");
-        fclose($fp);
-
         //Find the first game with an available spot
+
         //Check and make sure there is at least one active game
         $currentGameCount = $this->checkGameCount();
 
@@ -90,13 +97,31 @@ class Game_Manager{
 
             $gameid = $this->findGameWithLessThanMaxPlayers();
             //Add new player to the Game Players
-            $oldGame = new BlackjackGame();
-            $oldGame->addPlayer($gameid);
+            //$oldGame = new BlackjackGame($_db, $gameid);
 
-            //Add this player to the game
-            $_SESSION['GameID'] = $gameid;
+            foreach ($this->game_holder as $game) {
 
-            //Add this to overall log
+                 echo 'Type: '.gettype($game). '<br />';
+
+                 print_r($game);
+
+                 $gid = $game->_gid;
+                 echo 'id: '.$gid. '<br />';
+
+                if ( $gid == $gameid) {
+                    echo "I found the game for you!!";
+
+                    //add player to this game
+                    $game->addPlayer($gameid);
+
+                    //Add this player to the game
+                    $_SESSION['GameID'] = $gameid;
+                }
+
+          
+            }
+
+
 
         }else{
             //Sorry... No available spots
@@ -108,12 +133,53 @@ class Game_Manager{
         
     }
 
+    public function makeAHit($thisPlayersGameID){
+
+        //find a game by id
+        //pass that move and player to that game
+        foreach ($this->game_holder as $game) {
+
+                if ($game->_gid == $thisPlayersGameID){
+                    
+                    echo "<p>A Game found for that Move</p>";
+                    $game->hit();
+                }  
+        }
+ 
+        
+    }
+    public function makeAStay($thisPlayersGameID){
+
+        //find a game by id
+        //pass that move and player to that game
+        foreach ($this->game_holder as $game) {
+
+                if ($game->_gid == $thisPlayersGameID){
+                    
+                    echo "<p>A Game found for that Move</p>";
+                    $game->stay();
+                }  
+        }
+ 
+        
+    }
     private function retrieveCurrentGames(){
 
+        $active = 1;
+        
+        $sql = "SELECT *
+                FROM games
+                WHERE gamestate=:active";
 
-        $fp = fopen("actionlog.php", "w");
-        fwrite($fp, "retrieveCurrentGames() in Game Management called");
-        fclose($fp);
+        if($stmt = $this->_db->prepare($sql)) {
+            $stmt->bindParam(":active", $active, PDO::PARAM_BOOL);
+            $stmt->execute();
+            $row = $stmt->fetchAll();
+
+            $stmt->closeCursor();
+
+            return $row;
+        };
     }
 
     private function removePlayerFromGame(){
@@ -132,10 +198,9 @@ class Game_Manager{
         //Remove this player from the Game Players
     }
 
+
     private function checkGameCount(){
 
-        $fp = fopen("actionlog.php", "w");
-        fwrite($fp, " checkGameCount() in Game Management called");
 
         $active = 1;
         
@@ -159,13 +224,12 @@ class Game_Manager{
             $stmt->closeCursor();
         }
 
-        fclose($fp);
     }
 
     //Returns first Game ID where number of players is not at MAX
     private function findGameWithLessThanMaxPlayers(){
 
-        $max = 5;
+        $max = 4;
 
         $sql = "SELECT gameID
                 FROM games
@@ -186,6 +250,8 @@ class Game_Manager{
             return $gameidtoJoin;
         }
     }
+
+
 }
 
 ?>

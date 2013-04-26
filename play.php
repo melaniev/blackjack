@@ -13,19 +13,20 @@
 <?php
 	if($_GET){
 
+//check if logged in, if not, go to login page
+
 		$gametype = filter_input(INPUT_GET, 'game', FILTER_SANITIZE_STRING);
 
-		$newGameController = new BlackjackGame_Controller($db);
 
 		if($gametype == 'newgame'){
 
 			echo 'You want a new game!';
-			$newGameController->createANewGame();
+			createANewGame();
 		}
 		if($gametype == 'join'){
 
 			echo 'You want to join existing game!';
-			$newGameController->joinGame();
+			joinGame();
 		}		
 		
 	}
@@ -106,13 +107,20 @@
 
 				<!-- Player 5 -->					
 				<div class='a_player  not-dealer' id='player5'>
-					<h2 class='username'>My Username</h2>
+					<h2 class='username'><?php echo $_SESSION['Username']; ?></h2>
 					<div class='card-total'><h3>Total:</h3><span class='current-total'>##</span></div>
 					<div class='card'></div>
 					<div class='card'></div>
 					<div class='card'></div>
 					<div class='card'></div>
 					<div class='card'></div>
+					<form action='' method='post'>
+						<input type='submit' id='staybutton' class='button playbutton' style='width:60px;' value='Stay' name='stay'/>
+					</form>
+					<form action='' method='post'>
+						<input type='submit' id='hitbutton' class='button' style='width:60px;' value='Hit' name='hit' />
+						<input type='text' />
+					</form>
 				</div>
 
 		</div>
@@ -123,23 +131,84 @@
 
 <script type="text/javascript">
 
-	(function poll() {
+	$(document).ready(function(){
+
+		$('#hitbutton').click(function(event){
+			event.preventDefault();
+			alert('hit!');
+
+			$.ajax({
+	            type: 'POST',
+	            data: { name: "Hit", bet: "$50" },
+	            url: '<?php echo SITE_URL; ?>/move.php',
+	            success: function (data) {
+
+	            	alert('yes!');
+
+	            },
+	            
+	        });
+		});
+
+		$('#staybutton').click(function(event){
+			event.preventDefault();
+			alert('stay!');
+
+			$.ajax({
+	            type: 'POST',
+	            data: { name: "Stay", bet: "$50" },
+	            url: '<?php echo SITE_URL; ?>/move.php',
+	            success: function (data) {
+
+	            	alert('yes!');
+
+	            },
+	            
+	        });
+		});
+
+	});
+
+// 	(function poll() {
+//     setTimeout(function () {
+
+//         $.ajax({
+//             type: 'POST',
+//             dataType: 'html',
+//             url: '<?php echo SITE_URL; ?>/actionlog.php',
+//             success: function (data) {
+
+//             	//$('#side-bar #stats #status-feed').append('Info from server recieved<br />');
+//             	$('#side-bar #stats #status-feed').append(data + '<br />');
+
+//             },
+//             complete: poll
+//         });
+//     }, 2000);
+// })();
+
+
+	(function updateboard() {
     setTimeout(function () {
 
         $.ajax({
             type: 'POST',
-            dataType: 'html',
-            url: '<?php echo SITE_URL; ?>/actionlog.php',
+            //data: {action: 'update'},
+            dataType: 'json',
+            url: '<?php echo SITE_URL; ?>/plays.php',
             success: function (data) {
 
-            	//$('#side-bar #stats #status-feed').append('Info from server recieved<br />');
-            	$('#side-bar #stats #status-feed').append(data + '<br />');
+            	updateBoard(data);
 
-                //MyNamespace.myFunction(data); //DO ANY PROCESS HERE
             },
-            complete: poll
+            complete: updateboard
         });
     }, 2000);
 })();
+
+function updateBoard(gamedata){
+
+	var gameinfo = gamedata;
+}
 
 </script>

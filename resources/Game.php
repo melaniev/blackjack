@@ -3,9 +3,15 @@
 
 /* 
 
-User Class
+BlackjackGame Class
 
 */
+
+require_once("/resources/Deck.php");
+require_once("/resources/Player.php");
+require_once("/resources/Klogger.php");
+
+
 
 class BlackjackGame{
 
@@ -16,6 +22,9 @@ class BlackjackGame{
      */
     private $_db;
     public $_gid;
+    private $deck;
+    private $dealer;
+    private $players = array();
 
   
     /**
@@ -24,8 +33,9 @@ class BlackjackGame{
      * @param object $db
      * @return void
      */
-    public function __construct($db=NULL)
+    public function __construct($db=NULL, $id=NULL)
     {
+        //echo "<br/>Blackjack Constructed called with id: ". $id.'<br />';
         if(is_object($db))
         {
             $this->_db = $db;
@@ -35,6 +45,18 @@ class BlackjackGame{
             $dsn = "mysql:host=".DB_HOST.";dbname=".DB_NAME;
             $this->_db = new PDO($dsn, DB_USER, DB_PASS);
         }
+
+        if ($id != NULL) {
+            
+            $this->_gid = $id;
+        }
+
+        //Create a dealer
+        $this->dealer = new Player($db, 'dealer');
+
+        $log   = KLogger::instance(dirname(__FILE__), KLogger::DEBUG);
+        $log->logInfo('Blackjack Constructed called with id: ', $id);
+
 
     }
 
@@ -62,10 +84,6 @@ class BlackjackGame{
             $stmt->execute();
             $id = $stmt->fetch();
             $next_id = $id['nextID'];
-
-            $fp = fopen("actionlog.php", "w");
-            fwrite($fp, "New Game Created with id " . $next_id);
-            fclose($fp);
             
             $stmt->closeCursor();
 
@@ -74,11 +92,8 @@ class BlackjackGame{
 
         }
 
+        
 
-        //Create action log file
-        $fp = fopen("actionlog.php", "w");
-        fwrite($fp, "New Game Created");
-        fclose($fp);
     }
 
     public function getGameID(){
@@ -88,8 +103,10 @@ class BlackjackGame{
 
     public function addPlayer($gid){
 
-        echo 'Add player called';
+        $new_player = new Player($db, $_SESSION['Username']);
 
+        echo 'Add player called';
+        array_push ($this->players, $new_player);
 
         $incr = 1;
         $userID = $this->getUserID();
@@ -117,24 +134,170 @@ class BlackjackGame{
             $stmt->execute();
             $stmt->closeCursor();
         }
+
+
     }
-    public function removePlayer(){
+    public function removePlayer($idofGame){
+
+        $userID = $this->getUserID();
+
+        //Remove that player from that games current players
+        $sql = "DELETE FROM gameplayers
+                WHERE gameID = :gID AND userID = :uID";
+
+        if($stmt = $this->_db->prepare($sql)) {      
+            $stmt->bindParam(":gID", $idofGame , PDO::PARAM_INT);
+            $stmt->bindParam(":uID", $userID , PDO::PARAM_INT);
+            $stmt->execute();
+            $stmt->closeCursor();
+        }
+
+        //Update the count of the number of players
+        $sql = "SELECT playerCount AS players
+        FROM games
+        WHERE gameID = :gID";
+
+        if($stmt = $this->_db->prepare($sql)) {
+            $stmt->bindParam(":gID", $idofGame , PDO::PARAM_INT);
+            $stmt->execute();
+            $row = $stmt->fetch();
+            $numOfPlayrs = $row['players'];
+
+            $stmt->closeCursor();
+        }
+        //If the game no longer has players, make the game inactive
+        if ($numOfPlayrs - 1 <= 0) {
+
+            $inactive = 0;
+
+            $sql = "UPDATE games
+                    SET gameState =:inactive
+                    WHERE gameID=:gID";
+
+            if($stmt = $this->_db->prepare($sql)) {      
+                $stmt->bindParam(":gID", $idofGame, PDO::PARAM_INT);
+                $stmt->bindParam(":inactive", $inactive , PDO::PARAM_BOOL);
+                $stmt->execute();
+                $stmt->closeCursor();
+            }
+
+        }else{
+            //update the game with one less player
+
+            $incr = 1;
+
+            $sql = "UPDATE games
+                    SET playerCount = playerCount - :incr
+                    WHERE gameID=:gID";
+
+            if($stmt = $this->_db->prepare($sql)) {      
+                $stmt->bindParam(":gID", $idofGame, PDO::PARAM_INT);
+                $stmt->bindParam(":incr", $incr , PDO::PARAM_INT);
+                $stmt->execute();
+                $stmt->closeCursor();
+            }
+
+        }
+
+    }
+    public function playRound(){
+
+        $this->dealHand();
+
+        echo "<br />NOW:".time()."<br />";
 
 
     }
     public function dealHand(){
 
-    }
+        echo "Dealing hand...";
 
+        $this->deck = new Deck();
+
+        foreach ($this->players as $player) {
+
+            $card = $this->deck->deal();
+            $player->addCard($card);
+            echo "Player: ".$player->username.", the card is:" . $card. '<br />';
+
+        }
+
+        //deal to dealer
+        $card = $this->deck->deal();
+        $this->dealer->addCard($card);
+
+        $this->updateGameState();
+
+         foreach ($this->players as $player) {
+
+            $card = $this->deck->deal();
+            $player->addCard($card);
+            echo "Player: ".$player->username.", the card is:" . $card. '<br />';
+        }
+
+        //deal to dealer
+        $card = $this->deck->deal();
+        $this->dealer->addCard($card);
+
+        print_r($this->deck);
+
+        $this->updateGameState();
+
+    }
+    public function hit(){
+
+        echo "<p>Hit!</p>";
+        $log->logInfo('hit');
+
+            $fp = fopen("../plays.php", "a");
+            fwrite($fp, "hit hit hit!!!");
+            fclose($fp);
+    }
+    public function stay(){
+
+        echo "<p>Stay!</p>";
+        $log->logInfo('stay');
+
+        $fp = fopen("../plays.php", "a");
+        fwrite($fp, "stay stay stay!!!");
+        fclose($fp);
+
+
+    }
     public function dealCard(){
 
+    }
+
+    public function updateGameState(){
+
+        $gamestate = array(
+                array(
+                    'name'=> 'dealer',
+                    'cards'=> json_encode($this->dealer->hand)
+                )
+        );
+
+        foreach ($this->players as $player) {
+
+            $playerInfo = array(
+
+                'name' => $player->username,
+                'cards'=> json_encode($player->hand)
+
+                );
+
+            array_push($gamestate, $playerInfo);
+        }
+
+
+            $fp = fopen("plays.php", "w");
+            fwrite($fp, json_encode($gamestate));
+            fclose($fp);
     }
 
     private function getUserID(){
 
         echo 'getUserID called';
-
-        $fp = fopen("actionlog.php", "w");
 
         $un = $_SESSION['Username'];
 
@@ -151,9 +314,6 @@ class BlackjackGame{
             $id = $stmt->fetch();
             $us_id = $id['uID'];
 
-            
-            fwrite($fp, "User ID retrieved, id: " . $us_id);
-            fclose($fp);
             
             $stmt->closeCursor();
 

@@ -7,21 +7,6 @@
     // Include Game Manager
     include_once "GameManagement.php";
 
-
-/*
-	I will usually place the following in a bootstrap file or some type of environment
-	setup file (code that is run at the start of every page request), but they work 
-	just as well in your config file if it's in php (some alternatives to php are xml or ini files).
-*/
-
-/*
-	Creating constants for heavily used paths makes things a lot easier.
-	ex. require_once(LIBRARY_PATH . "Paginator.php")
-*/
-
-
-// defined("LIBRARY_PATH")
-// 	or define("LIBRARY_PATH", realpath(dirname(__FILE__) . '/library'));
 	
 defined("SITE_URL")
 	or define("SITE_URL", 'http://localhost:36408');
@@ -57,11 +42,6 @@ try {
 
 // Create the Game Manager
 global $gmanager;
-$gmanager = new Game_Manager();
-
-//Create action log file
-$fp = fopen("actionlog.php", "w");
-fwrite($fp, "action log is open");
-//fclose($fp);
+$gmanager = Game_Manager::Instance();
 
 ?>

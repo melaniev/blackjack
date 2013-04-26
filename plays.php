@@ -1,0 +1,1 @@
+[{"name":"dealer","cards":"[\"1_diamond\",\"7_club\"]"},{"name":"JJ","cards":"[\"1_diamond\",\"10_spade\"]"}]

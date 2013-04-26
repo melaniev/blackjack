@@ -1,0 +1,56 @@
+2013-04-25 20:41:54 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 20:41:55 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 20:48:09 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 20:48:10 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 20:53:33 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 20:53:35 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 20:58:08 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 20:58:10 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:00:08 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:00:09 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:07:52 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:07:53 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:09:49 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:09:50 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:11:01 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:11:02 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:11:04 - INFO --> createANewGame in GameController 
+2013-04-25 21:15:08 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:15:09 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:15:11 - INFO --> createANewGame in GameController 
+2013-04-25 21:16:55 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:16:56 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:16:58 - INFO --> createANewGame in GameController 
+2013-04-25 21:18:20 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:18:21 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:18:24 - INFO --> createANewGame in GameController 
+2013-04-25 21:21:08 - INFO --> a Stay in GameController 
+2013-04-25 21:26:43 - INFO --> a Stay in GameController 
+2013-04-25 21:26:43 - INFO --> a Hit in GameController 
+2013-04-25 21:26:43 - INFO --> a Hit in GameController 
+2013-04-25 21:46:29 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:46:30 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:46:32 - INFO --> createANewGame in GameController 
+2013-04-25 21:47:29 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:47:30 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:47:32 - INFO --> createANewGame in GameController 
+2013-04-25 21:48:35 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:48:36 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:48:38 - INFO --> createANewGame in GameController 
+2013-04-25 21:52:39 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:52:40 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 21:52:42 - INFO --> createANewGame in GameController 
+2013-04-25 21:52:58 - INFO --> a Stay in GameController 
+2013-04-25 21:52:58 - INFO --> a Hit in GameController 
+2013-04-25 21:52:58 - INFO --> a Stay in GameController 
+2013-04-25 21:53:03 - INFO --> a Stay in GameController 
+2013-04-25 21:53:03 - INFO --> a Hit in GameController 
+2013-04-25 21:53:03 - INFO --> a Hit in GameController 
+2013-04-25 21:53:07 - INFO --> a Stay in GameController 
+2013-04-25 21:53:07 - INFO --> a Hit in GameController 
+2013-04-25 21:53:07 - INFO --> a Hit in GameController 
+2013-04-25 23:01:27 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 23:01:43 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 23:01:44 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-25 23:01:47 - INFO --> createANewGame in GameController 
+2013-04-25 23:02:02 - INFO --> Blackjack Constructed called with id: ; NULL

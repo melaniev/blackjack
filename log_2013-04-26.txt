@@ -1,0 +1,21 @@
+2013-04-26 9:20:04 - INFO --> Move.php
+2013-04-26 9:56:12 - INFO --> Move.php
+2013-04-26 9:57:30 - INFO --> Move.php
+2013-04-26 9:57:30 - INFO --> Hit in Move.php
+2013-04-26 9:57:44 - INFO --> Move.php
+2013-04-26 9:59:37 - INFO --> Move.php
+2013-04-26 9:59:37 - INFO --> Hit in Move.php
+2013-04-26 10:02:03 - INFO --> Move.php
+2013-04-26 10:02:03 - INFO --> Stay in Move.php
+2013-04-26 10:04:17 - INFO --> Move.php
+2013-04-26 10:04:17 - INFO --> Hit in Move.php
+2013-04-26 10:04:54 - INFO --> Move.php
+2013-04-26 10:05:19 - INFO --> Move.php
+2013-04-26 10:05:19 - INFO --> Stay in Move.php
+2013-04-26 10:07:15 - INFO --> Move.php
+2013-04-26 10:07:15 - INFO --> Stay in Move.php
+2013-04-26 10:09:13 - INFO --> Move.php
+2013-04-26 10:09:13 - INFO --> Stay in Move.php
+2013-04-26 10:11:43 - INFO --> Move.php
+2013-04-26 10:11:43 - INFO --> Hit in Move.php
+2013-04-26 10:29:38 - INFO --> Move.php
