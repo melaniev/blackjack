@@ -209,6 +209,22 @@
 function updateBoard(gamedata){
 
 	var gameinfo = gamedata;
+
+	    $.each(gameinfo, function(index, element) {
+	        //alert(element.name);
+
+	        if (element.name = 'dealer') {
+
+	        	$('#dealer').children('.card').css({'background-color': 'yellow', 'border': '5px solid red'});
+
+	        	for (var i = 0; i < element.cards; i++) {
+
+	        		alert(i);
+	        		
+	        	};
+	        };
+	    });
+
 }
 
 </script>
