@@ -141,8 +141,7 @@ class Game_Manager{
 
                 if ($game->_gid == $thisPlayersGameID){
                     
-                    echo "<p>A Game found for that Move</p>";
-                    $game->hit();
+                    $game->hit($_SESSION['Username']);
                 }  
         }
  
@@ -157,7 +156,7 @@ class Game_Manager{
                 if ($game->_gid == $thisPlayersGameID){
                     
                     echo "<p>A Game found for that Move</p>";
-                    $game->stay();
+                    $game->stay($_SESSION['Username']);
                 }  
         }
  

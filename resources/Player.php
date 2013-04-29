@@ -19,6 +19,7 @@ class Player{
     public $bankroll;
     public $username;
     public $played_turn;
+    public $card_count;
 
 
   
@@ -45,7 +46,8 @@ class Player{
 
         $this->username = $sessuser;
         $this->bankroll = 0;
-        $played_turn = 0;
+        $this->played_turn = 0;
+        $this->card_count = 0;
 
 
     }
@@ -56,7 +58,11 @@ class Player{
 
        
     }
-   
+    public function addToCardTotal($cardvalue){
+
+        $this->card_count = $this->card_count + $cardvalue;
+
+    }  
 
 }    
 

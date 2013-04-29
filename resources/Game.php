@@ -206,6 +206,7 @@ class BlackjackGame{
 
         echo "<br />NOW:".time()."<br />";
 
+        $time = time();
 
     }
     public function dealHand(){
@@ -214,46 +215,71 @@ class BlackjackGame{
 
         $this->deck = new Deck();
 
+        // Deal a card to each player
         foreach ($this->players as $player) {
 
             $card = $this->deck->deal();
             $player->addCard($card);
-            echo "Player: ".$player->username.", the card is:" . $card. '<br />';
+            $player->addCard($card);
+            $valueofCard = getCardValue($card);
+            $player->addToCardTotal($valueofCard);
 
         }
 
-        //deal to dealer
+        //Deal to the dealer
         $card = $this->deck->deal();
         $this->dealer->addCard($card);
+        $valueofCard = getCardValue($card);
+        $this->dealer->addToCardTotal($valueofCard);
 
         $this->updateGameState();
 
+        // Deal another card to each player
          foreach ($this->players as $player) {
 
             $card = $this->deck->deal();
-            $player->addCard($card);
-            echo "Player: ".$player->username.", the card is:" . $card. '<br />';
+            $player->addCard( $card );
+            $valueofCard = getCardValue( $card );
+            $player->addToCardTotal( $valueofCard );
+            
         }
 
-        //deal to dealer
+        //Deal another to the dealer
         $card = $this->deck->deal();
-        $this->dealer->addCard($card);
+        $this->dealer->addCard( $card );
+        $valueofCard = getCardValue( $card );
+        $this->dealer->addToCardTotal( $valueofCard );
 
         print_r($this->deck);
 
         $this->updateGameState();
 
     }
-    public function hit(){
+    public function hit( $p ){
 
         echo "<p>Hit!</p>";
         $log->logInfo('hit');
 
             $fp = fopen("../plays.php", "a");
-            fwrite($fp, "hit hit hit!!!");
-            fclose($fp);
+            fwrite( $fp, "hit hit hit!!!");
+            fclose( $fp );
+
+        $player_turn = getPlayerByName( $p );
+
+        //If player hasn't already finished turn
+        if ($player_turn->played_turn != 1) {
+                
+            $newCard = $this->deck->deal();
+
+            //first check and make sure an object was returned!!
+            $player_turn->addCard( $newCard );
+            $valueofCard = getCardValue( $card );
+            $player_turn->addToCardTotal( $newCard );
+        }
+
+        updateTurn();
     }
-    public function stay(){
+    public function stay( $p ){
 
         echo "<p>Stay!</p>";
         $log->logInfo('stay');
@@ -263,9 +289,94 @@ class BlackjackGame{
         fclose($fp);
 
 
-    }
-    public function dealCard(){
 
+        $player_turn = getPlayerByName($p);
+
+        if ($player_turn->played_turn != 1) {
+        //first check and make sure an object was returned!!
+            $player_turn->played_turn = 1;
+            updateTurn();
+        }
+
+    }
+    public function updateTurn(){
+
+        $playsmade = 0;
+
+        foreach ($this->players as $player) {
+
+            if($player->played_turn == 1){
+                
+                $playsmade++;
+            }
+
+            if ($playsmade == count($this->players)) {
+                
+                finishRound();
+            }
+
+        } 
+    }
+
+    private function finishRound(){
+
+
+    }
+    private function getCardValue($card_delt){
+
+        $card_value = substr($card_delt, 0, 2);
+
+        switch ($card_value) {
+            case "01":
+                return 1;
+                break;
+            case "02":
+                return 2;
+                break;
+            case "03":
+                return 3;
+                break;
+            case "04":
+                return 4;
+                break;
+            case "05":
+                return 5;
+                break;
+            case "06":
+                return 6;
+                break;
+            case "07":
+                return 7;
+                break;
+            case "08":
+                return 8;
+                break;
+            case "09":
+                return 9;
+                break;
+            case "10":
+                return 10;
+                break;
+            case "11":
+                return 10;
+                break;
+            case "12":
+                return 10;
+                break;
+        }
+
+
+    }
+    private function getPlayerByName($p){
+
+        foreach ($this->players as $player) {
+
+            if($player->username == $p){
+                
+                
+            }
+
+        } 
     }
 
     public function updateGameState(){
@@ -273,6 +384,7 @@ class BlackjackGame{
         $gamestate = array(
                 array(
                     'name'=> 'dealer',
+                    'count' => $this->dealer->card_count,
                     'cards'=> json_encode($this->dealer->hand)
                 )
         );
@@ -282,6 +394,7 @@ class BlackjackGame{
             $playerInfo = array(
 
                 'name' => $player->username,
+                'count' => $player->card_count,
                 'cards'=> json_encode($player->hand)
 
                 );
