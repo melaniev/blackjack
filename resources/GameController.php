@@ -30,20 +30,10 @@ function joinGame($db=NULL){
 
 }
 
-function updateBoard($blah){
-
-    echo '<br />Updating Board</br />';
-    $fp = fopen("plays.php", "a");
-    fwrite($fp, "board updated again");
-    fwrite($fp, $blah);
-    fclose($fp);
-
-}
 function hit(){
 
     global $gmanager;
-    $gmanager->makeAHit('hit', $_SESSION['GameID']);
-    updateBoard('a hit in Game Controller');
+    $gmanager->makeAHit($_SESSION['GameID']);
 
     $log = KLogger::instance(dirname(__FILE__), KLogger::DEBUG);
     $log->logInfo('a Hit in GameController ');
@@ -52,8 +42,7 @@ function hit(){
 function stay(){
 
     global $gmanager;
-    $gmanager->makeAStay('stay', $_SESSION['GameID']);
-    updateBoard('a stay in Game Controller');
+    $gmanager->makeAStay($_SESSION['GameID']);
 
     $log = KLogger::instance(dirname(__FILE__), KLogger::DEBUG);
     $log->logInfo('a Stay in GameController ');

@@ -8,16 +8,22 @@
 	require_once("/resources/UserController.php");
 	require_once("/resources/GameController.php");
 	require_once(TEMPLATES_PATH . "/header.php");
+
 ?>
 
 <?php
 	//User Login
 	if($_POST['home-log-in']){
+
+
 		$thisUsername = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
 		$thisPassword = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
 
+
 		$thisUserController = new BlackjackUser_Controller();
 		$loggedIn = $thisUserController->loginAccount($db, $thisUsername, $thisPassword);
+
+		$loggedIn != 1;
 
         if($loggedIn != 1){
         	//try again ?
@@ -26,6 +32,7 @@
 	}
 	//New User Registration
 	else if($_POST['signup-new-user']){
+
 
 		/******** SECURITY FEATURE ********************/
 		//using php filter_input function, allowing only strings
@@ -42,10 +49,7 @@
         	//try again ?
         	header( 'Location:'.SITE_URL.'/signup.php' );
         }
-
-        echo $accountCreateSuccess."<br />";
-
-		echo $newUsername. ", Signed UP!";
+        
 	}else{
 
 		//confirmed that they are logged in or redirect them away from this page!!

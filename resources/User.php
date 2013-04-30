@@ -7,6 +7,8 @@ User Class
 
 */
 
+require("/resources/PasswordHash.php");
+
 class BlackjackUser{
 
     /**
@@ -37,24 +39,20 @@ class BlackjackUser{
     }
 
 
-    public function createUserAccountInfo($un, $pass1, $pass2){
-
-        //DO SOME CRYPTOGRAPHY ON THE PASSWORD!!!
+    public function createUserAccountInfo($un, $pass1){
 
 
-        //HASH THE USERNAME TOO!!
-
-        $hsh_un = $this->hashUsername($un);
+        //$hsh_un = $this->hashUsername($un);
         $hsh_pass = $this->hashPassword($pass1);
 
-        $checkAlreadyUsed = $this->checkIfAccountAlreadyExists($hsh_un);
+        $checkAlreadyUsed = $this->checkIfAccountAlreadyExists($un);
 
 
         if ($checkAlreadyUsed != -1){
 
-            $this->insertUserInfoIntoDatabase($hsh_un, $hsh_pass);
+            $this->insertUserInfoIntoDatabase($un, $hsh_pass);
 
-            $_SESSION['Username'] = $hsh_un;
+            $_SESSION['Username'] = $un;
             $_SESSION['LoggedIn'] = 1;
 
             return 1;
@@ -68,26 +66,30 @@ class BlackjackUser{
 
     public function loginReturningUser($thisUsername, $thisPassword){
 
-        $return_hsh_un = $this->hashUsername($thisUsername);
-        $return_hsh_pass = $this->hashPassword($thisPassword);
+        //$return_hsh_un = $this->hashUsername($thisUsername);
 
-        $sql = "SELECT username
+        
+        $sql = "SELECT blackj_pass
                 FROM users
                 WHERE username=:user
-                AND blackj_pass=:pass
                 LIMIT 1";
         try
         {
             $stmt = $this->_db->prepare($sql);
-            $stmt->bindParam(':user', $return_hsh_un , PDO::PARAM_STR);
-            $stmt->bindParam(':pass', $return_hsh_pass , PDO::PARAM_STR);
+            $stmt->bindParam(':user', $thisUsername, PDO::PARAM_STR);
             $stmt->execute();
+            $row = $stmt->fetch();
             if($stmt->rowCount()==1)
             {
 
-                $_SESSION['Username'] = $thisUsername;
-                $_SESSION['LoggedIn'] = 1;
+                $returnedHashPass = $row['blackj_pass'];
 
+                $success = $this->checkHashedPassword($returnedHashPass, $thisPassword);
+
+                if ($success) {
+                    $_SESSION['Username'] = $thisUsername;
+                    $_SESSION['LoggedIn'] = 1;                    
+                }
 
                 return 1;
             }
@@ -149,14 +151,20 @@ class BlackjackUser{
 
     }
 
-    private function hashUsername($un){
+    private function checkHashedPassword($stored_hash, $pw){
 
-        return $un;
+        $hasher = new PasswordHash(8, false);
+        $check = $hasher->CheckPassword($pw, $stored_hash);
+
+        return $check;
     }
 
     private function hashPassword($pass1){
 
-        return $pass1;
+        $hasher = new PasswordHash(8, false);
+        $hash = $hasher->HashPassword($pass1);
+
+        return $hash;
     }
 
 

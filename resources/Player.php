@@ -20,6 +20,9 @@ class Player{
     public $username;
     public $played_turn;
     public $card_count;
+    public $has_ace;
+
+    public $log;
 
 
   
@@ -49,10 +52,14 @@ class Player{
         $this->played_turn = 0;
         $this->card_count = 0;
 
+        $this->log   = KLogger::instance(dirname(__FILE__), KLogger::DEBUG);
+        $this->log->logInfo('New Player Created');
 
     }
 
     public function addCard($card){
+
+         $this->log->logInfo('addCard called in Player.php');
 
         array_push($this->hand, $card );
 

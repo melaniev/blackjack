@@ -14,6 +14,8 @@ class Game_Manager{
     private $game_holder = array(50);
     public $_db;
 
+    public $log;
+
     public static function Instance()
     {
         static $inst = null;
@@ -51,6 +53,8 @@ class Game_Manager{
         array_push($this->game_holder, $newGame);
       
         }
+
+         $this->log   = KLogger::instance(dirname(__FILE__), KLogger::DEBUG);
     }
 
    public function requestNewGame(){
@@ -135,16 +139,25 @@ class Game_Manager{
 
     public function makeAHit($thisPlayersGameID){
 
+        $this->log->logInfo('makeaHit called in GameManagement');
+        $this->log->logInfo('Looking for a Game from a player with id: ', $thisPlayersGameID);
+
         //find a game by id
         //pass that move and player to that game
         foreach ($this->game_holder as $game) {
 
+                $this->log->logInfo('checking game with gameid: ', $game->_gid);
+
                 if ($game->_gid == $thisPlayersGameID){
+
+                    $this->log->logInfo('game found in Game Management with game id', $thisPlayersGameID);
                     
                     $game->hit($_SESSION['Username']);
+
+                    $this->log->logInfo('sending a hit request to Game with username: ', $_SESSION['Username']);
+
                 }  
         }
- 
         
     }
     public function makeAStay($thisPlayersGameID){
@@ -160,7 +173,6 @@ class Game_Manager{
                 }  
         }
  
-        
     }
     private function retrieveCurrentGames(){
 

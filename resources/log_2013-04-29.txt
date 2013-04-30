@@ -1,0 +1,2058 @@
+2013-04-29 17:28:55 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 17:28:55 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 17:28:55 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 17:28:55 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 17:28:55 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 17:28:55 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 17:28:55 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 17:28:55 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 17:28:55 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 17:28:55 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 17:28:55 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 17:28:55 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 17:28:55 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 17:28:55 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 17:28:55 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 17:28:55 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 17:28:55 - INFO --> Blackjack Constructed called with id: ; '144'
+2013-04-29 17:28:57 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 17:28:59 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 17:29:01 - INFO --> createANewGame in GameController 
+2013-04-29 17:29:30 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 17:29:30 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 17:29:30 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 17:29:30 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 17:29:30 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 17:29:30 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 17:29:30 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 17:29:30 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 17:29:30 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 17:29:30 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 17:29:30 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 17:29:30 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 17:29:30 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 17:29:30 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 17:29:30 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 17:29:30 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 17:29:30 - INFO --> Blackjack Constructed called with id: ; '145'
+2013-04-29 17:29:32 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 17:29:32 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 17:29:32 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 17:29:32 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 17:29:32 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 17:29:32 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 17:29:32 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 17:29:32 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 17:29:32 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 17:29:32 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 17:29:32 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 17:29:32 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 17:29:32 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 17:29:32 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 17:29:32 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 17:29:32 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 17:29:32 - INFO --> Blackjack Constructed called with id: ; '145'
+2013-04-29 17:29:40 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 17:29:40 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 17:29:40 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 17:29:40 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 17:29:40 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 17:29:40 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 17:29:40 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 17:29:40 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 17:29:40 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 17:29:40 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 17:29:40 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 17:29:40 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 17:29:40 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 17:29:40 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 17:29:40 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 17:29:40 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 17:29:40 - INFO --> Blackjack Constructed called with id: ; '145'
+2013-04-29 17:29:42 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 17:29:44 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 17:29:46 - INFO --> createANewGame in GameController 
+2013-04-29 17:32:46 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 17:32:46 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 17:32:46 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 17:32:46 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 17:32:46 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 17:32:46 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 17:32:46 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 17:32:46 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 17:32:46 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 17:32:46 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 17:32:46 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 17:32:46 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 17:32:46 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 17:32:46 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 17:32:46 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 17:32:46 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 17:32:46 - INFO --> Blackjack Constructed called with id: ; '146'
+2013-04-29 17:32:48 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 17:32:51 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 17:32:53 - INFO --> createANewGame in GameController 
+2013-04-29 17:33:14 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 17:33:14 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 17:33:14 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 17:33:14 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 17:33:14 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 17:33:14 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 17:33:14 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 17:33:14 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 17:33:14 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 17:33:14 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 17:33:14 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 17:33:14 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 17:33:14 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 17:33:14 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 17:33:14 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 17:33:14 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 17:33:14 - INFO --> Blackjack Constructed called with id: ; '147'
+2013-04-29 17:33:14 - INFO --> a Hit in GameController 
+2013-04-29 17:35:18 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 17:35:18 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 17:35:18 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 17:35:18 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 17:35:18 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 17:35:18 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 17:35:18 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 17:35:18 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 17:35:18 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 17:35:18 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 17:35:18 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 17:35:18 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 17:35:18 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 17:35:18 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 17:35:18 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 17:35:18 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 17:35:18 - INFO --> Blackjack Constructed called with id: ; '147'
+2013-04-29 17:35:20 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 17:35:22 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 17:35:24 - INFO --> createANewGame in GameController 
+2013-04-29 17:43:50 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 17:43:50 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 17:43:50 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 17:43:50 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 17:43:50 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 17:43:50 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 17:43:50 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 17:43:50 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 17:43:50 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 17:43:50 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 17:43:50 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 17:43:50 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 17:43:50 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 17:43:50 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 17:43:50 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 17:43:50 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 17:43:50 - INFO --> Blackjack Constructed called with id: ; '148'
+2013-04-29 17:43:52 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 17:43:54 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 17:43:57 - INFO --> createANewGame in GameController 
+2013-04-29 17:45:25 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 17:45:25 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 17:45:25 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 17:45:25 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 17:45:25 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 17:45:25 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 17:45:25 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 17:45:25 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 17:45:25 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 17:45:25 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 17:45:25 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 17:45:25 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 17:45:25 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 17:45:25 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 17:45:25 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 17:45:25 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 17:45:25 - INFO --> Blackjack Constructed called with id: ; '149'
+2013-04-29 17:45:25 - INFO --> makeaHit called in GameManagement
+2013-04-29 17:45:25 - INFO --> a Hit in GameController 
+2013-04-29 17:45:36 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 17:45:36 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 17:45:36 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 17:45:36 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 17:45:36 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 17:45:36 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 17:45:36 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 17:45:36 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 17:45:36 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 17:45:36 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 17:45:36 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 17:45:36 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 17:45:36 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 17:45:36 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 17:45:36 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 17:45:36 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 17:45:36 - INFO --> Blackjack Constructed called with id: ; '149'
+2013-04-29 17:48:32 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 17:48:32 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 17:48:32 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 17:48:32 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 17:48:32 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 17:48:32 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 17:48:32 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 17:48:32 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 17:48:32 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 17:48:32 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 17:48:32 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 17:48:32 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 17:48:32 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 17:48:32 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 17:48:32 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 17:48:32 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 17:48:32 - INFO --> Blackjack Constructed called with id: ; '149'
+2013-04-29 17:48:34 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 17:48:36 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 17:48:38 - INFO --> createANewGame in GameController 
+2013-04-29 17:48:45 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 17:48:45 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 17:48:45 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 17:48:45 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 17:48:45 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 17:48:45 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 17:48:45 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 17:48:45 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 17:48:45 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 17:48:45 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 17:48:45 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 17:48:45 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 17:48:45 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 17:48:45 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 17:48:45 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 17:48:45 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 17:48:45 - INFO --> Blackjack Constructed called with id: ; '150'
+2013-04-29 17:48:45 - INFO --> makeaHit called in GameManagement
+2013-04-29 17:48:45 - INFO --> Looking for a Game from a player with id: ; 'hit'
+2013-04-29 17:48:45 - INFO --> checking game with gameid: ; NULL
+2013-04-29 17:48:45 - INFO --> checking game with gameid: ; '1'
+2013-04-29 17:48:45 - INFO --> checking game with gameid: ; '2'
+2013-04-29 17:48:45 - INFO --> checking game with gameid: ; '3'
+2013-04-29 17:48:45 - INFO --> checking game with gameid: ; '4'
+2013-04-29 17:48:45 - INFO --> checking game with gameid: ; '5'
+2013-04-29 17:48:45 - INFO --> checking game with gameid: ; '6'
+2013-04-29 17:48:45 - INFO --> checking game with gameid: ; '7'
+2013-04-29 17:48:45 - INFO --> checking game with gameid: ; '8'
+2013-04-29 17:48:45 - INFO --> checking game with gameid: ; '9'
+2013-04-29 17:48:45 - INFO --> checking game with gameid: ; '10'
+2013-04-29 17:48:45 - INFO --> checking game with gameid: ; '11'
+2013-04-29 17:48:45 - INFO --> checking game with gameid: ; '12'
+2013-04-29 17:48:45 - INFO --> checking game with gameid: ; '13'
+2013-04-29 17:48:45 - INFO --> checking game with gameid: ; '14'
+2013-04-29 17:48:45 - INFO --> checking game with gameid: ; '15'
+2013-04-29 17:48:45 - INFO --> checking game with gameid: ; '30'
+2013-04-29 17:48:45 - INFO --> checking game with gameid: ; '150'
+2013-04-29 17:48:45 - INFO --> a Hit in GameController 
+2013-04-29 17:49:45 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 17:49:45 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 17:49:45 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 17:49:45 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 17:49:45 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 17:49:45 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 17:49:45 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 17:49:45 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 17:49:45 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 17:49:45 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 17:49:45 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 17:49:45 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 17:49:45 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 17:49:45 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 17:49:45 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 17:49:45 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 17:49:45 - INFO --> Blackjack Constructed called with id: ; '150'
+2013-04-29 17:49:47 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 17:49:49 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 17:49:51 - INFO --> createANewGame in GameController 
+2013-04-29 17:49:58 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 17:49:58 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 17:49:58 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 17:49:58 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 17:49:58 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 17:49:58 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 17:49:58 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 17:49:58 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 17:49:58 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 17:49:58 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 17:49:58 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 17:49:58 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 17:49:58 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 17:49:58 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 17:49:58 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 17:49:58 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 17:49:58 - INFO --> Blackjack Constructed called with id: ; '151'
+2013-04-29 17:49:58 - INFO --> makeaHit called in GameManagement
+2013-04-29 17:49:58 - INFO --> Looking for a Game from a player with id: ; '151'
+2013-04-29 17:49:58 - INFO --> checking game with gameid: ; NULL
+2013-04-29 17:49:58 - INFO --> checking game with gameid: ; '1'
+2013-04-29 17:49:58 - INFO --> checking game with gameid: ; '2'
+2013-04-29 17:49:58 - INFO --> checking game with gameid: ; '3'
+2013-04-29 17:49:58 - INFO --> checking game with gameid: ; '4'
+2013-04-29 17:49:58 - INFO --> checking game with gameid: ; '5'
+2013-04-29 17:49:58 - INFO --> checking game with gameid: ; '6'
+2013-04-29 17:49:58 - INFO --> checking game with gameid: ; '7'
+2013-04-29 17:49:58 - INFO --> checking game with gameid: ; '8'
+2013-04-29 17:49:58 - INFO --> checking game with gameid: ; '9'
+2013-04-29 17:49:58 - INFO --> checking game with gameid: ; '10'
+2013-04-29 17:49:58 - INFO --> checking game with gameid: ; '11'
+2013-04-29 17:49:58 - INFO --> checking game with gameid: ; '12'
+2013-04-29 17:49:58 - INFO --> checking game with gameid: ; '13'
+2013-04-29 17:49:58 - INFO --> checking game with gameid: ; '14'
+2013-04-29 17:49:58 - INFO --> checking game with gameid: ; '15'
+2013-04-29 17:49:58 - INFO --> checking game with gameid: ; '30'
+2013-04-29 17:49:58 - INFO --> checking game with gameid: ; '151'
+2013-04-29 17:49:58 - INFO --> game found in Game Management with game id; '151'
+2013-04-29 17:54:29 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 17:54:29 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 17:54:29 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 17:54:29 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 17:54:29 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 17:54:29 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 17:54:29 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 17:54:29 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 17:54:29 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 17:54:29 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 17:54:29 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 17:54:29 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 17:54:29 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 17:54:29 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 17:54:29 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 17:54:29 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 17:54:29 - INFO --> Blackjack Constructed called with id: ; '151'
+2013-04-29 17:54:31 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 17:54:33 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 17:54:35 - INFO --> createANewGame in GameController 
+2013-04-29 17:54:43 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 17:54:43 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 17:54:43 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 17:54:43 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 17:54:43 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 17:54:43 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 17:54:43 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 17:54:43 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 17:54:43 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 17:54:43 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 17:54:43 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 17:54:43 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 17:54:43 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 17:54:43 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 17:54:43 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 17:54:43 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 17:54:43 - INFO --> Blackjack Constructed called with id: ; '152'
+2013-04-29 17:54:43 - INFO --> makeaHit called in GameManagement
+2013-04-29 17:54:43 - INFO --> Looking for a Game from a player with id: ; '152'
+2013-04-29 17:54:43 - INFO --> checking game with gameid: ; NULL
+2013-04-29 17:54:43 - INFO --> checking game with gameid: ; '1'
+2013-04-29 17:54:43 - INFO --> checking game with gameid: ; '2'
+2013-04-29 17:54:43 - INFO --> checking game with gameid: ; '3'
+2013-04-29 17:54:43 - INFO --> checking game with gameid: ; '4'
+2013-04-29 17:54:43 - INFO --> checking game with gameid: ; '5'
+2013-04-29 17:54:43 - INFO --> checking game with gameid: ; '6'
+2013-04-29 17:54:43 - INFO --> checking game with gameid: ; '7'
+2013-04-29 17:54:43 - INFO --> checking game with gameid: ; '8'
+2013-04-29 17:54:43 - INFO --> checking game with gameid: ; '9'
+2013-04-29 17:54:43 - INFO --> checking game with gameid: ; '10'
+2013-04-29 17:54:43 - INFO --> checking game with gameid: ; '11'
+2013-04-29 17:54:43 - INFO --> checking game with gameid: ; '12'
+2013-04-29 17:54:43 - INFO --> checking game with gameid: ; '13'
+2013-04-29 17:54:43 - INFO --> checking game with gameid: ; '14'
+2013-04-29 17:54:43 - INFO --> checking game with gameid: ; '15'
+2013-04-29 17:54:43 - INFO --> checking game with gameid: ; '30'
+2013-04-29 17:54:43 - INFO --> checking game with gameid: ; '152'
+2013-04-29 17:54:43 - INFO --> game found in Game Management with game id; '152'
+2013-04-29 17:54:43 - INFO --> a Hit in the Game from player: ; 'JJ'
+2013-04-29 17:57:50 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 17:57:50 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 17:57:50 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 17:57:50 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 17:57:50 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 17:57:50 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 17:57:50 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 17:57:50 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 17:57:50 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 17:57:50 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 17:57:50 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 17:57:50 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 17:57:50 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 17:57:50 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 17:57:50 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 17:57:50 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 17:57:50 - INFO --> Blackjack Constructed called with id: ; '152'
+2013-04-29 17:57:52 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 17:57:54 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 17:57:56 - INFO --> createANewGame in GameController 
+2013-04-29 17:58:02 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 17:58:02 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 17:58:02 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 17:58:02 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 17:58:02 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 17:58:02 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 17:58:02 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 17:58:02 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 17:58:02 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 17:58:02 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 17:58:02 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 17:58:02 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 17:58:02 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 17:58:02 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 17:58:02 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 17:58:02 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 17:58:02 - INFO --> Blackjack Constructed called with id: ; '153'
+2013-04-29 17:58:02 - INFO --> makeaHit called in GameManagement
+2013-04-29 17:58:02 - INFO --> Looking for a Game from a player with id: ; '153'
+2013-04-29 17:58:02 - INFO --> checking game with gameid: ; NULL
+2013-04-29 17:58:02 - INFO --> checking game with gameid: ; '1'
+2013-04-29 17:58:02 - INFO --> checking game with gameid: ; '2'
+2013-04-29 17:58:02 - INFO --> checking game with gameid: ; '3'
+2013-04-29 17:58:02 - INFO --> checking game with gameid: ; '4'
+2013-04-29 17:58:02 - INFO --> checking game with gameid: ; '5'
+2013-04-29 17:58:02 - INFO --> checking game with gameid: ; '6'
+2013-04-29 17:58:02 - INFO --> checking game with gameid: ; '7'
+2013-04-29 17:58:02 - INFO --> checking game with gameid: ; '8'
+2013-04-29 17:58:02 - INFO --> checking game with gameid: ; '9'
+2013-04-29 17:58:02 - INFO --> checking game with gameid: ; '10'
+2013-04-29 17:58:02 - INFO --> checking game with gameid: ; '11'
+2013-04-29 17:58:02 - INFO --> checking game with gameid: ; '12'
+2013-04-29 17:58:02 - INFO --> checking game with gameid: ; '13'
+2013-04-29 17:58:02 - INFO --> checking game with gameid: ; '14'
+2013-04-29 17:58:02 - INFO --> checking game with gameid: ; '15'
+2013-04-29 17:58:02 - INFO --> checking game with gameid: ; '30'
+2013-04-29 17:58:02 - INFO --> checking game with gameid: ; '153'
+2013-04-29 17:58:02 - INFO --> game found in Game Management with game id; '153'
+2013-04-29 17:58:02 - INFO --> a Hit in the Game from player: ; 'JJ'
+2013-04-29 17:59:06 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 17:59:06 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 17:59:06 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 17:59:06 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 17:59:06 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 17:59:06 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 17:59:06 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 17:59:06 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 17:59:06 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 17:59:06 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 17:59:06 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 17:59:06 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 17:59:06 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 17:59:06 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 17:59:06 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 17:59:06 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 17:59:06 - INFO --> Blackjack Constructed called with id: ; '153'
+2013-04-29 17:59:06 - INFO --> makeaHit called in GameManagement
+2013-04-29 17:59:06 - INFO --> Looking for a Game from a player with id: ; '153'
+2013-04-29 17:59:06 - INFO --> checking game with gameid: ; NULL
+2013-04-29 17:59:06 - INFO --> checking game with gameid: ; '1'
+2013-04-29 17:59:06 - INFO --> checking game with gameid: ; '2'
+2013-04-29 17:59:06 - INFO --> checking game with gameid: ; '3'
+2013-04-29 17:59:06 - INFO --> checking game with gameid: ; '4'
+2013-04-29 17:59:06 - INFO --> checking game with gameid: ; '5'
+2013-04-29 17:59:06 - INFO --> checking game with gameid: ; '6'
+2013-04-29 17:59:06 - INFO --> checking game with gameid: ; '7'
+2013-04-29 17:59:06 - INFO --> checking game with gameid: ; '8'
+2013-04-29 17:59:06 - INFO --> checking game with gameid: ; '9'
+2013-04-29 17:59:06 - INFO --> checking game with gameid: ; '10'
+2013-04-29 17:59:06 - INFO --> checking game with gameid: ; '11'
+2013-04-29 17:59:06 - INFO --> checking game with gameid: ; '12'
+2013-04-29 17:59:06 - INFO --> checking game with gameid: ; '13'
+2013-04-29 17:59:06 - INFO --> checking game with gameid: ; '14'
+2013-04-29 17:59:06 - INFO --> checking game with gameid: ; '15'
+2013-04-29 17:59:06 - INFO --> checking game with gameid: ; '30'
+2013-04-29 17:59:06 - INFO --> checking game with gameid: ; '153'
+2013-04-29 17:59:06 - INFO --> game found in Game Management with game id; '153'
+2013-04-29 17:59:06 - INFO --> a Hit in the Game from player: ; 'JJ'
+2013-04-29 18:01:02 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:01:02 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:01:02 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:01:02 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:01:02 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:01:02 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:01:02 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:01:02 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:01:02 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:01:02 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:01:02 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:01:02 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:01:02 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:01:02 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:01:03 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:01:03 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:01:03 - INFO --> Blackjack Constructed called with id: ; '153'
+2013-04-29 18:01:05 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:01:07 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:01:09 - INFO --> createANewGame in GameController 
+2013-04-29 18:01:16 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:01:16 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:01:16 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:01:16 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:01:16 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:01:16 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:01:16 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:01:16 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:01:16 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:01:16 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:01:16 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:01:16 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:01:16 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:01:16 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:01:16 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:01:16 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:01:16 - INFO --> Blackjack Constructed called with id: ; '154'
+2013-04-29 18:01:16 - INFO --> makeaHit called in GameManagement
+2013-04-29 18:01:16 - INFO --> Looking for a Game from a player with id: ; '154'
+2013-04-29 18:01:16 - INFO --> checking game with gameid: ; NULL
+2013-04-29 18:01:16 - INFO --> checking game with gameid: ; '1'
+2013-04-29 18:01:16 - INFO --> checking game with gameid: ; '2'
+2013-04-29 18:01:16 - INFO --> checking game with gameid: ; '3'
+2013-04-29 18:01:16 - INFO --> checking game with gameid: ; '4'
+2013-04-29 18:01:16 - INFO --> checking game with gameid: ; '5'
+2013-04-29 18:01:16 - INFO --> checking game with gameid: ; '6'
+2013-04-29 18:01:16 - INFO --> checking game with gameid: ; '7'
+2013-04-29 18:01:16 - INFO --> checking game with gameid: ; '8'
+2013-04-29 18:01:16 - INFO --> checking game with gameid: ; '9'
+2013-04-29 18:01:16 - INFO --> checking game with gameid: ; '10'
+2013-04-29 18:01:16 - INFO --> checking game with gameid: ; '11'
+2013-04-29 18:01:16 - INFO --> checking game with gameid: ; '12'
+2013-04-29 18:01:16 - INFO --> checking game with gameid: ; '13'
+2013-04-29 18:01:16 - INFO --> checking game with gameid: ; '14'
+2013-04-29 18:01:16 - INFO --> checking game with gameid: ; '15'
+2013-04-29 18:01:16 - INFO --> checking game with gameid: ; '30'
+2013-04-29 18:01:16 - INFO --> checking game with gameid: ; '154'
+2013-04-29 18:01:16 - INFO --> game found in Game Management with game id; '154'
+2013-04-29 18:01:16 - INFO --> a Hit in the Game from player: ; 'JJ'
+2013-04-29 18:03:15 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:03:15 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:03:15 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:03:15 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:03:15 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:03:15 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:03:15 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:03:15 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:03:15 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:03:15 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:03:15 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:03:15 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:03:15 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:03:15 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:03:16 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:03:16 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:03:16 - INFO --> Blackjack Constructed called with id: ; '154'
+2013-04-29 18:03:18 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:03:20 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:03:22 - INFO --> createANewGame in GameController 
+2013-04-29 18:03:27 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:03:27 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:03:27 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:03:27 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:03:27 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:03:27 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:03:27 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:03:27 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:03:27 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:03:27 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:03:27 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:03:27 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:03:27 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:03:27 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:03:27 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:03:27 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:03:27 - INFO --> Blackjack Constructed called with id: ; '155'
+2013-04-29 18:03:27 - INFO --> makeaHit called in GameManagement
+2013-04-29 18:03:27 - INFO --> Looking for a Game from a player with id: ; '155'
+2013-04-29 18:03:27 - INFO --> checking game with gameid: ; NULL
+2013-04-29 18:03:27 - INFO --> checking game with gameid: ; '1'
+2013-04-29 18:03:27 - INFO --> checking game with gameid: ; '2'
+2013-04-29 18:03:27 - INFO --> checking game with gameid: ; '3'
+2013-04-29 18:03:27 - INFO --> checking game with gameid: ; '4'
+2013-04-29 18:03:27 - INFO --> checking game with gameid: ; '5'
+2013-04-29 18:03:27 - INFO --> checking game with gameid: ; '6'
+2013-04-29 18:03:27 - INFO --> checking game with gameid: ; '7'
+2013-04-29 18:03:27 - INFO --> checking game with gameid: ; '8'
+2013-04-29 18:03:27 - INFO --> checking game with gameid: ; '9'
+2013-04-29 18:03:27 - INFO --> checking game with gameid: ; '10'
+2013-04-29 18:03:27 - INFO --> checking game with gameid: ; '11'
+2013-04-29 18:03:27 - INFO --> checking game with gameid: ; '12'
+2013-04-29 18:03:27 - INFO --> checking game with gameid: ; '13'
+2013-04-29 18:03:27 - INFO --> checking game with gameid: ; '14'
+2013-04-29 18:03:27 - INFO --> checking game with gameid: ; '15'
+2013-04-29 18:03:27 - INFO --> checking game with gameid: ; '30'
+2013-04-29 18:03:27 - INFO --> checking game with gameid: ; '155'
+2013-04-29 18:03:27 - INFO --> game found in Game Management with game id; '155'
+2013-04-29 18:03:27 - INFO --> a Hit in the Game from player: ; 'JJ'
+2013-04-29 18:04:37 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:04:37 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:04:37 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:04:37 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:04:37 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:04:37 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:04:37 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:04:37 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:04:37 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:04:37 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:04:37 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:04:37 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:04:37 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:04:37 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:04:37 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:04:37 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:04:37 - INFO --> Blackjack Constructed called with id: ; '155'
+2013-04-29 18:04:39 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:04:41 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:04:43 - INFO --> createANewGame in GameController 
+2013-04-29 18:04:54 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:04:54 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:04:54 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:04:54 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:04:54 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:04:54 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:04:54 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:04:54 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:04:54 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:04:54 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:04:54 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:04:54 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:04:54 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:04:54 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:04:54 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:04:54 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:04:54 - INFO --> Blackjack Constructed called with id: ; '156'
+2013-04-29 18:04:54 - INFO --> makeaHit called in GameManagement
+2013-04-29 18:04:54 - INFO --> Looking for a Game from a player with id: ; '156'
+2013-04-29 18:04:54 - INFO --> checking game with gameid: ; NULL
+2013-04-29 18:04:54 - INFO --> checking game with gameid: ; '1'
+2013-04-29 18:04:54 - INFO --> checking game with gameid: ; '2'
+2013-04-29 18:04:54 - INFO --> checking game with gameid: ; '3'
+2013-04-29 18:04:54 - INFO --> checking game with gameid: ; '4'
+2013-04-29 18:04:54 - INFO --> checking game with gameid: ; '5'
+2013-04-29 18:04:54 - INFO --> checking game with gameid: ; '6'
+2013-04-29 18:04:54 - INFO --> checking game with gameid: ; '7'
+2013-04-29 18:04:54 - INFO --> checking game with gameid: ; '8'
+2013-04-29 18:04:54 - INFO --> checking game with gameid: ; '9'
+2013-04-29 18:04:54 - INFO --> checking game with gameid: ; '10'
+2013-04-29 18:04:54 - INFO --> checking game with gameid: ; '11'
+2013-04-29 18:04:54 - INFO --> checking game with gameid: ; '12'
+2013-04-29 18:04:54 - INFO --> checking game with gameid: ; '13'
+2013-04-29 18:04:54 - INFO --> checking game with gameid: ; '14'
+2013-04-29 18:04:54 - INFO --> checking game with gameid: ; '15'
+2013-04-29 18:04:54 - INFO --> checking game with gameid: ; '30'
+2013-04-29 18:04:54 - INFO --> checking game with gameid: ; '156'
+2013-04-29 18:04:54 - INFO --> game found in Game Management with game id; '156'
+2013-04-29 18:04:54 - INFO --> a Hit in the Game from player: ; 'JJ'
+2013-04-29 18:04:54 - INFO --> Checking for player in getPlayerByName in Game.php, player: ; 'JJ'
+2013-04-29 18:04:54 - INFO --> It is still players turn, player: ; 'JJ'
+2013-04-29 18:08:29 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:08:29 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:08:29 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:08:29 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:08:29 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:08:29 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:08:29 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:08:29 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:08:29 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:08:29 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:08:29 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:08:29 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:08:29 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:08:29 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:08:29 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:08:29 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:08:29 - INFO --> Blackjack Constructed called with id: ; '156'
+2013-04-29 18:08:31 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:08:33 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:08:35 - INFO --> createANewGame in GameController 
+2013-04-29 18:08:41 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:08:41 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:08:41 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:08:41 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:08:41 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:08:41 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:08:41 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:08:41 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:08:41 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:08:41 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:08:41 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:08:41 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:08:41 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:08:41 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:08:41 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:08:41 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:08:41 - INFO --> Blackjack Constructed called with id: ; '157'
+2013-04-29 18:08:41 - INFO --> makeaHit called in GameManagement
+2013-04-29 18:08:41 - INFO --> Looking for a Game from a player with id: ; '157'
+2013-04-29 18:08:41 - INFO --> checking game with gameid: ; NULL
+2013-04-29 18:08:41 - INFO --> checking game with gameid: ; '1'
+2013-04-29 18:08:41 - INFO --> checking game with gameid: ; '2'
+2013-04-29 18:08:41 - INFO --> checking game with gameid: ; '3'
+2013-04-29 18:08:41 - INFO --> checking game with gameid: ; '4'
+2013-04-29 18:08:41 - INFO --> checking game with gameid: ; '5'
+2013-04-29 18:08:41 - INFO --> checking game with gameid: ; '6'
+2013-04-29 18:08:41 - INFO --> checking game with gameid: ; '7'
+2013-04-29 18:08:41 - INFO --> checking game with gameid: ; '8'
+2013-04-29 18:08:41 - INFO --> checking game with gameid: ; '9'
+2013-04-29 18:08:41 - INFO --> checking game with gameid: ; '10'
+2013-04-29 18:08:41 - INFO --> checking game with gameid: ; '11'
+2013-04-29 18:08:41 - INFO --> checking game with gameid: ; '12'
+2013-04-29 18:08:41 - INFO --> checking game with gameid: ; '13'
+2013-04-29 18:08:41 - INFO --> checking game with gameid: ; '14'
+2013-04-29 18:08:41 - INFO --> checking game with gameid: ; '15'
+2013-04-29 18:08:41 - INFO --> checking game with gameid: ; '30'
+2013-04-29 18:08:41 - INFO --> checking game with gameid: ; '157'
+2013-04-29 18:08:41 - INFO --> game found in Game Management with game id; '157'
+2013-04-29 18:08:41 - INFO --> a Hit in the Game from player: ; 'JJ'
+2013-04-29 18:08:41 - INFO --> Checking for player in getPlayerByName in Game.php, player: ; 'JJ'
+2013-04-29 18:08:41 - INFO --> It is still players turn, player: ; 'JJ'
+2013-04-29 18:10:21 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:10:21 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:10:21 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:10:21 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:10:21 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:10:21 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:10:21 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:10:21 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:10:21 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:10:21 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:10:21 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:10:21 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:10:21 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:10:21 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:10:21 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:10:21 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:10:21 - INFO --> Blackjack Constructed called with id: ; '157'
+2013-04-29 18:10:23 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:10:26 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:10:28 - INFO --> createANewGame in GameController 
+2013-04-29 18:10:34 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:10:34 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:10:34 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:10:34 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:10:34 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:10:34 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:10:34 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:10:34 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:10:34 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:10:34 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:10:34 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:10:34 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:10:34 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:10:34 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:10:34 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:10:34 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:10:34 - INFO --> Blackjack Constructed called with id: ; '158'
+2013-04-29 18:10:34 - INFO --> makeaHit called in GameManagement
+2013-04-29 18:10:34 - INFO --> Looking for a Game from a player with id: ; '158'
+2013-04-29 18:10:34 - INFO --> checking game with gameid: ; NULL
+2013-04-29 18:10:34 - INFO --> checking game with gameid: ; '1'
+2013-04-29 18:10:34 - INFO --> checking game with gameid: ; '2'
+2013-04-29 18:10:34 - INFO --> checking game with gameid: ; '3'
+2013-04-29 18:10:34 - INFO --> checking game with gameid: ; '4'
+2013-04-29 18:10:34 - INFO --> checking game with gameid: ; '5'
+2013-04-29 18:10:34 - INFO --> checking game with gameid: ; '6'
+2013-04-29 18:10:34 - INFO --> checking game with gameid: ; '7'
+2013-04-29 18:10:34 - INFO --> checking game with gameid: ; '8'
+2013-04-29 18:10:34 - INFO --> checking game with gameid: ; '9'
+2013-04-29 18:10:34 - INFO --> checking game with gameid: ; '10'
+2013-04-29 18:10:34 - INFO --> checking game with gameid: ; '11'
+2013-04-29 18:10:34 - INFO --> checking game with gameid: ; '12'
+2013-04-29 18:10:34 - INFO --> checking game with gameid: ; '13'
+2013-04-29 18:10:34 - INFO --> checking game with gameid: ; '14'
+2013-04-29 18:10:34 - INFO --> checking game with gameid: ; '15'
+2013-04-29 18:10:34 - INFO --> checking game with gameid: ; '30'
+2013-04-29 18:10:34 - INFO --> checking game with gameid: ; '158'
+2013-04-29 18:10:34 - INFO --> game found in Game Management with game id; '158'
+2013-04-29 18:10:34 - INFO --> a Hit in the Game from player: ; 'JJ'
+2013-04-29 18:10:34 - INFO --> Checking for player in getPlayerByName in Game.php, player: ; 'JJ'
+2013-04-29 18:10:34 - INFO --> It is still players turn, player: ; 'JJ'
+2013-04-29 18:13:53 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:13:54 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:13:55 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:13:56 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:13:57 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:13:58 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:13:59 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:14:00 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:14:01 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:14:02 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:14:03 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:14:04 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:14:05 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:14:06 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:14:07 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:14:08 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:14:09 - INFO --> Blackjack Constructed called with id: ; '158'
+2013-04-29 18:14:12 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:14:15 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:14:18 - INFO --> createANewGame in GameController 
+2013-04-29 18:14:48 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:14:49 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:14:50 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:14:51 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:14:52 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:14:53 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:14:54 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:14:55 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:14:56 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:14:57 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:14:58 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:14:59 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:15:01 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:15:02 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:15:03 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:15:04 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:15:05 - INFO --> Blackjack Constructed called with id: ; '159'
+2013-04-29 18:15:06 - INFO --> makeaHit called in GameManagement
+2013-04-29 18:15:06 - INFO --> Looking for a Game from a player with id: ; '159'
+2013-04-29 18:15:06 - INFO --> checking game with gameid: ; NULL
+2013-04-29 18:15:06 - INFO --> checking game with gameid: ; '1'
+2013-04-29 18:15:06 - INFO --> checking game with gameid: ; '2'
+2013-04-29 18:15:06 - INFO --> checking game with gameid: ; '3'
+2013-04-29 18:15:06 - INFO --> checking game with gameid: ; '4'
+2013-04-29 18:15:06 - INFO --> checking game with gameid: ; '5'
+2013-04-29 18:15:06 - INFO --> checking game with gameid: ; '6'
+2013-04-29 18:15:06 - INFO --> checking game with gameid: ; '7'
+2013-04-29 18:15:06 - INFO --> checking game with gameid: ; '8'
+2013-04-29 18:15:06 - INFO --> checking game with gameid: ; '9'
+2013-04-29 18:15:06 - INFO --> checking game with gameid: ; '10'
+2013-04-29 18:15:06 - INFO --> checking game with gameid: ; '11'
+2013-04-29 18:15:06 - INFO --> checking game with gameid: ; '12'
+2013-04-29 18:15:06 - INFO --> checking game with gameid: ; '13'
+2013-04-29 18:15:06 - INFO --> checking game with gameid: ; '14'
+2013-04-29 18:15:06 - INFO --> checking game with gameid: ; '15'
+2013-04-29 18:15:06 - INFO --> checking game with gameid: ; '30'
+2013-04-29 18:15:06 - INFO --> checking game with gameid: ; '159'
+2013-04-29 18:15:06 - INFO --> game found in Game Management with game id; '159'
+2013-04-29 18:15:06 - INFO --> a Hit in the Game from player: ; 'JJ'
+2013-04-29 18:15:06 - INFO --> Checking for player in getPlayerByName in Game.php, player: ; 'JJ'
+2013-04-29 18:15:06 - INFO --> It is still players turn, player: ; 'JJ'
+2013-04-29 18:15:06 - INFO --> Player delt card: ; '06_heart'
+2013-04-29 18:19:06 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:19:07 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:19:08 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:19:09 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:19:10 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:19:11 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:19:12 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:19:13 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:19:14 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:19:15 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:19:16 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:19:17 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:19:18 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:19:19 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:19:20 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:19:21 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:19:22 - INFO --> Blackjack Constructed called with id: ; '159'
+2013-04-29 18:19:25 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:19:28 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:19:30 - INFO --> createANewGame in GameController 
+2013-04-29 18:19:38 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:19:39 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:19:40 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:19:41 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:19:42 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:19:43 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:19:44 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:19:45 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:19:46 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:19:47 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:19:48 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:19:49 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:19:50 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:19:51 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:19:52 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:19:53 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:19:54 - INFO --> Blackjack Constructed called with id: ; '160'
+2013-04-29 18:19:55 - INFO --> makeaHit called in GameManagement
+2013-04-29 18:19:55 - INFO --> Looking for a Game from a player with id: ; '160'
+2013-04-29 18:19:55 - INFO --> checking game with gameid: ; NULL
+2013-04-29 18:19:55 - INFO --> checking game with gameid: ; '1'
+2013-04-29 18:19:55 - INFO --> checking game with gameid: ; '2'
+2013-04-29 18:19:55 - INFO --> checking game with gameid: ; '3'
+2013-04-29 18:19:55 - INFO --> checking game with gameid: ; '4'
+2013-04-29 18:19:55 - INFO --> checking game with gameid: ; '5'
+2013-04-29 18:19:55 - INFO --> checking game with gameid: ; '6'
+2013-04-29 18:19:55 - INFO --> checking game with gameid: ; '7'
+2013-04-29 18:19:55 - INFO --> checking game with gameid: ; '8'
+2013-04-29 18:19:55 - INFO --> checking game with gameid: ; '9'
+2013-04-29 18:19:55 - INFO --> checking game with gameid: ; '10'
+2013-04-29 18:19:55 - INFO --> checking game with gameid: ; '11'
+2013-04-29 18:19:55 - INFO --> checking game with gameid: ; '12'
+2013-04-29 18:19:55 - INFO --> checking game with gameid: ; '13'
+2013-04-29 18:19:55 - INFO --> checking game with gameid: ; '14'
+2013-04-29 18:19:55 - INFO --> checking game with gameid: ; '15'
+2013-04-29 18:19:55 - INFO --> checking game with gameid: ; '30'
+2013-04-29 18:19:55 - INFO --> checking game with gameid: ; '160'
+2013-04-29 18:19:55 - INFO --> game found in Game Management with game id; '160'
+2013-04-29 18:19:55 - INFO --> a Hit in the Game from player: ; 'JJ'
+2013-04-29 18:19:55 - INFO --> Checking for player in getPlayerByName in Game.php, player: ; 'JJ'
+2013-04-29 18:19:55 - INFO --> It is still players turn, player: ; 'JJ'
+2013-04-29 18:19:55 - INFO --> Player delt card: ; '03_heart'
+2013-04-29 18:23:24 - INFO --> New Player Created
+2013-04-29 18:23:24 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:23:25 - INFO --> New Player Created
+2013-04-29 18:23:25 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:23:26 - INFO --> New Player Created
+2013-04-29 18:23:26 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:23:27 - INFO --> New Player Created
+2013-04-29 18:23:27 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:23:28 - INFO --> New Player Created
+2013-04-29 18:23:28 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:23:29 - INFO --> New Player Created
+2013-04-29 18:23:29 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:23:30 - INFO --> New Player Created
+2013-04-29 18:23:30 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:23:31 - INFO --> New Player Created
+2013-04-29 18:23:31 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:23:32 - INFO --> New Player Created
+2013-04-29 18:23:32 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:23:33 - INFO --> New Player Created
+2013-04-29 18:23:33 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:23:34 - INFO --> New Player Created
+2013-04-29 18:23:34 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:23:35 - INFO --> New Player Created
+2013-04-29 18:23:35 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:23:36 - INFO --> New Player Created
+2013-04-29 18:23:36 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:23:37 - INFO --> New Player Created
+2013-04-29 18:23:37 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:23:38 - INFO --> New Player Created
+2013-04-29 18:23:38 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:23:39 - INFO --> New Player Created
+2013-04-29 18:23:39 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:23:40 - INFO --> New Player Created
+2013-04-29 18:23:40 - INFO --> Blackjack Constructed called with id: ; '160'
+2013-04-29 18:23:43 - INFO --> New Player Created
+2013-04-29 18:23:43 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:23:47 - INFO --> New Player Created
+2013-04-29 18:23:47 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:23:49 - INFO --> New Player Created
+2013-04-29 18:23:49 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:23:49 - INFO --> String version of card value: ; '08'
+2013-04-29 18:23:49 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:23:49 - INFO --> String version of card value: ; '07'
+2013-04-29 18:23:49 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:23:49 - INFO --> String version of card value: ; '05'
+2013-04-29 18:23:49 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:23:49 - INFO --> String version of card value: ; '04'
+2013-04-29 18:23:49 - INFO --> createANewGame in GameController 
+2013-04-29 18:24:03 - INFO --> New Player Created
+2013-04-29 18:24:03 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:24:04 - INFO --> New Player Created
+2013-04-29 18:24:04 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:24:05 - INFO --> New Player Created
+2013-04-29 18:24:05 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:24:06 - INFO --> New Player Created
+2013-04-29 18:24:06 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:24:07 - INFO --> New Player Created
+2013-04-29 18:24:07 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:24:08 - INFO --> New Player Created
+2013-04-29 18:24:08 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:24:09 - INFO --> New Player Created
+2013-04-29 18:24:09 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:24:10 - INFO --> New Player Created
+2013-04-29 18:24:10 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:24:11 - INFO --> New Player Created
+2013-04-29 18:24:11 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:24:12 - INFO --> New Player Created
+2013-04-29 18:24:12 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:24:13 - INFO --> New Player Created
+2013-04-29 18:24:13 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:24:14 - INFO --> New Player Created
+2013-04-29 18:24:14 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:24:15 - INFO --> New Player Created
+2013-04-29 18:24:15 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:24:16 - INFO --> New Player Created
+2013-04-29 18:24:16 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:24:17 - INFO --> New Player Created
+2013-04-29 18:24:17 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:24:18 - INFO --> New Player Created
+2013-04-29 18:24:18 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:24:19 - INFO --> New Player Created
+2013-04-29 18:24:19 - INFO --> Blackjack Constructed called with id: ; '161'
+2013-04-29 18:24:20 - INFO --> makeaHit called in GameManagement
+2013-04-29 18:24:20 - INFO --> Looking for a Game from a player with id: ; '161'
+2013-04-29 18:24:20 - INFO --> checking game with gameid: ; NULL
+2013-04-29 18:24:20 - INFO --> checking game with gameid: ; '1'
+2013-04-29 18:24:20 - INFO --> checking game with gameid: ; '2'
+2013-04-29 18:24:20 - INFO --> checking game with gameid: ; '3'
+2013-04-29 18:24:20 - INFO --> checking game with gameid: ; '4'
+2013-04-29 18:24:20 - INFO --> checking game with gameid: ; '5'
+2013-04-29 18:24:20 - INFO --> checking game with gameid: ; '6'
+2013-04-29 18:24:20 - INFO --> checking game with gameid: ; '7'
+2013-04-29 18:24:20 - INFO --> checking game with gameid: ; '8'
+2013-04-29 18:24:20 - INFO --> checking game with gameid: ; '9'
+2013-04-29 18:24:20 - INFO --> checking game with gameid: ; '10'
+2013-04-29 18:24:20 - INFO --> checking game with gameid: ; '11'
+2013-04-29 18:24:20 - INFO --> checking game with gameid: ; '12'
+2013-04-29 18:24:20 - INFO --> checking game with gameid: ; '13'
+2013-04-29 18:24:20 - INFO --> checking game with gameid: ; '14'
+2013-04-29 18:24:20 - INFO --> checking game with gameid: ; '15'
+2013-04-29 18:24:20 - INFO --> checking game with gameid: ; '30'
+2013-04-29 18:24:20 - INFO --> checking game with gameid: ; '161'
+2013-04-29 18:24:20 - INFO --> game found in Game Management with game id; '161'
+2013-04-29 18:24:20 - INFO --> a Hit in the Game from player: ; 'JJ'
+2013-04-29 18:24:20 - INFO --> Checking for player in getPlayerByName in Game.php, player: ; 'JJ'
+2013-04-29 18:24:20 - INFO --> It is still players turn, player: ; 'JJ'
+2013-04-29 18:24:20 - INFO --> Player delt card: ; '01_club'
+2013-04-29 18:24:22 - INFO --> New Player Created
+2013-04-29 18:24:22 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:24:23 - INFO --> New Player Created
+2013-04-29 18:24:23 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:24:24 - INFO --> New Player Created
+2013-04-29 18:24:24 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:24:25 - INFO --> New Player Created
+2013-04-29 18:24:25 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:24:26 - INFO --> New Player Created
+2013-04-29 18:24:26 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:24:27 - INFO --> New Player Created
+2013-04-29 18:24:27 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:24:28 - INFO --> New Player Created
+2013-04-29 18:24:28 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:24:29 - INFO --> New Player Created
+2013-04-29 18:24:29 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:24:30 - INFO --> New Player Created
+2013-04-29 18:24:30 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:24:31 - INFO --> New Player Created
+2013-04-29 18:24:31 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:24:32 - INFO --> New Player Created
+2013-04-29 18:24:32 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:24:33 - INFO --> New Player Created
+2013-04-29 18:24:33 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:24:34 - INFO --> New Player Created
+2013-04-29 18:24:34 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:24:35 - INFO --> New Player Created
+2013-04-29 18:24:35 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:24:36 - INFO --> New Player Created
+2013-04-29 18:24:36 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:24:37 - INFO --> New Player Created
+2013-04-29 18:24:37 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:24:38 - INFO --> New Player Created
+2013-04-29 18:24:38 - INFO --> Blackjack Constructed called with id: ; '161'
+2013-04-29 18:24:41 - INFO --> New Player Created
+2013-04-29 18:24:41 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:24:44 - INFO --> New Player Created
+2013-04-29 18:24:44 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:24:46 - INFO --> New Player Created
+2013-04-29 18:24:46 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:24:46 - INFO --> String version of card value: ; '09'
+2013-04-29 18:24:46 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:24:46 - INFO --> String version of card value: ; '12'
+2013-04-29 18:24:46 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:24:46 - INFO --> String version of card value: ; '09'
+2013-04-29 18:24:46 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:24:46 - INFO --> String version of card value: ; '07'
+2013-04-29 18:24:46 - INFO --> createANewGame in GameController 
+2013-04-29 18:24:56 - INFO --> New Player Created
+2013-04-29 18:24:56 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:24:57 - INFO --> New Player Created
+2013-04-29 18:24:57 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:24:58 - INFO --> New Player Created
+2013-04-29 18:24:58 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:24:59 - INFO --> New Player Created
+2013-04-29 18:24:59 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:25:00 - INFO --> New Player Created
+2013-04-29 18:25:00 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:25:01 - INFO --> New Player Created
+2013-04-29 18:25:01 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:25:02 - INFO --> New Player Created
+2013-04-29 18:25:02 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:25:03 - INFO --> New Player Created
+2013-04-29 18:25:03 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:25:04 - INFO --> New Player Created
+2013-04-29 18:25:04 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:25:05 - INFO --> New Player Created
+2013-04-29 18:25:05 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:25:06 - INFO --> New Player Created
+2013-04-29 18:25:06 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:25:07 - INFO --> New Player Created
+2013-04-29 18:25:07 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:25:08 - INFO --> New Player Created
+2013-04-29 18:25:08 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:25:09 - INFO --> New Player Created
+2013-04-29 18:25:09 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:25:10 - INFO --> New Player Created
+2013-04-29 18:25:10 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:25:11 - INFO --> New Player Created
+2013-04-29 18:25:11 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:25:12 - INFO --> New Player Created
+2013-04-29 18:25:12 - INFO --> Blackjack Constructed called with id: ; '162'
+2013-04-29 18:25:13 - INFO --> makeaHit called in GameManagement
+2013-04-29 18:25:13 - INFO --> Looking for a Game from a player with id: ; '162'
+2013-04-29 18:25:13 - INFO --> checking game with gameid: ; NULL
+2013-04-29 18:25:13 - INFO --> checking game with gameid: ; '1'
+2013-04-29 18:25:13 - INFO --> checking game with gameid: ; '2'
+2013-04-29 18:25:13 - INFO --> checking game with gameid: ; '3'
+2013-04-29 18:25:13 - INFO --> checking game with gameid: ; '4'
+2013-04-29 18:25:13 - INFO --> checking game with gameid: ; '5'
+2013-04-29 18:25:13 - INFO --> checking game with gameid: ; '6'
+2013-04-29 18:25:13 - INFO --> checking game with gameid: ; '7'
+2013-04-29 18:25:13 - INFO --> checking game with gameid: ; '8'
+2013-04-29 18:25:13 - INFO --> checking game with gameid: ; '9'
+2013-04-29 18:25:13 - INFO --> checking game with gameid: ; '10'
+2013-04-29 18:25:13 - INFO --> checking game with gameid: ; '11'
+2013-04-29 18:25:13 - INFO --> checking game with gameid: ; '12'
+2013-04-29 18:25:13 - INFO --> checking game with gameid: ; '13'
+2013-04-29 18:25:13 - INFO --> checking game with gameid: ; '14'
+2013-04-29 18:25:13 - INFO --> checking game with gameid: ; '15'
+2013-04-29 18:25:13 - INFO --> checking game with gameid: ; '30'
+2013-04-29 18:25:13 - INFO --> checking game with gameid: ; '162'
+2013-04-29 18:25:13 - INFO --> game found in Game Management with game id; '162'
+2013-04-29 18:25:13 - INFO --> a Hit in the Game from player: ; 'JJ'
+2013-04-29 18:25:13 - INFO --> Checking for player in getPlayerByName in Game.php, player: ; 'JJ'
+2013-04-29 18:25:13 - INFO --> It is still players turn, player: ; 'JJ'
+2013-04-29 18:25:13 - INFO --> Player delt card: ; '10_club'
+2013-04-29 18:26:44 - INFO --> New Player Created
+2013-04-29 18:26:44 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:26:45 - INFO --> New Player Created
+2013-04-29 18:26:45 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:26:46 - INFO --> New Player Created
+2013-04-29 18:26:46 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:26:47 - INFO --> New Player Created
+2013-04-29 18:26:47 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:26:48 - INFO --> New Player Created
+2013-04-29 18:26:48 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:26:49 - INFO --> New Player Created
+2013-04-29 18:26:49 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:26:50 - INFO --> New Player Created
+2013-04-29 18:26:50 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:26:51 - INFO --> New Player Created
+2013-04-29 18:26:51 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:26:52 - INFO --> New Player Created
+2013-04-29 18:26:52 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:26:53 - INFO --> New Player Created
+2013-04-29 18:26:53 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:26:54 - INFO --> New Player Created
+2013-04-29 18:26:54 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:26:55 - INFO --> New Player Created
+2013-04-29 18:26:55 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:26:56 - INFO --> New Player Created
+2013-04-29 18:26:56 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:26:57 - INFO --> New Player Created
+2013-04-29 18:26:57 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:26:58 - INFO --> New Player Created
+2013-04-29 18:26:58 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:26:59 - INFO --> New Player Created
+2013-04-29 18:26:59 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:27:00 - INFO --> New Player Created
+2013-04-29 18:27:00 - INFO --> Blackjack Constructed called with id: ; '162'
+2013-04-29 18:27:03 - INFO --> New Player Created
+2013-04-29 18:27:03 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:27:06 - INFO --> New Player Created
+2013-04-29 18:27:06 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:27:08 - INFO --> New Player Created
+2013-04-29 18:27:08 - INFO --> addCard called in Player.php
+2013-04-29 18:27:08 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:27:08 - INFO --> String version of card value: ; '12'
+2013-04-29 18:27:08 - INFO --> addCard called in Player.php
+2013-04-29 18:27:08 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:27:08 - INFO --> String version of card value: ; '10'
+2013-04-29 18:27:08 - INFO --> addCard called in Player.php
+2013-04-29 18:27:08 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:27:08 - INFO --> String version of card value: ; '01'
+2013-04-29 18:27:08 - INFO --> addCard called in Player.php
+2013-04-29 18:27:08 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:27:08 - INFO --> String version of card value: ; '03'
+2013-04-29 18:27:08 - INFO --> createANewGame in GameController 
+2013-04-29 18:27:21 - INFO --> New Player Created
+2013-04-29 18:27:21 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:27:22 - INFO --> New Player Created
+2013-04-29 18:27:22 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:27:23 - INFO --> New Player Created
+2013-04-29 18:27:23 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:27:24 - INFO --> New Player Created
+2013-04-29 18:27:24 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:27:25 - INFO --> New Player Created
+2013-04-29 18:27:25 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:27:26 - INFO --> New Player Created
+2013-04-29 18:27:26 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:27:27 - INFO --> New Player Created
+2013-04-29 18:27:27 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:27:28 - INFO --> New Player Created
+2013-04-29 18:27:28 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:27:29 - INFO --> New Player Created
+2013-04-29 18:27:29 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:27:30 - INFO --> New Player Created
+2013-04-29 18:27:30 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:27:31 - INFO --> New Player Created
+2013-04-29 18:27:31 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:27:32 - INFO --> New Player Created
+2013-04-29 18:27:32 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:27:33 - INFO --> New Player Created
+2013-04-29 18:27:33 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:27:34 - INFO --> New Player Created
+2013-04-29 18:27:34 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:27:35 - INFO --> New Player Created
+2013-04-29 18:27:35 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:27:36 - INFO --> New Player Created
+2013-04-29 18:27:36 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:27:37 - INFO --> New Player Created
+2013-04-29 18:27:37 - INFO --> Blackjack Constructed called with id: ; '163'
+2013-04-29 18:27:38 - INFO --> makeaHit called in GameManagement
+2013-04-29 18:27:38 - INFO --> Looking for a Game from a player with id: ; '163'
+2013-04-29 18:27:38 - INFO --> checking game with gameid: ; NULL
+2013-04-29 18:27:38 - INFO --> checking game with gameid: ; '1'
+2013-04-29 18:27:38 - INFO --> checking game with gameid: ; '2'
+2013-04-29 18:27:38 - INFO --> checking game with gameid: ; '3'
+2013-04-29 18:27:38 - INFO --> checking game with gameid: ; '4'
+2013-04-29 18:27:38 - INFO --> checking game with gameid: ; '5'
+2013-04-29 18:27:38 - INFO --> checking game with gameid: ; '6'
+2013-04-29 18:27:38 - INFO --> checking game with gameid: ; '7'
+2013-04-29 18:27:38 - INFO --> checking game with gameid: ; '8'
+2013-04-29 18:27:38 - INFO --> checking game with gameid: ; '9'
+2013-04-29 18:27:38 - INFO --> checking game with gameid: ; '10'
+2013-04-29 18:27:38 - INFO --> checking game with gameid: ; '11'
+2013-04-29 18:27:38 - INFO --> checking game with gameid: ; '12'
+2013-04-29 18:27:38 - INFO --> checking game with gameid: ; '13'
+2013-04-29 18:27:38 - INFO --> checking game with gameid: ; '14'
+2013-04-29 18:27:38 - INFO --> checking game with gameid: ; '15'
+2013-04-29 18:27:38 - INFO --> checking game with gameid: ; '30'
+2013-04-29 18:27:38 - INFO --> checking game with gameid: ; '163'
+2013-04-29 18:27:38 - INFO --> game found in Game Management with game id; '163'
+2013-04-29 18:27:38 - INFO --> a Hit in the Game from player: ; 'JJ'
+2013-04-29 18:27:38 - INFO --> Checking for player in getPlayerByName in Game.php, player: ; 'JJ'
+2013-04-29 18:27:38 - INFO --> It is still players turn, player: ; 'JJ'
+2013-04-29 18:27:38 - INFO --> Player delt card: ; '05_diamond'
+2013-04-29 18:36:00 - INFO --> New Player Created
+2013-04-29 18:36:00 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:36:01 - INFO --> New Player Created
+2013-04-29 18:36:01 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:36:02 - INFO --> New Player Created
+2013-04-29 18:36:02 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:36:03 - INFO --> New Player Created
+2013-04-29 18:36:03 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:36:04 - INFO --> New Player Created
+2013-04-29 18:36:04 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:36:05 - INFO --> New Player Created
+2013-04-29 18:36:05 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:36:06 - INFO --> New Player Created
+2013-04-29 18:36:06 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:36:07 - INFO --> New Player Created
+2013-04-29 18:36:07 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:36:08 - INFO --> New Player Created
+2013-04-29 18:36:08 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:36:09 - INFO --> New Player Created
+2013-04-29 18:36:09 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:36:10 - INFO --> New Player Created
+2013-04-29 18:36:10 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:36:11 - INFO --> New Player Created
+2013-04-29 18:36:11 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:36:12 - INFO --> New Player Created
+2013-04-29 18:36:12 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:36:13 - INFO --> New Player Created
+2013-04-29 18:36:13 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:36:14 - INFO --> New Player Created
+2013-04-29 18:36:14 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:36:15 - INFO --> New Player Created
+2013-04-29 18:36:15 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:36:16 - INFO --> New Player Created
+2013-04-29 18:36:16 - INFO --> Blackjack Constructed called with id: ; '163'
+2013-04-29 18:36:19 - INFO --> New Player Created
+2013-04-29 18:36:19 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:36:22 - INFO --> New Player Created
+2013-04-29 18:36:22 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:36:24 - INFO --> New Player Created
+2013-04-29 18:36:25 - INFO --> addCard called in Player.php
+2013-04-29 18:36:25 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:36:25 - INFO --> String version of card value: ; '01'
+2013-04-29 18:36:25 - INFO --> addCard called in Player.php
+2013-04-29 18:36:25 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:36:25 - INFO --> String version of card value: ; '10'
+2013-04-29 18:36:25 - INFO --> addCard called in Player.php
+2013-04-29 18:36:25 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:36:25 - INFO --> String version of card value: ; '05'
+2013-04-29 18:36:25 - INFO --> addCard called in Player.php
+2013-04-29 18:36:25 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:36:25 - INFO --> String version of card value: ; '03'
+2013-04-29 18:36:25 - INFO --> createANewGame in GameController 
+2013-04-29 18:36:35 - INFO --> New Player Created
+2013-04-29 18:36:35 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:36:36 - INFO --> New Player Created
+2013-04-29 18:36:36 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:36:37 - INFO --> New Player Created
+2013-04-29 18:36:37 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:36:38 - INFO --> New Player Created
+2013-04-29 18:36:38 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:36:39 - INFO --> New Player Created
+2013-04-29 18:36:39 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:36:40 - INFO --> New Player Created
+2013-04-29 18:36:40 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:36:41 - INFO --> New Player Created
+2013-04-29 18:36:41 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:36:42 - INFO --> New Player Created
+2013-04-29 18:36:42 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:36:43 - INFO --> New Player Created
+2013-04-29 18:36:43 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:36:44 - INFO --> New Player Created
+2013-04-29 18:36:44 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:36:45 - INFO --> New Player Created
+2013-04-29 18:36:45 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:36:46 - INFO --> New Player Created
+2013-04-29 18:36:46 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:36:47 - INFO --> New Player Created
+2013-04-29 18:36:47 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:36:48 - INFO --> New Player Created
+2013-04-29 18:36:48 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:36:49 - INFO --> New Player Created
+2013-04-29 18:36:49 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:36:50 - INFO --> New Player Created
+2013-04-29 18:36:50 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:36:51 - INFO --> New Player Created
+2013-04-29 18:36:51 - INFO --> Blackjack Constructed called with id: ; '164'
+2013-04-29 18:36:52 - INFO --> makeaHit called in GameManagement
+2013-04-29 18:36:52 - INFO --> Looking for a Game from a player with id: ; '164'
+2013-04-29 18:36:52 - INFO --> checking game with gameid: ; NULL
+2013-04-29 18:36:52 - INFO --> checking game with gameid: ; '1'
+2013-04-29 18:36:52 - INFO --> checking game with gameid: ; '2'
+2013-04-29 18:36:52 - INFO --> checking game with gameid: ; '3'
+2013-04-29 18:36:52 - INFO --> checking game with gameid: ; '4'
+2013-04-29 18:36:52 - INFO --> checking game with gameid: ; '5'
+2013-04-29 18:36:52 - INFO --> checking game with gameid: ; '6'
+2013-04-29 18:36:52 - INFO --> checking game with gameid: ; '7'
+2013-04-29 18:36:52 - INFO --> checking game with gameid: ; '8'
+2013-04-29 18:36:52 - INFO --> checking game with gameid: ; '9'
+2013-04-29 18:36:52 - INFO --> checking game with gameid: ; '10'
+2013-04-29 18:36:52 - INFO --> checking game with gameid: ; '11'
+2013-04-29 18:36:52 - INFO --> checking game with gameid: ; '12'
+2013-04-29 18:36:52 - INFO --> checking game with gameid: ; '13'
+2013-04-29 18:36:52 - INFO --> checking game with gameid: ; '14'
+2013-04-29 18:36:52 - INFO --> checking game with gameid: ; '15'
+2013-04-29 18:36:52 - INFO --> checking game with gameid: ; '30'
+2013-04-29 18:36:52 - INFO --> checking game with gameid: ; '164'
+2013-04-29 18:36:52 - INFO --> game found in Game Management with game id; '164'
+2013-04-29 18:36:52 - INFO --> a Hit in the Game from player: ; 'JJ'
+2013-04-29 18:36:52 - INFO --> Checking for player in getPlayerByName in Game.php, player: ; 'JJ'
+2013-04-29 18:36:52 - INFO --> Hmm are we sure this is returning a player: ; NULL
+2013-04-29 18:36:52 - INFO --> It is still players turn, player: ; 'JJ'
+2013-04-29 18:36:52 - INFO --> Player delt card: ; '02_diamond'
+2013-04-29 18:39:45 - INFO --> New Player Created
+2013-04-29 18:39:45 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:39:46 - INFO --> New Player Created
+2013-04-29 18:39:46 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:39:47 - INFO --> New Player Created
+2013-04-29 18:39:47 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:39:48 - INFO --> New Player Created
+2013-04-29 18:39:48 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:39:49 - INFO --> New Player Created
+2013-04-29 18:39:49 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:39:50 - INFO --> New Player Created
+2013-04-29 18:39:50 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:39:51 - INFO --> New Player Created
+2013-04-29 18:39:51 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:39:52 - INFO --> New Player Created
+2013-04-29 18:39:52 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:39:53 - INFO --> New Player Created
+2013-04-29 18:39:53 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:39:54 - INFO --> New Player Created
+2013-04-29 18:39:54 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:39:55 - INFO --> New Player Created
+2013-04-29 18:39:55 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:39:56 - INFO --> New Player Created
+2013-04-29 18:39:56 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:39:57 - INFO --> New Player Created
+2013-04-29 18:39:57 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:39:58 - INFO --> New Player Created
+2013-04-29 18:39:58 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:39:59 - INFO --> New Player Created
+2013-04-29 18:39:59 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:40:00 - INFO --> New Player Created
+2013-04-29 18:40:00 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:40:02 - INFO --> New Player Created
+2013-04-29 18:40:02 - INFO --> Blackjack Constructed called with id: ; '164'
+2013-04-29 18:40:05 - INFO --> New Player Created
+2013-04-29 18:40:05 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:40:08 - INFO --> New Player Created
+2013-04-29 18:40:08 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:40:10 - INFO --> New Player Created
+2013-04-29 18:40:10 - INFO --> addCard called in Player.php
+2013-04-29 18:40:10 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:40:10 - INFO --> String version of card value: ; '05'
+2013-04-29 18:40:10 - INFO --> addCard called in Player.php
+2013-04-29 18:40:10 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:40:10 - INFO --> String version of card value: ; '08'
+2013-04-29 18:40:10 - INFO --> addCard called in Player.php
+2013-04-29 18:40:10 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:40:10 - INFO --> String version of card value: ; '01'
+2013-04-29 18:40:10 - INFO --> addCard called in Player.php
+2013-04-29 18:40:10 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:40:10 - INFO --> String version of card value: ; '08'
+2013-04-29 18:40:10 - INFO --> createANewGame in GameController 
+2013-04-29 18:40:22 - INFO --> New Player Created
+2013-04-29 18:40:22 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:40:23 - INFO --> New Player Created
+2013-04-29 18:40:23 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:40:24 - INFO --> New Player Created
+2013-04-29 18:40:24 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:40:25 - INFO --> New Player Created
+2013-04-29 18:40:25 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:40:26 - INFO --> New Player Created
+2013-04-29 18:40:26 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:40:27 - INFO --> New Player Created
+2013-04-29 18:40:27 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:40:28 - INFO --> New Player Created
+2013-04-29 18:40:28 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:40:29 - INFO --> New Player Created
+2013-04-29 18:40:29 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:40:30 - INFO --> New Player Created
+2013-04-29 18:40:30 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:40:31 - INFO --> New Player Created
+2013-04-29 18:40:31 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:40:32 - INFO --> New Player Created
+2013-04-29 18:40:32 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:40:33 - INFO --> New Player Created
+2013-04-29 18:40:33 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:40:34 - INFO --> New Player Created
+2013-04-29 18:40:34 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:40:35 - INFO --> New Player Created
+2013-04-29 18:40:35 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:40:36 - INFO --> New Player Created
+2013-04-29 18:40:36 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:40:37 - INFO --> New Player Created
+2013-04-29 18:40:37 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:40:38 - INFO --> New Player Created
+2013-04-29 18:40:38 - INFO --> Blackjack Constructed called with id: ; '165'
+2013-04-29 18:40:39 - INFO --> makeaHit called in GameManagement
+2013-04-29 18:40:39 - INFO --> Looking for a Game from a player with id: ; '165'
+2013-04-29 18:40:39 - INFO --> checking game with gameid: ; NULL
+2013-04-29 18:40:39 - INFO --> checking game with gameid: ; '1'
+2013-04-29 18:40:39 - INFO --> checking game with gameid: ; '2'
+2013-04-29 18:40:39 - INFO --> checking game with gameid: ; '3'
+2013-04-29 18:40:39 - INFO --> checking game with gameid: ; '4'
+2013-04-29 18:40:39 - INFO --> checking game with gameid: ; '5'
+2013-04-29 18:40:39 - INFO --> checking game with gameid: ; '6'
+2013-04-29 18:40:39 - INFO --> checking game with gameid: ; '7'
+2013-04-29 18:40:39 - INFO --> checking game with gameid: ; '8'
+2013-04-29 18:40:39 - INFO --> checking game with gameid: ; '9'
+2013-04-29 18:40:39 - INFO --> checking game with gameid: ; '10'
+2013-04-29 18:40:39 - INFO --> checking game with gameid: ; '11'
+2013-04-29 18:40:39 - INFO --> checking game with gameid: ; '12'
+2013-04-29 18:40:39 - INFO --> checking game with gameid: ; '13'
+2013-04-29 18:40:39 - INFO --> checking game with gameid: ; '14'
+2013-04-29 18:40:39 - INFO --> checking game with gameid: ; '15'
+2013-04-29 18:40:39 - INFO --> checking game with gameid: ; '30'
+2013-04-29 18:40:39 - INFO --> checking game with gameid: ; '165'
+2013-04-29 18:40:39 - INFO --> game found in Game Management with game id; '165'
+2013-04-29 18:40:39 - INFO --> a Hit in the Game from player: ; 'JJ'
+2013-04-29 18:40:39 - INFO --> Checking for player in getPlayerByName in Game.php, player: ; 'JJ'
+2013-04-29 18:40:39 - INFO --> Hmm are we sure this is returning a player: ; NULL
+2013-04-29 18:40:39 - INFO --> It is still players turn, player: ; 'JJ'
+2013-04-29 18:40:39 - INFO --> Player delt card: ; '01_diamond'
+2013-04-29 18:45:04 - INFO --> New Player Created
+2013-04-29 18:45:04 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:45:05 - INFO --> New Player Created
+2013-04-29 18:45:05 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:45:06 - INFO --> New Player Created
+2013-04-29 18:45:06 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:45:07 - INFO --> New Player Created
+2013-04-29 18:45:07 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:45:08 - INFO --> New Player Created
+2013-04-29 18:45:08 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:45:09 - INFO --> New Player Created
+2013-04-29 18:45:09 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:45:10 - INFO --> New Player Created
+2013-04-29 18:45:10 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:45:11 - INFO --> New Player Created
+2013-04-29 18:45:11 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:45:12 - INFO --> New Player Created
+2013-04-29 18:45:12 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:45:13 - INFO --> New Player Created
+2013-04-29 18:45:13 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:45:14 - INFO --> New Player Created
+2013-04-29 18:45:14 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:45:15 - INFO --> New Player Created
+2013-04-29 18:45:15 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:45:16 - INFO --> New Player Created
+2013-04-29 18:45:16 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:45:17 - INFO --> New Player Created
+2013-04-29 18:45:17 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:45:18 - INFO --> New Player Created
+2013-04-29 18:45:18 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:45:19 - INFO --> New Player Created
+2013-04-29 18:45:19 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:45:20 - INFO --> New Player Created
+2013-04-29 18:45:20 - INFO --> Blackjack Constructed called with id: ; '165'
+2013-04-29 18:45:23 - INFO --> New Player Created
+2013-04-29 18:45:23 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:45:26 - INFO --> New Player Created
+2013-04-29 18:45:26 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:45:28 - INFO --> New Player Created
+2013-04-29 18:45:28 - INFO --> addCard called in Player.php
+2013-04-29 18:45:28 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:45:28 - INFO --> String version of card value: ; '05'
+2013-04-29 18:45:28 - INFO --> addCard called in Player.php
+2013-04-29 18:45:28 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:45:28 - INFO --> String version of card value: ; '09'
+2013-04-29 18:45:28 - INFO --> addCard called in Player.php
+2013-04-29 18:45:28 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:45:28 - INFO --> String version of card value: ; '05'
+2013-04-29 18:45:28 - INFO --> addCard called in Player.php
+2013-04-29 18:45:28 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:45:28 - INFO --> String version of card value: ; '11'
+2013-04-29 18:45:28 - INFO --> createANewGame in GameController 
+2013-04-29 18:45:36 - INFO --> New Player Created
+2013-04-29 18:45:36 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:45:37 - INFO --> New Player Created
+2013-04-29 18:45:37 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:45:38 - INFO --> New Player Created
+2013-04-29 18:45:38 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:45:39 - INFO --> New Player Created
+2013-04-29 18:45:39 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:45:40 - INFO --> New Player Created
+2013-04-29 18:45:40 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:45:41 - INFO --> New Player Created
+2013-04-29 18:45:41 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:45:42 - INFO --> New Player Created
+2013-04-29 18:45:42 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:45:43 - INFO --> New Player Created
+2013-04-29 18:45:43 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:45:44 - INFO --> New Player Created
+2013-04-29 18:45:44 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:45:45 - INFO --> New Player Created
+2013-04-29 18:45:45 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:45:46 - INFO --> New Player Created
+2013-04-29 18:45:46 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:45:47 - INFO --> New Player Created
+2013-04-29 18:45:47 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:45:48 - INFO --> New Player Created
+2013-04-29 18:45:48 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:45:49 - INFO --> New Player Created
+2013-04-29 18:45:49 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:45:50 - INFO --> New Player Created
+2013-04-29 18:45:50 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:45:51 - INFO --> New Player Created
+2013-04-29 18:45:51 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:45:52 - INFO --> New Player Created
+2013-04-29 18:45:52 - INFO --> Blackjack Constructed called with id: ; '166'
+2013-04-29 18:45:53 - INFO --> makeaHit called in GameManagement
+2013-04-29 18:45:53 - INFO --> Looking for a Game from a player with id: ; '166'
+2013-04-29 18:45:53 - INFO --> checking game with gameid: ; NULL
+2013-04-29 18:45:53 - INFO --> checking game with gameid: ; '1'
+2013-04-29 18:45:53 - INFO --> checking game with gameid: ; '2'
+2013-04-29 18:45:53 - INFO --> checking game with gameid: ; '3'
+2013-04-29 18:45:53 - INFO --> checking game with gameid: ; '4'
+2013-04-29 18:45:53 - INFO --> checking game with gameid: ; '5'
+2013-04-29 18:45:53 - INFO --> checking game with gameid: ; '6'
+2013-04-29 18:45:53 - INFO --> checking game with gameid: ; '7'
+2013-04-29 18:45:53 - INFO --> checking game with gameid: ; '8'
+2013-04-29 18:45:53 - INFO --> checking game with gameid: ; '9'
+2013-04-29 18:45:53 - INFO --> checking game with gameid: ; '10'
+2013-04-29 18:45:53 - INFO --> checking game with gameid: ; '11'
+2013-04-29 18:45:53 - INFO --> checking game with gameid: ; '12'
+2013-04-29 18:45:53 - INFO --> checking game with gameid: ; '13'
+2013-04-29 18:45:53 - INFO --> checking game with gameid: ; '14'
+2013-04-29 18:45:53 - INFO --> checking game with gameid: ; '15'
+2013-04-29 18:45:53 - INFO --> checking game with gameid: ; '30'
+2013-04-29 18:45:53 - INFO --> checking game with gameid: ; '166'
+2013-04-29 18:45:53 - INFO --> game found in Game Management with game id; '166'
+2013-04-29 18:45:53 - INFO --> a Hit in the Game from player: ; 'JJ'
+2013-04-29 18:45:53 - INFO --> Checking for player in getPlayerByName in Game.php, player: ; 'JJ'
+2013-04-29 18:45:53 - INFO --> The players in this game are: ; array (
+)
+2013-04-29 18:45:53 - INFO --> Hmm are we sure this is returning a player: ; NULL
+2013-04-29 18:45:53 - INFO --> It is still players turn, player: ; 'JJ'
+2013-04-29 18:45:53 - INFO --> Player delt card: ; '02_spade'
+2013-04-29 18:47:13 - INFO --> New Player Created
+2013-04-29 18:47:13 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:47:14 - INFO --> New Player Created
+2013-04-29 18:47:14 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:47:15 - INFO --> New Player Created
+2013-04-29 18:47:15 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:47:16 - INFO --> New Player Created
+2013-04-29 18:47:16 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:47:17 - INFO --> New Player Created
+2013-04-29 18:47:17 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:47:18 - INFO --> New Player Created
+2013-04-29 18:47:18 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:47:19 - INFO --> New Player Created
+2013-04-29 18:47:19 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:47:20 - INFO --> New Player Created
+2013-04-29 18:47:20 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:47:21 - INFO --> New Player Created
+2013-04-29 18:47:21 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:47:22 - INFO --> New Player Created
+2013-04-29 18:47:22 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:47:23 - INFO --> New Player Created
+2013-04-29 18:47:23 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:47:24 - INFO --> New Player Created
+2013-04-29 18:47:24 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:47:25 - INFO --> New Player Created
+2013-04-29 18:47:25 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:47:26 - INFO --> New Player Created
+2013-04-29 18:47:26 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:47:27 - INFO --> New Player Created
+2013-04-29 18:47:27 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:47:28 - INFO --> New Player Created
+2013-04-29 18:47:28 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:47:29 - INFO --> New Player Created
+2013-04-29 18:47:29 - INFO --> Blackjack Constructed called with id: ; '166'
+2013-04-29 18:47:32 - INFO --> New Player Created
+2013-04-29 18:47:32 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:47:35 - INFO --> New Player Created
+2013-04-29 18:47:35 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:47:37 - INFO --> New Player Created
+2013-04-29 18:47:38 - INFO --> addCard called in Player.php
+2013-04-29 18:47:38 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:47:38 - INFO --> String version of card value: ; '10'
+2013-04-29 18:47:38 - INFO --> addCard called in Player.php
+2013-04-29 18:47:38 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:47:38 - INFO --> String version of card value: ; '12'
+2013-04-29 18:47:38 - INFO --> addCard called in Player.php
+2013-04-29 18:47:38 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:47:38 - INFO --> String version of card value: ; '06'
+2013-04-29 18:47:38 - INFO --> addCard called in Player.php
+2013-04-29 18:47:38 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:47:38 - INFO --> String version of card value: ; '11'
+2013-04-29 18:47:38 - INFO --> createANewGame in GameController 
+2013-04-29 18:47:45 - INFO --> New Player Created
+2013-04-29 18:47:45 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:47:46 - INFO --> New Player Created
+2013-04-29 18:47:46 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:47:47 - INFO --> New Player Created
+2013-04-29 18:47:47 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:47:48 - INFO --> New Player Created
+2013-04-29 18:47:48 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:47:49 - INFO --> New Player Created
+2013-04-29 18:47:49 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:47:50 - INFO --> New Player Created
+2013-04-29 18:47:50 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:47:51 - INFO --> New Player Created
+2013-04-29 18:47:51 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:47:52 - INFO --> New Player Created
+2013-04-29 18:47:52 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:47:53 - INFO --> New Player Created
+2013-04-29 18:47:53 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:47:54 - INFO --> New Player Created
+2013-04-29 18:47:54 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:47:55 - INFO --> New Player Created
+2013-04-29 18:47:55 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:47:56 - INFO --> New Player Created
+2013-04-29 18:47:56 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:47:57 - INFO --> New Player Created
+2013-04-29 18:47:57 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:47:58 - INFO --> New Player Created
+2013-04-29 18:47:58 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:47:59 - INFO --> New Player Created
+2013-04-29 18:47:59 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:48:00 - INFO --> New Player Created
+2013-04-29 18:48:00 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:48:01 - INFO --> New Player Created
+2013-04-29 18:48:01 - INFO --> Blackjack Constructed called with id: ; '167'
+2013-04-29 18:48:02 - INFO --> makeaHit called in GameManagement
+2013-04-29 18:48:02 - INFO --> Looking for a Game from a player with id: ; '167'
+2013-04-29 18:48:02 - INFO --> checking game with gameid: ; NULL
+2013-04-29 18:48:02 - INFO --> checking game with gameid: ; '1'
+2013-04-29 18:48:02 - INFO --> checking game with gameid: ; '2'
+2013-04-29 18:48:02 - INFO --> checking game with gameid: ; '3'
+2013-04-29 18:48:02 - INFO --> checking game with gameid: ; '4'
+2013-04-29 18:48:02 - INFO --> checking game with gameid: ; '5'
+2013-04-29 18:48:02 - INFO --> checking game with gameid: ; '6'
+2013-04-29 18:48:02 - INFO --> checking game with gameid: ; '7'
+2013-04-29 18:48:02 - INFO --> checking game with gameid: ; '8'
+2013-04-29 18:48:02 - INFO --> checking game with gameid: ; '9'
+2013-04-29 18:48:02 - INFO --> checking game with gameid: ; '10'
+2013-04-29 18:48:02 - INFO --> checking game with gameid: ; '11'
+2013-04-29 18:48:02 - INFO --> checking game with gameid: ; '12'
+2013-04-29 18:48:02 - INFO --> checking game with gameid: ; '13'
+2013-04-29 18:48:02 - INFO --> checking game with gameid: ; '14'
+2013-04-29 18:48:02 - INFO --> checking game with gameid: ; '15'
+2013-04-29 18:48:02 - INFO --> checking game with gameid: ; '30'
+2013-04-29 18:48:02 - INFO --> checking game with gameid: ; '167'
+2013-04-29 18:48:02 - INFO --> game found in Game Management with game id; '167'
+2013-04-29 18:48:02 - INFO --> a Hit in the Game from player: ; 'JJ'
+2013-04-29 18:48:02 - INFO --> Checking for player in getPlayerByName in Game.php, player: ; 'JJ'
+2013-04-29 18:48:02 - INFO --> The players in this game are: ; true
+2013-04-29 18:48:02 - INFO --> Hmm are we sure this is returning a player: ; NULL
+2013-04-29 18:48:02 - INFO --> It is still players turn, player: ; 'JJ'
+2013-04-29 18:48:02 - INFO --> Player delt card: ; '09_heart'
+2013-04-29 18:50:43 - INFO --> New Player Created
+2013-04-29 18:50:43 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:50:44 - INFO --> New Player Created
+2013-04-29 18:50:44 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:50:45 - INFO --> New Player Created
+2013-04-29 18:50:45 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:50:46 - INFO --> New Player Created
+2013-04-29 18:50:46 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:50:47 - INFO --> New Player Created
+2013-04-29 18:50:47 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:50:48 - INFO --> New Player Created
+2013-04-29 18:50:48 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:50:49 - INFO --> New Player Created
+2013-04-29 18:50:49 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:50:50 - INFO --> New Player Created
+2013-04-29 18:50:50 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:50:51 - INFO --> New Player Created
+2013-04-29 18:50:51 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:50:52 - INFO --> New Player Created
+2013-04-29 18:50:52 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:50:53 - INFO --> New Player Created
+2013-04-29 18:50:53 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:50:54 - INFO --> New Player Created
+2013-04-29 18:50:54 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:50:55 - INFO --> New Player Created
+2013-04-29 18:50:55 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:50:56 - INFO --> New Player Created
+2013-04-29 18:50:56 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:50:57 - INFO --> New Player Created
+2013-04-29 18:50:57 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:50:58 - INFO --> New Player Created
+2013-04-29 18:50:58 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:50:59 - INFO --> New Player Created
+2013-04-29 18:50:59 - INFO --> Blackjack Constructed called with id: ; '167'
+2013-04-29 18:51:02 - INFO --> New Player Created
+2013-04-29 18:51:02 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:51:05 - INFO --> New Player Created
+2013-04-29 18:51:05 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:51:07 - INFO --> New Player Created
+2013-04-29 18:51:07 - INFO --> addCard called in Player.php
+2013-04-29 18:51:07 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:51:07 - INFO --> String version of card value: ; '06'
+2013-04-29 18:51:07 - INFO --> addCard called in Player.php
+2013-04-29 18:51:07 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:51:07 - INFO --> String version of card value: ; '9_'
+2013-04-29 18:51:07 - INFO --> addCard called in Player.php
+2013-04-29 18:51:07 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:51:07 - INFO --> String version of card value: ; '05'
+2013-04-29 18:51:07 - INFO --> addCard called in Player.php
+2013-04-29 18:51:07 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:51:07 - INFO --> String version of card value: ; '05'
+2013-04-29 18:51:07 - INFO --> createANewGame in GameController 
+2013-04-29 18:51:15 - INFO --> New Player Created
+2013-04-29 18:51:15 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:51:16 - INFO --> New Player Created
+2013-04-29 18:51:16 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:51:17 - INFO --> New Player Created
+2013-04-29 18:51:17 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:51:18 - INFO --> New Player Created
+2013-04-29 18:51:18 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:51:19 - INFO --> New Player Created
+2013-04-29 18:51:19 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:51:20 - INFO --> New Player Created
+2013-04-29 18:51:20 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:51:21 - INFO --> New Player Created
+2013-04-29 18:51:21 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:51:22 - INFO --> New Player Created
+2013-04-29 18:51:22 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:51:23 - INFO --> New Player Created
+2013-04-29 18:51:23 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:51:24 - INFO --> New Player Created
+2013-04-29 18:51:24 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:51:25 - INFO --> New Player Created
+2013-04-29 18:51:25 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:51:26 - INFO --> New Player Created
+2013-04-29 18:51:26 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:51:27 - INFO --> New Player Created
+2013-04-29 18:51:27 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:51:28 - INFO --> New Player Created
+2013-04-29 18:51:28 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:51:29 - INFO --> New Player Created
+2013-04-29 18:51:29 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:51:30 - INFO --> New Player Created
+2013-04-29 18:51:30 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:51:31 - INFO --> New Player Created
+2013-04-29 18:51:31 - INFO --> Blackjack Constructed called with id: ; '168'
+2013-04-29 18:51:32 - INFO --> makeaHit called in GameManagement
+2013-04-29 18:51:32 - INFO --> Looking for a Game from a player with id: ; '168'
+2013-04-29 18:51:32 - INFO --> checking game with gameid: ; NULL
+2013-04-29 18:51:32 - INFO --> checking game with gameid: ; '1'
+2013-04-29 18:51:32 - INFO --> checking game with gameid: ; '2'
+2013-04-29 18:51:32 - INFO --> checking game with gameid: ; '3'
+2013-04-29 18:51:32 - INFO --> checking game with gameid: ; '4'
+2013-04-29 18:51:32 - INFO --> checking game with gameid: ; '5'
+2013-04-29 18:51:32 - INFO --> checking game with gameid: ; '6'
+2013-04-29 18:51:32 - INFO --> checking game with gameid: ; '7'
+2013-04-29 18:51:32 - INFO --> checking game with gameid: ; '8'
+2013-04-29 18:51:32 - INFO --> checking game with gameid: ; '9'
+2013-04-29 18:51:32 - INFO --> checking game with gameid: ; '10'
+2013-04-29 18:51:32 - INFO --> checking game with gameid: ; '11'
+2013-04-29 18:51:32 - INFO --> checking game with gameid: ; '12'
+2013-04-29 18:51:32 - INFO --> checking game with gameid: ; '13'
+2013-04-29 18:51:32 - INFO --> checking game with gameid: ; '14'
+2013-04-29 18:51:32 - INFO --> checking game with gameid: ; '15'
+2013-04-29 18:51:32 - INFO --> checking game with gameid: ; '30'
+2013-04-29 18:51:32 - INFO --> checking game with gameid: ; '168'
+2013-04-29 18:51:32 - INFO --> game found in Game Management with game id; '168'
+2013-04-29 18:51:32 - INFO --> a Hit in the Game from player: ; 'JJ'
+2013-04-29 18:51:32 - INFO --> Checking for player in getPlayerByName in Game.php, player: ; 'JJ'
+2013-04-29 18:51:32 - INFO --> Hmm are we sure this is returning a player: ; NULL
+2013-04-29 18:51:32 - INFO --> It is still players turn, player: ; 'JJ'
+2013-04-29 18:51:32 - INFO --> Player delt card: ; '12_diamond'
+2013-04-29 18:58:07 - INFO --> New Player Created
+2013-04-29 18:58:07 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:58:08 - INFO --> New Player Created
+2013-04-29 18:58:08 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:58:09 - INFO --> New Player Created
+2013-04-29 18:58:09 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:58:10 - INFO --> New Player Created
+2013-04-29 18:58:10 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:58:11 - INFO --> New Player Created
+2013-04-29 18:58:11 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:58:12 - INFO --> New Player Created
+2013-04-29 18:58:12 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:58:13 - INFO --> New Player Created
+2013-04-29 18:58:13 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:58:14 - INFO --> New Player Created
+2013-04-29 18:58:14 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:58:15 - INFO --> New Player Created
+2013-04-29 18:58:15 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:58:16 - INFO --> New Player Created
+2013-04-29 18:58:16 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:58:17 - INFO --> New Player Created
+2013-04-29 18:58:17 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:58:18 - INFO --> New Player Created
+2013-04-29 18:58:18 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:58:19 - INFO --> New Player Created
+2013-04-29 18:58:19 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:58:20 - INFO --> New Player Created
+2013-04-29 18:58:20 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:58:21 - INFO --> New Player Created
+2013-04-29 18:58:21 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:58:22 - INFO --> New Player Created
+2013-04-29 18:58:22 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:58:23 - INFO --> New Player Created
+2013-04-29 18:58:23 - INFO --> Blackjack Constructed called with id: ; '168'
+2013-04-29 18:58:26 - INFO --> New Player Created
+2013-04-29 18:58:26 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:58:29 - INFO --> New Player Created
+2013-04-29 18:58:29 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 18:58:31 - INFO --> New Player Created
+2013-04-29 18:58:31 - INFO --> addCard called in Player.php
+2013-04-29 18:58:31 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:58:31 - INFO --> String version of card value: ; '03'
+2013-04-29 18:58:31 - INFO --> addCard called in Player.php
+2013-04-29 18:58:31 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:58:31 - INFO --> String version of card value: ; '06'
+2013-04-29 18:58:31 - INFO --> addCard called in Player.php
+2013-04-29 18:58:31 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:58:31 - INFO --> String version of card value: ; '06'
+2013-04-29 18:58:31 - INFO --> addCard called in Player.php
+2013-04-29 18:58:31 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 18:58:31 - INFO --> String version of card value: ; '12'
+2013-04-29 18:58:31 - INFO --> createANewGame in GameController 
+2013-04-29 18:58:40 - INFO --> New Player Created
+2013-04-29 18:58:40 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 18:58:41 - INFO --> New Player Created
+2013-04-29 18:58:41 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 18:58:42 - INFO --> New Player Created
+2013-04-29 18:58:42 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 18:58:43 - INFO --> New Player Created
+2013-04-29 18:58:43 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 18:58:44 - INFO --> New Player Created
+2013-04-29 18:58:44 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 18:58:45 - INFO --> New Player Created
+2013-04-29 18:58:45 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 18:58:46 - INFO --> New Player Created
+2013-04-29 18:58:46 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 18:58:47 - INFO --> New Player Created
+2013-04-29 18:58:47 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 18:58:48 - INFO --> New Player Created
+2013-04-29 18:58:48 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 18:58:49 - INFO --> New Player Created
+2013-04-29 18:58:49 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 18:58:50 - INFO --> New Player Created
+2013-04-29 18:58:50 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 18:58:51 - INFO --> New Player Created
+2013-04-29 18:58:51 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 18:58:52 - INFO --> New Player Created
+2013-04-29 18:58:52 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 18:58:53 - INFO --> New Player Created
+2013-04-29 18:58:53 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 18:58:54 - INFO --> New Player Created
+2013-04-29 18:58:54 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 18:58:55 - INFO --> New Player Created
+2013-04-29 18:58:55 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 18:58:56 - INFO --> New Player Created
+2013-04-29 18:58:56 - INFO --> Blackjack Constructed called with id: ; '169'
+2013-04-29 18:58:57 - INFO --> makeaHit called in GameManagement
+2013-04-29 18:58:57 - INFO --> Looking for a Game from a player with id: ; '169'
+2013-04-29 18:58:57 - INFO --> checking game with gameid: ; NULL
+2013-04-29 18:58:57 - INFO --> checking game with gameid: ; '1'
+2013-04-29 18:58:57 - INFO --> checking game with gameid: ; '2'
+2013-04-29 18:58:57 - INFO --> checking game with gameid: ; '3'
+2013-04-29 18:58:57 - INFO --> checking game with gameid: ; '4'
+2013-04-29 18:58:57 - INFO --> checking game with gameid: ; '5'
+2013-04-29 18:58:57 - INFO --> checking game with gameid: ; '6'
+2013-04-29 18:58:57 - INFO --> checking game with gameid: ; '7'
+2013-04-29 18:58:57 - INFO --> checking game with gameid: ; '8'
+2013-04-29 18:58:57 - INFO --> checking game with gameid: ; '9'
+2013-04-29 18:58:57 - INFO --> checking game with gameid: ; '10'
+2013-04-29 18:58:57 - INFO --> checking game with gameid: ; '11'
+2013-04-29 18:58:57 - INFO --> checking game with gameid: ; '12'
+2013-04-29 18:58:57 - INFO --> checking game with gameid: ; '13'
+2013-04-29 18:58:57 - INFO --> checking game with gameid: ; '14'
+2013-04-29 18:58:57 - INFO --> checking game with gameid: ; '15'
+2013-04-29 18:58:57 - INFO --> checking game with gameid: ; '30'
+2013-04-29 18:58:57 - INFO --> checking game with gameid: ; '169'
+2013-04-29 18:58:57 - INFO --> game found in Game Management with game id; '169'
+2013-04-29 18:58:57 - INFO --> a Hit in the Game from player: ; 'JJ'
+2013-04-29 18:58:57 - INFO --> Checking for player in getPlayerByName in Game.php, player: ; 'JJ'
+2013-04-29 18:58:57 - INFO --> Hmm are we sure this is returning a player: ; NULL
+2013-04-29 18:58:57 - INFO --> It is still players turn, player: ; 'JJ'
+2013-04-29 18:58:57 - INFO --> Player delt card: ; '01_heart'
+2013-04-29 20:05:35 - INFO --> New Player Created
+2013-04-29 20:05:35 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 20:05:36 - INFO --> New Player Created
+2013-04-29 20:05:36 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 20:05:37 - INFO --> New Player Created
+2013-04-29 20:05:37 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 20:05:39 - INFO --> New Player Created
+2013-04-29 20:05:39 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 20:05:40 - INFO --> New Player Created
+2013-04-29 20:05:40 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 20:05:41 - INFO --> New Player Created
+2013-04-29 20:05:41 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 20:05:42 - INFO --> New Player Created
+2013-04-29 20:05:42 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 20:05:43 - INFO --> New Player Created
+2013-04-29 20:05:43 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 20:05:44 - INFO --> New Player Created
+2013-04-29 20:05:44 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 20:05:45 - INFO --> New Player Created
+2013-04-29 20:05:45 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 20:05:46 - INFO --> New Player Created
+2013-04-29 20:05:46 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 20:05:47 - INFO --> New Player Created
+2013-04-29 20:05:47 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 20:05:48 - INFO --> New Player Created
+2013-04-29 20:05:48 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 20:05:49 - INFO --> New Player Created
+2013-04-29 20:05:49 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 20:05:50 - INFO --> New Player Created
+2013-04-29 20:05:50 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 20:05:51 - INFO --> New Player Created
+2013-04-29 20:05:51 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 20:05:52 - INFO --> New Player Created
+2013-04-29 20:05:52 - INFO --> Blackjack Constructed called with id: ; '169'
+2013-04-29 20:05:55 - INFO --> New Player Created
+2013-04-29 20:05:55 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 20:05:58 - INFO --> New Player Created
+2013-04-29 20:05:58 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 20:06:00 - INFO --> New Player Created
+2013-04-29 20:06:00 - INFO --> addCard called in Player.php
+2013-04-29 20:06:00 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 20:06:00 - INFO --> String version of card value: ; '07'
+2013-04-29 20:06:00 - INFO --> addCard called in Player.php
+2013-04-29 20:06:00 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 20:06:00 - INFO --> String version of card value: ; '11'
+2013-04-29 20:06:00 - INFO --> addCard called in Player.php
+2013-04-29 20:06:00 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 20:06:00 - INFO --> String version of card value: ; '05'
+2013-04-29 20:06:00 - INFO --> addCard called in Player.php
+2013-04-29 20:06:00 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 20:06:00 - INFO --> String version of card value: ; '08'
+2013-04-29 20:06:00 - INFO --> createANewGame in GameController 
+2013-04-29 20:06:08 - INFO --> New Player Created
+2013-04-29 20:06:08 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 20:06:09 - INFO --> New Player Created
+2013-04-29 20:06:09 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 20:06:10 - INFO --> New Player Created
+2013-04-29 20:06:10 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 20:06:11 - INFO --> New Player Created
+2013-04-29 20:06:11 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 20:06:12 - INFO --> New Player Created
+2013-04-29 20:06:12 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 20:06:13 - INFO --> New Player Created
+2013-04-29 20:06:13 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 20:06:14 - INFO --> New Player Created
+2013-04-29 20:06:14 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 20:06:15 - INFO --> New Player Created
+2013-04-29 20:06:15 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 20:06:16 - INFO --> New Player Created
+2013-04-29 20:06:16 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 20:06:17 - INFO --> New Player Created
+2013-04-29 20:06:17 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 20:06:18 - INFO --> New Player Created
+2013-04-29 20:06:18 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 20:06:19 - INFO --> New Player Created
+2013-04-29 20:06:19 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 20:06:20 - INFO --> New Player Created
+2013-04-29 20:06:20 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 20:06:21 - INFO --> New Player Created
+2013-04-29 20:06:21 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 20:06:22 - INFO --> New Player Created
+2013-04-29 20:06:22 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 20:06:23 - INFO --> New Player Created
+2013-04-29 20:06:23 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 20:06:24 - INFO --> New Player Created
+2013-04-29 20:06:24 - INFO --> Blackjack Constructed called with id: ; '170'
+2013-04-29 20:06:27 - INFO --> New Player Created
+2013-04-29 20:06:27 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 20:06:30 - INFO --> New Player Created
+2013-04-29 20:06:30 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-04-29 20:06:32 - INFO --> New Player Created
+2013-04-29 20:06:32 - INFO --> addCard called in Player.php
+2013-04-29 20:06:32 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 20:06:32 - INFO --> String version of card value: ; '03'
+2013-04-29 20:06:32 - INFO --> addCard called in Player.php
+2013-04-29 20:06:32 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 20:06:32 - INFO --> String version of card value: ; '08'
+2013-04-29 20:06:32 - INFO --> addCard called in Player.php
+2013-04-29 20:06:32 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 20:06:32 - INFO --> String version of card value: ; '02'
+2013-04-29 20:06:32 - INFO --> addCard called in Player.php
+2013-04-29 20:06:32 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-04-29 20:06:32 - INFO --> String version of card value: ; '06'
+2013-04-29 20:06:32 - INFO --> createANewGame in GameController 
+2013-04-29 20:09:22 - INFO --> New Player Created
+2013-04-29 20:09:22 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 20:09:23 - INFO --> New Player Created
+2013-04-29 20:09:23 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 20:09:24 - INFO --> New Player Created
+2013-04-29 20:09:24 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 20:09:25 - INFO --> New Player Created
+2013-04-29 20:09:25 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 20:09:26 - INFO --> New Player Created
+2013-04-29 20:09:26 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 20:09:27 - INFO --> New Player Created
+2013-04-29 20:09:27 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 20:09:28 - INFO --> New Player Created
+2013-04-29 20:09:28 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 20:09:29 - INFO --> New Player Created
+2013-04-29 20:09:29 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 20:09:30 - INFO --> New Player Created
+2013-04-29 20:09:30 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 20:09:31 - INFO --> New Player Created
+2013-04-29 20:09:31 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 20:09:32 - INFO --> New Player Created
+2013-04-29 20:09:32 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 20:09:33 - INFO --> New Player Created
+2013-04-29 20:09:33 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 20:09:34 - INFO --> New Player Created
+2013-04-29 20:09:34 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 20:09:35 - INFO --> New Player Created
+2013-04-29 20:09:35 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 20:09:36 - INFO --> New Player Created
+2013-04-29 20:09:36 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 20:09:37 - INFO --> New Player Created
+2013-04-29 20:09:37 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 20:09:38 - INFO --> New Player Created
+2013-04-29 20:09:38 - INFO --> Blackjack Constructed called with id: ; '171'
+2013-04-29 20:10:12 - INFO --> New Player Created
+2013-04-29 20:10:12 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-04-29 20:10:13 - INFO --> New Player Created
+2013-04-29 20:10:13 - INFO --> Blackjack Constructed called with id: ; '2'
+2013-04-29 20:10:14 - INFO --> New Player Created
+2013-04-29 20:10:14 - INFO --> Blackjack Constructed called with id: ; '3'
+2013-04-29 20:10:15 - INFO --> New Player Created
+2013-04-29 20:10:15 - INFO --> Blackjack Constructed called with id: ; '4'
+2013-04-29 20:10:16 - INFO --> New Player Created
+2013-04-29 20:10:16 - INFO --> Blackjack Constructed called with id: ; '5'
+2013-04-29 20:10:17 - INFO --> New Player Created
+2013-04-29 20:10:17 - INFO --> Blackjack Constructed called with id: ; '6'
+2013-04-29 20:10:18 - INFO --> New Player Created
+2013-04-29 20:10:18 - INFO --> Blackjack Constructed called with id: ; '7'
+2013-04-29 20:10:19 - INFO --> New Player Created
+2013-04-29 20:10:19 - INFO --> Blackjack Constructed called with id: ; '8'
+2013-04-29 20:10:20 - INFO --> New Player Created
+2013-04-29 20:10:20 - INFO --> Blackjack Constructed called with id: ; '9'
+2013-04-29 20:10:21 - INFO --> New Player Created
+2013-04-29 20:10:21 - INFO --> Blackjack Constructed called with id: ; '10'
+2013-04-29 20:10:22 - INFO --> New Player Created
+2013-04-29 20:10:22 - INFO --> Blackjack Constructed called with id: ; '11'
+2013-04-29 20:10:23 - INFO --> New Player Created
+2013-04-29 20:10:23 - INFO --> Blackjack Constructed called with id: ; '12'
+2013-04-29 20:10:24 - INFO --> New Player Created
+2013-04-29 20:10:24 - INFO --> Blackjack Constructed called with id: ; '13'
+2013-04-29 20:10:25 - INFO --> New Player Created
+2013-04-29 20:10:25 - INFO --> Blackjack Constructed called with id: ; '14'
+2013-04-29 20:10:26 - INFO --> New Player Created
+2013-04-29 20:10:26 - INFO --> Blackjack Constructed called with id: ; '15'
+2013-04-29 20:10:27 - INFO --> New Player Created
+2013-04-29 20:10:27 - INFO --> Blackjack Constructed called with id: ; '30'
+2013-04-29 20:10:28 - INFO --> New Player Created
+2013-04-29 20:10:28 - INFO --> Blackjack Constructed called with id: ; '171'

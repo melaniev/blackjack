@@ -1,6 +1,6 @@
 <?php
 
-	$pageTitle = 'Play BlackJack';
+	$pageTitle = '';
 	$pageId = 'table-top-page';
 	
 	// load config
@@ -21,12 +21,12 @@
 		if($gametype == 'newgame'){
 
 			echo 'You want a new game!';
-			createANewGame();
+			//createANewGame();
 		}
 		if($gametype == 'join'){
 
 			echo 'You want to join existing game!';
-			joinGame();
+			//joinGame();
 		}		
 		
 	}

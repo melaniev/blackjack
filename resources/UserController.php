@@ -43,7 +43,9 @@ class BlackjackUser_Controller{
 
     	//Create a new User
     	$newUser = new BlackjackUser($db);
-    	$success = $newUser->createUserAccountInfo($un, $pass1, $pass2);
+    	$success = $newUser->createUserAccountInfo($un, $pass1);
+
+        echo "Success = ". $success;
 
     	return ($success == 1) ? 1 : 0;
 

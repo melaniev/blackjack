@@ -25,8 +25,9 @@ class BlackjackGame{
     private $deck;
     private $dealer;
     private $players = array();
+    private $update;
 
-  
+    public $log;
     /**
      * Checks for a database object and creates one if none is found
      *
@@ -53,9 +54,12 @@ class BlackjackGame{
 
         //Create a dealer
         $this->dealer = new Player($db, 'dealer');
+        $this->update = 0;
 
-        $log   = KLogger::instance(dirname(__FILE__), KLogger::DEBUG);
-        $log->logInfo('Blackjack Constructed called with id: ', $id);
+        $this->log   = KLogger::instance(dirname(__FILE__), KLogger::DEBUG);
+        $this->log->logInfo('Blackjack Constructed called with id: ', $id);
+
+        $this->deck = new Deck();
 
 
     }
@@ -213,33 +217,34 @@ class BlackjackGame{
 
         echo "Dealing hand...";
 
-        $this->deck = new Deck();
+        
 
         // Deal a card to each player
         foreach ($this->players as $player) {
 
             $card = $this->deck->deal();
             $player->addCard($card);
-            $player->addCard($card);
-            $valueofCard = getCardValue($card);
-            $player->addToCardTotal($valueofCard);
+            $valueofCard = $this->getCardValue( $card );
+            $player->addToCardTotal( $valueofCard );
 
         }
 
         //Deal to the dealer
         $card = $this->deck->deal();
         $this->dealer->addCard($card);
-        $valueofCard = getCardValue($card);
-        $this->dealer->addToCardTotal($valueofCard);
+        $valueofCard = $this->getCardValue( $card );
+        $this->dealer->addToCardTotal( $valueofCard );
 
+        $this->update= $this->update + 1;
         $this->updateGameState();
+        
 
         // Deal another card to each player
          foreach ($this->players as $player) {
 
             $card = $this->deck->deal();
             $player->addCard( $card );
-            $valueofCard = getCardValue( $card );
+            $valueofCard = $this->getCardValue( $card );
             $player->addToCardTotal( $valueofCard );
             
         }
@@ -247,48 +252,55 @@ class BlackjackGame{
         //Deal another to the dealer
         $card = $this->deck->deal();
         $this->dealer->addCard( $card );
-        $valueofCard = getCardValue( $card );
+        $valueofCard = $this->getCardValue( $card );
         $this->dealer->addToCardTotal( $valueofCard );
 
         print_r($this->deck);
 
+        $this->update= $this->update + 1;
         $this->updateGameState();
 
     }
     public function hit( $p ){
 
-        echo "<p>Hit!</p>";
-        $log->logInfo('hit');
+        $this->log->logInfo('a Hit in the Game from player: ', $p);
 
-            $fp = fopen("../plays.php", "a");
-            fwrite( $fp, "hit hit hit!!!");
-            fclose( $fp );
-
-        $player_turn = getPlayerByName( $p );
+        $player_turn = $this->getPlayerByName( $p );
 
         //If player hasn't already finished turn
+
+        $this->log->logInfo('Hmm are we sure this is returning a player: ', $player_turn->played_turn);
         if ($player_turn->played_turn != 1) {
-                
-            $newCard = $this->deck->deal();
+
+            $this->log->logInfo('It is still players turn, player: ', $p);
+            
+            $deck = $this->deck;
+            $newCard = $deck->deal();
+
+            $this->log->logInfo('Player delt card: ', $newCard);
 
             //first check and make sure an object was returned!!
             $player_turn->addCard( $newCard );
-            $valueofCard = getCardValue( $card );
-            $player_turn->addToCardTotal( $newCard );
+            $valueofCard = $this->getCardValue( $newCard );
+
+            $this->log->logInfo('The value of the new card is ', $valueofCard);
+            $player_turn->addToCardTotal( $valueofCard );
+
+            $this->log->logInfo('Player now has total: ', $player_turn->card_count);
+
+        }else{
+            $this->log->logInfo('Players turn was already over, player: ', $p);
         }
 
         updateTurn();
+        $this->update= $this->update + 1;
+        updateGameState();
+
+        $this->log->logInfo('A Hit in Game.php ');
     }
     public function stay( $p ){
 
-        echo "<p>Stay!</p>";
-        $log->logInfo('stay');
-
-        $fp = fopen("../plays.php", "a");
-        fwrite($fp, "stay stay stay!!!");
-        fclose($fp);
-
-
+        $this->log->logInfo('Blackjack Constructed called with id: ', $id);
 
         $player_turn = getPlayerByName($p);
 
@@ -297,6 +309,8 @@ class BlackjackGame{
             $player_turn->played_turn = 1;
             updateTurn();
         }
+
+        $this->log->logInfo('A Stay in Game.php ');
 
     }
     public function updateTurn(){
@@ -320,11 +334,23 @@ class BlackjackGame{
 
     private function finishRound(){
 
+        while ( $this->dealer->card_count < 17) {
+            
+            //Deal another to the dealer
+            $card = $this->deck->deal();
+            $this->dealer->addCard( $card );
+            $valueofCard = $this->getCardValue( $card );
+            $this->dealer->addToCardTotal( $valueofCard );
+        }
+
 
     }
-    private function getCardValue($card_delt){
+    public function getCardValue($card_delt){
+
+        $this->log->logInfo('Checking for the value of the card in getCardValue in Game.php');
 
         $card_value = substr($card_delt, 0, 2);
+        $this->log->logInfo('String version of card value: ', $card_value );
 
         switch ($card_value) {
             case "01":
@@ -365,14 +391,30 @@ class BlackjackGame{
                 break;
         }
 
+        return 0;
 
     }
     private function getPlayerByName($p){
 
+        $this->log->logInfo('Checking for player in getPlayerByName in Game.php, player: ', $p );
+
+        $fp = fopen("plays.php", "w");
+            fwrite($fp, json_encode($this->players));
+            fclose($fp);
+ 
+
         foreach ($this->players as $player) {
 
+            $this->log->logInfo('Inside the for each loop' );
+
             if($player->username == $p){
-                
+
+                $this->log->logInfo('Inside the if loop' );
+
+            $this->log->logInfo('correct player found');
+
+
+                return $player;
                 
             }
 
@@ -383,9 +425,11 @@ class BlackjackGame{
 
         $gamestate = array(
                 array(
+
                     'name'=> 'dealer',
                     'count' => $this->dealer->card_count,
-                    'cards'=> json_encode($this->dealer->hand)
+                    'cards'=> json_encode($this->dealer->hand),
+                    'updateCount' => $this->update
                 )
         );
 

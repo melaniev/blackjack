@@ -9,7 +9,7 @@
 
 	
 defined("SITE_URL")
-	or define("SITE_URL", 'http://localhost:36408');
+	or define("SITE_URL", 'https://localhost:44300');
 
 
 defined("TEMPLATES_PATH")
@@ -41,7 +41,7 @@ try {
 }
 
 // Create the Game Manager
-global $gmanager;
-$gmanager = Game_Manager::Instance();
+//global $gmanager;
+//$gmanager = Game_Manager::Instance();
 
 ?>
