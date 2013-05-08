@@ -8,6 +8,7 @@ CREATE DATABASE `swe_blackjack_db` DEFAULT CHARACTER SET utf8 COLLATE utf8_gener
 /* User Table */
 CREATE TABLE swe_blackjack_db.users(
 	userID  INT AUTO_INCREMENT UNIQUE,
+	sessID VARCHAR(250),
 	username VARCHAR(150) NOT NULL,
 	blackj_pass VARCHAR(150),
 	PRIMARY KEY (userID));
@@ -37,3 +38,16 @@ CREATE TABLE swe_blackjack_db.gameplayers(
 	FOREIGN KEY (userID) REFERENCES users(userID),
 	FOREIGN KEY (gameID) REFERENCES games(gameID));
 
+/* Deck */
+CREATE TABLE swe_blackjack_db.hand(
+	gameID  INT,
+	userID  INT,
+	card VARCHAR(20),
+	FOREIGN KEY (userID) REFERENCES users(userID),
+	FOREIGN KEY (gameID) REFERENCES games(gameID));
+
+/* Dealer */
+CREATE TABLE swe_blackjack_db.dealer(
+	gameID  INT,
+	card VARCHAR(20),
+	FOREIGN KEY (gameID) REFERENCES games(gameID));

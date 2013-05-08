@@ -1,6 +1,6 @@
 <?php
 
-	$pageTitle = 'BlackJack';
+	$pageTitle = '';
 	$pageId = 'lobby-page';
 	
 	// load config
@@ -15,15 +15,11 @@
 	//User Login
 	if($_POST['home-log-in']){
 
-
 		$thisUsername = filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING);
 		$thisPassword = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
 
-
 		$thisUserController = new BlackjackUser_Controller();
 		$loggedIn = $thisUserController->loginAccount($db, $thisUsername, $thisPassword);
-
-		$loggedIn != 1;
 
         if($loggedIn != 1){
         	//try again ?
@@ -49,7 +45,7 @@
         	//try again ?
         	header( 'Location:'.SITE_URL.'/signup.php' );
         }
-        
+
 	}else{
 
 		//confirmed that they are logged in or redirect them away from this page!!
@@ -73,6 +69,7 @@
 
 			<a href='play.php?game=newgame' class='button'>New Game</a>
 			<a href='play.php?game=join' class='button'>Join Game</a>
+			<a href='play.php?game=current' class='button'>Current Game</a>
 			<a href='' class='button'>View Past Games</a>
 
 

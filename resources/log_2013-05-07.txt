@@ -1,0 +1,101 @@
+2013-05-07 23:45:58 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-07 23:46:00 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-07 23:46:02 - INFO --> New Player Created for game; '20'
+2013-05-07 23:46:02 - INFO --> and with User ID; 0
+2013-05-07 23:46:02 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-07 23:46:02 - INFO -->  setUpOrGetHand and game ID:; '20'
+2013-05-07 23:46:03 - INFO --> New Player Created for game; '20'
+2013-05-07 23:46:03 - INFO --> and with User ID; '1'
+2013-05-07 23:46:03 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-07 23:46:03 - INFO -->  setUpOrGetHand and game ID:; '20'
+2013-05-07 23:46:03 - INFO --> playRound called
+2013-05-07 23:46:03 - INFO --> dealHand called
+2013-05-07 23:46:03 - INFO --> addCard called in Player.php
+2013-05-07 23:46:03 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-07 23:46:03 - INFO --> String version of card value: ; '08'
+2013-05-07 23:46:03 - INFO --> addCard called in Player.php
+2013-05-07 23:46:03 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-07 23:46:03 - INFO --> String version of card value: ; '02'
+2013-05-07 23:46:03 - INFO --> Updating Game State!
+2013-05-07 23:46:03 - INFO --> addCard called in Player.php
+2013-05-07 23:46:03 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-07 23:46:03 - INFO --> String version of card value: ; '03'
+2013-05-07 23:46:03 - INFO --> addCard called in Player.php
+2013-05-07 23:46:03 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-07 23:46:03 - INFO --> String version of card value: ; '06'
+2013-05-07 23:46:03 - INFO --> Updating Game State!
+2013-05-07 23:46:03 - INFO --> createANewGame in GameController 
+2013-05-07 23:46:07 - INFO --> New Player Created for game; '20'
+2013-05-07 23:46:07 - INFO --> and with User ID; 0
+2013-05-07 23:46:07 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-07 23:46:07 - INFO -->  setUpOrGetHand and game ID:; '20'
+2013-05-07 23:46:07 - INFO --> Blackjack Constructed called with id: ; '20'
+2013-05-07 23:46:54 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-07 23:46:56 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-07 23:46:58 - INFO --> New Player Created for game; '21'
+2013-05-07 23:46:58 - INFO --> and with User ID; 0
+2013-05-07 23:46:58 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-07 23:46:58 - INFO -->  setUpOrGetHand and game ID:; '21'
+2013-05-07 23:46:59 - INFO --> New Player Created for game; '21'
+2013-05-07 23:46:59 - INFO --> and with User ID; '1'
+2013-05-07 23:46:59 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-07 23:46:59 - INFO -->  setUpOrGetHand and game ID:; '21'
+2013-05-07 23:46:59 - INFO --> playRound called
+2013-05-07 23:46:59 - INFO --> dealHand called
+2013-05-07 23:46:59 - INFO --> addCard called in Player.php
+2013-05-07 23:46:59 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-07 23:46:59 - INFO --> String version of card value: ; '12'
+2013-05-07 23:46:59 - INFO --> addCard called in Player.php
+2013-05-07 23:46:59 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-07 23:46:59 - INFO --> String version of card value: ; '09'
+2013-05-07 23:46:59 - INFO --> Updating Game State!
+2013-05-07 23:46:59 - INFO --> addCard called in Player.php
+2013-05-07 23:46:59 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-07 23:46:59 - INFO --> String version of card value: ; '07'
+2013-05-07 23:46:59 - INFO --> addCard called in Player.php
+2013-05-07 23:46:59 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-07 23:46:59 - INFO --> String version of card value: ; '11'
+2013-05-07 23:46:59 - INFO --> Updating Game State!
+2013-05-07 23:46:59 - INFO --> createANewGame in GameController 
+2013-05-07 23:47:03 - INFO --> New Player Created for game; '21'
+2013-05-07 23:47:03 - INFO --> and with User ID; 0
+2013-05-07 23:47:03 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-07 23:47:03 - INFO -->  setUpOrGetHand and game ID:; '21'
+2013-05-07 23:47:03 - INFO --> Blackjack Constructed called with id: ; '21'
+2013-05-07 23:49:31 - INFO --> New Player Created for game; '21'
+2013-05-07 23:49:31 - INFO --> and with User ID; 0
+2013-05-07 23:49:31 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-07 23:49:31 - INFO -->  setUpOrGetHand and game ID:; '21'
+2013-05-07 23:49:31 - INFO --> Blackjack Constructed called with id: ; '21'
+2013-05-07 23:49:39 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-07 23:49:41 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-07 23:49:43 - INFO --> New Player Created for game; '22'
+2013-05-07 23:49:43 - INFO --> and with User ID; 0
+2013-05-07 23:49:43 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-07 23:49:43 - INFO -->  setUpOrGetHand and game ID:; '22'
+2013-05-07 23:49:44 - INFO --> New Player Created for game; '22'
+2013-05-07 23:49:44 - INFO --> and with User ID; '1'
+2013-05-07 23:49:44 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-07 23:49:44 - INFO -->  setUpOrGetHand and game ID:; '22'
+2013-05-07 23:49:44 - INFO --> playRound called
+2013-05-07 23:49:44 - INFO --> dealHand called
+2013-05-07 23:49:44 - INFO --> addCard called in Player.php
+2013-05-07 23:49:44 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-07 23:49:44 - INFO --> String version of card value: ; '05'
+2013-05-07 23:49:44 - INFO --> addCard called in Player.php
+2013-05-07 23:49:44 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-07 23:49:44 - INFO --> String version of card value: ; '12'
+2013-05-07 23:49:44 - INFO --> Updating Game State!
+2013-05-07 23:49:44 - INFO --> addCard called in Player.php
+2013-05-07 23:49:44 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-07 23:49:44 - INFO --> String version of card value: ; '01'
+2013-05-07 23:49:44 - INFO --> addCard called in Player.php
+2013-05-07 23:49:44 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-07 23:49:44 - INFO --> String version of card value: ; '01'
+2013-05-07 23:49:44 - INFO --> Updating Game State!
+2013-05-07 23:49:44 - INFO --> createANewGame in GameController 
+2013-05-07 23:49:48 - INFO --> New Player Created for game; '22'
+2013-05-07 23:49:48 - INFO --> and with User ID; 0
+2013-05-07 23:49:48 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-07 23:49:48 - INFO -->  setUpOrGetHand and game ID:; '22'
+2013-05-07 23:49:48 - INFO --> Blackjack Constructed called with id: ; '22'

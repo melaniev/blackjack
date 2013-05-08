@@ -50,7 +50,9 @@ class BlackjackUser{
 
         if ($checkAlreadyUsed != -1){
 
-            $this->insertUserInfoIntoDatabase($un, $hsh_pass);
+            $sess = session_id();
+
+            $this->insertUserInfoIntoDatabase($un, $hsh_pass, $sess);
 
             $_SESSION['Username'] = $un;
             $_SESSION['LoggedIn'] = 1;
@@ -84,9 +86,16 @@ class BlackjackUser{
 
                 $returnedHashPass = $row['blackj_pass'];
 
+                echo "Retuned Hashed Password:". $returnedHashPass."<br />";
+
                 $success = $this->checkHashedPassword($returnedHashPass, $thisPassword);
 
                 if ($success) {
+
+                    $a = session_id();
+                    if(empty($a)) session_start();
+                    echo "SID: ".SID."<br>session_id(): ".session_id()."<br>COOKIE: ".$_COOKIE["PHPSESSID"];
+
                     $_SESSION['Username'] = $thisUsername;
                     $_SESSION['LoggedIn'] = 1;                    
                 }
@@ -137,14 +146,15 @@ class BlackjackUser{
      * 
      * @return 
      */
-    private function insertUserInfoIntoDatabase($hsh_un, $hsh_pass){
+    private function insertUserInfoIntoDatabase($hsh_un, $hsh_pass, $s){
 
-        $sql = "INSERT INTO users(username, blackj_pass)
-                VALUES(:hun, :bjp)";
+        $sql = "INSERT INTO users(username, blackj_pass, sessID)
+                VALUES(:hun, :bjp, :s)";
         
         if($stmt = $this->_db->prepare($sql)) {
             $stmt->bindParam(":hun", $hsh_un, PDO::PARAM_STR);
             $stmt->bindParam(":bjp", $hsh_pass, PDO::PARAM_STR);
+            $stmt->bindParam(":s", $s, PDO::PARAM_STR);
             $stmt->execute();
             $stmt->closeCursor();
         }
@@ -155,6 +165,8 @@ class BlackjackUser{
 
         $hasher = new PasswordHash(8, false);
         $check = $hasher->CheckPassword($pw, $stored_hash);
+
+        echo "check: ".$check."<br />";
 
         return $check;
     }

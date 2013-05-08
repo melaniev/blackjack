@@ -252,7 +252,7 @@ html{
 	.a_player.not-dealer{
 		float: right;
 	}
-	#dealer{
+	#player0{
 		min-width: 80%;			
 		margin-left: auto;
 		margin-right: auto;
@@ -294,7 +294,7 @@ html{
 	#other-players  #player1 h2.username,  #player3 h2.username{
 		text-align: right;
 	}
-	#player5 .card, #dealer .card{
+	#player5 .card, #player0 .card{
 		width: 100px;
 		height: 150px;
 	}
@@ -305,7 +305,7 @@ html{
 	#home-page-login-container{
 		margin-top: 20%;
 	}
-	#dealer{
+	#player0{
 		min-width: 60%;			
 
 	}
@@ -314,7 +314,7 @@ html{
 	}
 }
 @media screen and (min-width: 1500px) {
-	#dealer{
+	#player0{
 		min-width: 50%;			
 
 	}

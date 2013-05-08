@@ -1,0 +1,181 @@
+2013-05-06 22:25:17 - INFO --> joinExistingGame() in GameManagement.php
+2013-05-06 22:25:18 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-06 22:25:21 - INFO --> New Player Created for game; '1'
+2013-05-06 22:25:21 - INFO --> and with User ID; 0
+2013-05-06 22:25:21 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 22:25:21 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 22:25:21 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 22:25:23 - INFO --> New Player Created for game; '1'
+2013-05-06 22:25:23 - INFO --> and with User ID; '1'
+2013-05-06 22:25:23 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-06 22:25:23 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 22:25:23 - INFO --> joinGame in GameController 
+2013-05-06 22:25:25 - INFO --> New Player Created for game; '1'
+2013-05-06 22:25:25 - INFO --> and with User ID; 0
+2013-05-06 22:25:25 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 22:25:25 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 22:25:25 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 22:25:30 - INFO --> New Player Created for game; '1'
+2013-05-06 22:25:30 - INFO --> and with User ID; 0
+2013-05-06 22:25:30 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 22:25:30 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 22:25:30 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 22:31:51 - INFO --> joinExistingGame() in GameManagement.php
+2013-05-06 22:31:52 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-06 22:31:55 - INFO --> New Player Created for game; '1'
+2013-05-06 22:31:55 - INFO --> and with User ID; 0
+2013-05-06 22:31:55 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 22:31:55 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 22:31:55 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 22:31:57 - INFO --> New Player Created for game; '1'
+2013-05-06 22:31:57 - INFO --> and with User ID; '1'
+2013-05-06 22:31:57 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-06 22:31:57 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 22:31:57 - INFO --> joinGame in GameController 
+2013-05-06 22:31:59 - INFO --> New Player Created for game; '1'
+2013-05-06 22:31:59 - INFO --> and with User ID; 0
+2013-05-06 22:31:59 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 22:31:59 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 22:31:59 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 22:32:04 - INFO --> New Player Created for game; '1'
+2013-05-06 22:32:04 - INFO --> and with User ID; 0
+2013-05-06 22:32:04 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 22:32:04 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 22:32:04 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 22:42:27 - INFO --> joinExistingGame() in GameManagement.php
+2013-05-06 22:42:28 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-06 22:42:32 - INFO --> New Player Created for game; '1'
+2013-05-06 22:42:32 - INFO --> and with User ID; 0
+2013-05-06 22:42:32 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 22:42:32 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 22:42:32 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 22:42:34 - INFO --> New Player Created for game; '1'
+2013-05-06 22:42:34 - INFO --> and with User ID; '1'
+2013-05-06 22:42:34 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-06 22:42:34 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 22:42:34 - INFO --> joinGame in GameController 
+2013-05-06 22:42:36 - INFO --> New Player Created for game; '1'
+2013-05-06 22:42:36 - INFO --> and with User ID; 0
+2013-05-06 22:42:36 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 22:42:36 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 22:42:36 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 22:42:41 - INFO --> New Player Created for game; '1'
+2013-05-06 22:42:41 - INFO --> and with User ID; 0
+2013-05-06 22:42:41 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 22:42:41 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 22:42:41 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 22:51:31 - INFO --> joinExistingGame() in GameManagement.php
+2013-05-06 22:51:32 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-06 22:51:35 - INFO --> New Player Created for game; '1'
+2013-05-06 22:51:35 - INFO --> and with User ID; 0
+2013-05-06 22:51:35 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 22:51:35 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 22:51:35 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 22:51:37 - INFO --> New Player Created for game; '1'
+2013-05-06 22:51:37 - INFO --> and with User ID; '1'
+2013-05-06 22:51:37 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-06 22:51:37 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 22:51:37 - INFO --> joinGame in GameController 
+2013-05-06 22:51:39 - INFO --> New Player Created for game; '1'
+2013-05-06 22:51:39 - INFO --> and with User ID; 0
+2013-05-06 22:51:39 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 22:51:39 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 22:51:39 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 22:51:44 - INFO --> New Player Created for game; '1'
+2013-05-06 22:51:44 - INFO --> and with User ID; 0
+2013-05-06 22:51:44 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 22:51:44 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 22:51:44 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 22:52:28 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-06 22:52:29 - INFO --> a Hit in the Game from player: ; 'toamjag8jsrkkua0i076nn62m7'
+2013-05-06 22:52:29 - INFO --> Hmm are we sure this is returning a player: ; NULL
+2013-05-06 22:52:29 - INFO --> It is still players turn, player: ; 'toamjag8jsrkkua0i076nn62m7'
+2013-05-06 22:52:29 - INFO --> Player delt card: ; '07_club'
+2013-05-06 23:00:36 - INFO --> joinExistingGame() in GameManagement.php
+2013-05-06 23:00:37 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-06 23:00:40 - INFO --> New Player Created for game; '1'
+2013-05-06 23:00:40 - INFO --> and with User ID; 0
+2013-05-06 23:00:40 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 23:00:40 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 23:00:40 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 23:00:42 - INFO --> New Player Created for game; '1'
+2013-05-06 23:00:42 - INFO --> and with User ID; '1'
+2013-05-06 23:00:42 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-06 23:00:42 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 23:00:43 - INFO --> joinGame in GameController 
+2013-05-06 23:00:45 - INFO --> New Player Created for game; '1'
+2013-05-06 23:00:45 - INFO --> and with User ID; 0
+2013-05-06 23:00:45 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 23:00:45 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 23:00:45 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 23:00:50 - INFO --> New Player Created for game; '1'
+2013-05-06 23:00:50 - INFO --> and with User ID; 0
+2013-05-06 23:00:50 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 23:00:50 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 23:00:50 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 23:04:17 - INFO --> joinExistingGame() in GameManagement.php
+2013-05-06 23:04:18 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-06 23:04:21 - INFO --> New Player Created for game; '1'
+2013-05-06 23:04:21 - INFO --> and with User ID; 0
+2013-05-06 23:04:21 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 23:04:21 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 23:04:21 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 23:04:23 - INFO --> New Player Created for game; '1'
+2013-05-06 23:04:23 - INFO --> and with User ID; '1'
+2013-05-06 23:04:23 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-06 23:04:23 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 23:04:23 - INFO --> joinGame in GameController 
+2013-05-06 23:04:25 - INFO --> New Player Created for game; '1'
+2013-05-06 23:04:25 - INFO --> and with User ID; 0
+2013-05-06 23:04:25 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 23:04:25 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 23:04:25 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 23:04:31 - INFO --> New Player Created for game; '1'
+2013-05-06 23:04:31 - INFO --> and with User ID; 0
+2013-05-06 23:04:31 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 23:04:31 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 23:04:31 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 23:07:33 - INFO --> joinExistingGame() in GameManagement.php
+2013-05-06 23:07:34 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-06 23:07:37 - INFO --> New Player Created for game; '1'
+2013-05-06 23:07:37 - INFO --> and with User ID; 0
+2013-05-06 23:07:37 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 23:07:37 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 23:07:37 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 23:07:39 - INFO --> New Player Created for game; '1'
+2013-05-06 23:07:39 - INFO --> and with User ID; '1'
+2013-05-06 23:07:39 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-06 23:07:39 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 23:07:39 - INFO --> joinGame in GameController 
+2013-05-06 23:07:41 - INFO --> New Player Created for game; '1'
+2013-05-06 23:07:41 - INFO --> and with User ID; 0
+2013-05-06 23:07:41 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 23:07:41 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 23:07:41 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 23:07:46 - INFO --> New Player Created for game; '1'
+2013-05-06 23:07:46 - INFO --> and with User ID; 0
+2013-05-06 23:07:46 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 23:07:46 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 23:07:46 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 23:15:46 - INFO --> joinExistingGame() in GameManagement.php
+2013-05-06 23:15:47 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-06 23:15:51 - INFO --> New Player Created for game; '1'
+2013-05-06 23:15:51 - INFO --> and with User ID; 0
+2013-05-06 23:15:51 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 23:15:51 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 23:15:51 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 23:15:53 - INFO --> New Player Created for game; '1'
+2013-05-06 23:15:53 - INFO --> and with User ID; '1'
+2013-05-06 23:15:53 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-06 23:15:53 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 23:15:53 - INFO --> joinGame in GameController 
+2013-05-06 23:15:55 - INFO --> New Player Created for game; '1'
+2013-05-06 23:15:55 - INFO --> and with User ID; 0
+2013-05-06 23:15:55 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 23:15:55 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 23:15:55 - INFO --> Blackjack Constructed called with id: ; '1'
+2013-05-06 23:16:00 - INFO --> New Player Created for game; '1'
+2013-05-06 23:16:00 - INFO --> and with User ID; 0
+2013-05-06 23:16:00 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-06 23:16:00 - INFO -->  setUpOrGetHand and game ID:; '1'
+2013-05-06 23:16:00 - INFO --> Blackjack Constructed called with id: ; '1'

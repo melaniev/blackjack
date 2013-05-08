@@ -36,7 +36,7 @@ class BlackjackGame{
      */
     public function __construct($db=NULL, $id=NULL)
     {
-        //echo "<br/>Blackjack Constructed called with id: ". $id.'<br />';
+    
         if(is_object($db))
         {
             $this->_db = $db;
@@ -50,17 +50,21 @@ class BlackjackGame{
         if ($id != NULL) {
             
             $this->_gid = $id;
+            $this->getPlayersInGame($this->_gid);
+
+            //Create a dealer
+            $this->dealer = new Player($db, 'dealer', 0, $this->_gid );
+        }else{
+            $this->dealer = NULL;
         }
 
-        //Create a dealer
-        $this->dealer = new Player($db, 'dealer');
+        
         $this->update = 0;
 
         $this->log   = KLogger::instance(dirname(__FILE__), KLogger::DEBUG);
         $this->log->logInfo('Blackjack Constructed called with id: ', $id);
 
         $this->deck = new Deck();
-
 
     }
 
@@ -92,11 +96,15 @@ class BlackjackGame{
             $stmt->closeCursor();
 
             $this->_gid = $next_id;
+            $this->getPlayersInGame($this->_gid);
 
 
         }
 
-        
+        if ($this->dealer == NULL) {
+
+           $this->dealer = new Player($db, 'dealer', 0, $this->_gid );
+        }
 
     }
 
@@ -107,14 +115,14 @@ class BlackjackGame{
 
     public function addPlayer($gid){
 
-        $new_player = new Player($db, $_SESSION['Username']);
+        $userID = $this->getUserID();
 
-        echo 'Add player called';
+        $new_player = new Player($db, $_SESSION['Username'], $userID, $gid );
+
         array_push ($this->players, $new_player);
 
         $incr = 1;
         $userID = $this->getUserID();
-        echo 'UserId is: '.$userID;
 
         //Add this player into the current players
         $sql = "INSERT INTO gameplayers(gameID, userID)
@@ -138,7 +146,6 @@ class BlackjackGame{
             $stmt->execute();
             $stmt->closeCursor();
         }
-
 
     }
     public function removePlayer($idofGame){
@@ -206,6 +213,8 @@ class BlackjackGame{
     }
     public function playRound(){
 
+        $this->log->logInfo('playRound called');
+
         $this->dealHand();
 
         echo "<br />NOW:".time()."<br />";
@@ -215,10 +224,9 @@ class BlackjackGame{
     }
     public function dealHand(){
 
-        echo "Dealing hand...";
+        $this->log->logInfo('dealHand called');
 
         
-
         // Deal a card to each player
         foreach ($this->players as $player) {
 
@@ -265,11 +273,12 @@ class BlackjackGame{
 
         $this->log->logInfo('a Hit in the Game from player: ', $p);
 
-        $player_turn = $this->getPlayerByName( $p );
+        //$player_turn = $this->getPlayerByName( $p );
 
         //If player hasn't already finished turn
 
         $this->log->logInfo('Hmm are we sure this is returning a player: ', $player_turn->played_turn);
+
         if ($player_turn->played_turn != 1) {
 
             $this->log->logInfo('It is still players turn, player: ', $p);
@@ -398,7 +407,9 @@ class BlackjackGame{
 
         $this->log->logInfo('Checking for player in getPlayerByName in Game.php, player: ', $p );
 
-        $fp = fopen("plays.php", "w");
+        $myGameFile = "plays".$this->_gid.".php";
+
+        $fp = fopen($myGameFile, "w");
             fwrite($fp, json_encode($this->players));
             fclose($fp);
  
@@ -421,33 +432,62 @@ class BlackjackGame{
         } 
     }
 
+    private function getPlayersInGame($g){
+
+       $sql = "SELECT userID
+        FROM gameplayers
+        WHERE gameID=:gm";
+
+        if($stmt = $this->_db->prepare($sql)) {
+            $stmt->bindParam(":gm", $g, PDO::PARAM_INT);
+            $stmt->execute();
+            $row = $stmt->fetchAll();
+
+            $stmt->closeCursor();
+
+            foreach ($row as $player) {
+                
+                array_push($this->players, $player['userID']);
+                echo 'Player: '.$player['userID'].'<br />';
+            }
+
+            print_r($row);
+        }
+
+    }
+
     public function updateGameState(){
+
+
+        $this->log->logInfo('Updating Game State!');
 
         $gamestate = array(
                 array(
 
                     'name'=> 'dealer',
                     'count' => $this->dealer->card_count,
-                    'cards'=> json_encode($this->dealer->hand),
+                    'cards'=> json_encode($this->dealer->setUpOrGetHand($gid, 0)),
                     'updateCount' => $this->update
                 )
         );
 
         foreach ($this->players as $player) {
 
+            $this->log->logInfo('Updating Game State for player: ', $player);
+
             $playerInfo = array(
 
                 'name' => $player->username,
                 'count' => $player->card_count,
-                'cards'=> json_encode($player->hand)
+                'cards'=> json_encode($player->setUpOrGetHand($gid, $player))
 
                 );
 
             array_push($gamestate, $playerInfo);
         }
+            $myGameFile = "plays".$this->_gid.".php";
 
-
-            $fp = fopen("plays.php", "w");
+            $fp = fopen($myGameFile, "w");
             fwrite($fp, json_encode($gamestate));
             fclose($fp);
     }
@@ -456,17 +496,17 @@ class BlackjackGame{
 
         echo 'getUserID called';
 
-        $un = $_SESSION['Username'];
+        $u = session_id();
 
         echo "Username is the session object is: ". $un;
 
         //Get the Game ID
         $sql = "SELECT userID AS uID
                 FROM users
-                WHERE username=:uN";
+                WHERE sessID=:sID";
 
         if($stmt = $this->_db->prepare($sql)) {
-            $stmt->bindParam(':uN', $un , PDO::PARAM_STR);
+            $stmt->bindParam(':sID', $u , PDO::PARAM_STR);
             $stmt->execute();
             $id = $stmt->fetch();
             $us_id = $id['uID'];

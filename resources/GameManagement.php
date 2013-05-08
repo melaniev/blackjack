@@ -45,12 +45,12 @@ class Game_Manager{
         foreach ($games as $game) {
 
             $gameid = $game['gameID'];
-            $newGame = new BlackjackGame($this->_db, $gameid);
+            //$newGame = new BlackjackGame($this->_db, $gameid);
 
           //  echo 'Type: '.gettype($newGame). '<br />';
 
             //store the game
-        array_push($this->game_holder, $newGame);
+        array_push($this->game_holder, $gameid);
       
         }
 
@@ -67,11 +67,12 @@ class Game_Manager{
 
         //If not, create a new game
         if ($currentGameCount < 51) {
+
             $newGame = new BlackjackGame();
             $newGame->newBJG();
             $gameid = $newGame->getGameID();
 
-            array_push($this->game_holder, $newGame);
+            array_push($this->game_holder, $gameid);
 
             //Add this player to the game
             $_SESSION['GameID'] = $gameid;
@@ -90,6 +91,9 @@ class Game_Manager{
 
    public function joinExistingGame(){
 
+        $this->log->logInfo('joinExistingGame() in GameManagement.php');
+
+
         $this->removePlayerFromGame();
 
         //Find the first game with an available spot
@@ -99,32 +103,16 @@ class Game_Manager{
 
         if ($currentGameCount > 0) {
 
+            print_r($this->game_holder);
+
             $gameid = $this->findGameWithLessThanMaxPlayers();
-            //Add new player to the Game Players
-            //$oldGame = new BlackjackGame($_db, $gameid);
 
-            foreach ($this->game_holder as $game) {
+            $game = new BlackjackGame( NULL, $gameid );
+            //add player to this game
+            $game->addPlayer( $gameid );
 
-                 echo 'Type: '.gettype($game). '<br />';
-
-                 print_r($game);
-
-                 $gid = $game->_gid;
-                 echo 'id: '.$gid. '<br />';
-
-                if ( $gid == $gameid) {
-                    echo "I found the game for you!!";
-
-                    //add player to this game
-                    $game->addPlayer($gameid);
-
-                    //Add this player to the game
-                    $_SESSION['GameID'] = $gameid;
-                }
-
-          
-            }
-
+            //Add this player to the game
+            $_SESSION['GameID'] = $gameid;
 
 
         }else{
@@ -137,43 +125,7 @@ class Game_Manager{
         
     }
 
-    public function makeAHit($thisPlayersGameID){
 
-        $this->log->logInfo('makeaHit called in GameManagement');
-        $this->log->logInfo('Looking for a Game from a player with id: ', $thisPlayersGameID);
-
-        //find a game by id
-        //pass that move and player to that game
-        foreach ($this->game_holder as $game) {
-
-                $this->log->logInfo('checking game with gameid: ', $game->_gid);
-
-                if ($game->_gid == $thisPlayersGameID){
-
-                    $this->log->logInfo('game found in Game Management with game id', $thisPlayersGameID);
-                    
-                    $game->hit($_SESSION['Username']);
-
-                    $this->log->logInfo('sending a hit request to Game with username: ', $_SESSION['Username']);
-
-                }  
-        }
-        
-    }
-    public function makeAStay($thisPlayersGameID){
-
-        //find a game by id
-        //pass that move and player to that game
-        foreach ($this->game_holder as $game) {
-
-                if ($game->_gid == $thisPlayersGameID){
-                    
-                    echo "<p>A Game found for that Move</p>";
-                    $game->stay($_SESSION['Username']);
-                }  
-        }
- 
-    }
     private function retrieveCurrentGames(){
 
         $active = 1;

@@ -7,30 +7,66 @@
 	require_once("/resources/config.php");
 	require_once("/resources/UserController.php");
 	require_once("/resources/GameController.php");
+	require_once("/resources/Game.php");
 	require_once(TEMPLATES_PATH . "/header.php");
 ?>
 
 <?php
-	if($_GET){
 
 //check if logged in, if not, go to login page
+	if($_SESSION['LoggedIn'] != 1){
+
+		header( 'Location:'.SITE_URL.'/login.php' );
+
+	}
+
+	$a = session_id();
+	echo "Session ID: ". $a;
+
+	echo "Game type: ".$_SESSION['gametype']."<br />";
+	
+	if($_GET){
 
 		$gametype = filter_input(INPUT_GET, 'game', FILTER_SANITIZE_STRING);
 
-
 		if($gametype == 'newgame'){
 
-			echo 'You want a new game!';
-			//createANewGame();
+			$_SESSION['gametype'] = "new";
+			header( 'Location:'.SITE_URL.'/play.php' );
+			
 		}
 		if($gametype == 'join'){
-
-			echo 'You want to join existing game!';
-			//joinGame();
+			$_SESSION['gametype'] = "join";
+			header( 'Location:'.SITE_URL.'/play.php' );
+			joinGame();
 		}		
-		
+		if($gametype == 'current'){
+			$_SESSION['gametype'] = "crnt";
+			header( 'Location:'.SITE_URL.'/play.php' );
+		}		
 	}
 
+	if(isset($_SESSION['gametype'])){
+
+		if ($_SESSION['gametype'] == "new") {
+			createANewGame();
+		}
+		elseif ($_SESSION['gametype'] == "join") {
+			joinGame();
+		}
+		elseif ($_SESSION['gametype'] == "crnt") {
+
+			if (isset($_SESSION['GameID'])) {
+				
+				$game = new BlackjackGame(NULL, $_SESSION['GameID']);
+
+			}else{
+				//hmmm, can check in the db and see if they have a game for you in there
+			}
+		}else{
+			header( 'Location:'.SITE_URL.'/lobby.php' );
+		}
+	}
 ?>
 
 		<div id='logout-lobby-controls'>
@@ -41,6 +77,8 @@
 		<div id='side-bar'>
 			<div id='chat' class='text-panels'>
 				<h2>Chat</h2>
+
+				<p>Game: <?php echo $_SESSION['GameID'] ?></p>
 			</div>
 			<div id='stats' class='text-panels'>
 				<h2>Stats or Whatever</h2>
@@ -53,7 +91,7 @@
 
 		</div>
 		<div id='table-top'>
-			<div class='a_player' id='dealer'>
+			<div class='a_player' id='player0'>
 				<h2 class='username'>Dealer</h2>
 				<div class='card-total'><h3>Total:</h3><span class='current-total'>##</span></div>
 				<div class='card'></div>
@@ -193,11 +231,11 @@
 
         $.ajax({
             type: 'POST',
-            //data: {action: 'update'},
             dataType: 'json',
-            url: '<?php echo SITE_URL; ?>/plays.php',
+            url: '<?php echo SITE_URL; ?>/plays<?php echo $_SESSION['GameID'] ?>.php',
             success: function (data) {
 
+            	//updateBoard(JSON.stringify(data));
             	updateBoard(data);
 
             },
@@ -208,20 +246,42 @@
 
 function updateBoard(gamedata){
 
+// 	var obj = jQuery.parseJSON('{"name":"John"}');
+// alert( obj.name === "John" );
+
 	var gameinfo = gamedata;
+	var spot;
 
 	    $.each(gameinfo, function(index, element) {
-	        //alert(element.name);
+
+	    	
 
 	        if (element.name = 'dealer') {
 
-	        	$('#dealer').children('.card').css({'background-color': 'yellow', 'border': '5px solid red'});
+	        	$('#player0').children('.card').css({'background-color': 'yellow', 'border': '5px solid red'});
+	        	spot = 0;
 
-	        	for (var i = 0; i < element.cards; i++) {
+	        	
 
-	        		alert(i);
-	        		
-	        	};
+	        }
+	        else if (element.name = '<?php echo $_SESSION['Username']; ?>') {
+
+	        	$('#player5').children('.card').css({'background-color': 'blue', 'border': '5px solid red'});
+	        	spot = 5;
+
+
+	        }else{
+
+	        }
+
+	        var cardstr = element.cards;
+	        var cards = cardstr.split(',');
+	        for (var i = 0; i < cards.length; i++) {
+
+	        	var cleanCard = cards[i].replace('[','');
+	        	var cleanCard = cleanCard.replace(']','');
+	        	alert(cleanCard);
+
 	        };
 	    });
 

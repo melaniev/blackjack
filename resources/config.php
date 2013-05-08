@@ -41,7 +41,7 @@ try {
 }
 
 // Create the Game Manager
-//global $gmanager;
-//$gmanager = Game_Manager::Instance();
+global $gmanager;
+$gmanager = Game_Manager::Instance();
 
 ?>
