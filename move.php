@@ -16,7 +16,7 @@ $log->logInfo('Move.php');
 
             if ($playtype == 'Hit') {
                 
-                hit();
+                hit($_SESSION['GameID']);
                 $log->logInfo('Hit in Move.php');
 
             }

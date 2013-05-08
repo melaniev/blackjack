@@ -21,9 +21,6 @@
 	}
 
 	$a = session_id();
-	echo "Session ID: ". $a;
-
-	echo "Game type: ".$_SESSION['gametype']."<br />";
 	
 	if($_GET){
 
@@ -36,6 +33,7 @@
 			
 		}
 		if($gametype == 'join'){
+			
 			$_SESSION['gametype'] = "join";
 			header( 'Location:'.SITE_URL.'/play.php' );
 			joinGame();
@@ -94,11 +92,11 @@
 			<div class='a_player' id='player0'>
 				<h2 class='username'>Dealer</h2>
 				<div class='card-total'><h3>Total:</h3><span class='current-total'>##</span></div>
-				<div class='card'></div>
-				<div class='card'></div>
-				<div class='card'></div>
-				<div class='card'></div>
-				<div class='card'></div>
+					<div class='card 3'></div>
+					<div class='card 1'></div>
+					<div class='card 2'></div>
+					<div class='card 4'></div>
+					<div class='card 5'></div>
 			</div>
 			<div id='other-players'>
 
@@ -106,40 +104,40 @@
 				<div class='a_player not-dealer' id='player1'>
 					<h2 class='username'>Player 1</h2>
 					<div class='card-total'><h3>Total:</h3><span class='current-total'>##</span></div>
-					<div class='card'></div>
-					<div class='card'></div>
-					<div class='card'></div>
-					<div class='card'></div>
+					<div class='card 3'></div>
+					<div class='card 1'></div>
+					<div class='card 2'></div>
+					<div class='card 4'></div>
 				</div>
 
 				<!-- Player 2 -->
 				<div class='a_player  not-dealer' id='player2'>
 					<h2 class='username'>Player 2</h2>
 					<div class='card-total'><h3>Total:</h3><span class='current-total'>##</span></div>
-					<div class='card'></div>
-					<div class='card'></div>
-					<div class='card'></div>
-					<div class='card'></div>
+					<div class='card 3'></div>
+					<div class='card 1'></div>
+					<div class='card 2'></div>
+					<div class='card 4'></div>
 				</div>
 
 				<!-- Player 3 -->
 				<div class='a_player  not-dealer' id='player3'>
 					<h2 class='username'>Player 3</h2>
 					<div class='card-total'><h3>Total:</h3><span class='current-total'>##</span></div>
-					<div class='card'></div>
-					<div class='card'></div>
-					<div class='card'></div>
-					<div class='card'></div>
+					<div class='card 3'></div>
+					<div class='card 1'></div>
+					<div class='card 2'></div>
+					<div class='card 4'></div>
 				</div>
 
 				<!-- Player 4 -->
 				<div class='a_player  not-dealer' id='player4'>
 					<h2 class='username'>Player 4</h2>
 					<div class='card-total'><h3>Total:</h3><span class='current-total'>##</span></div>
-					<div class='card'></div>
-					<div class='card'></div>
-					<div class='card'></div>
-					<div class='card'></div>
+					<div class='card 3'></div>
+					<div class='card 1'></div>
+					<div class='card 2'></div>
+					<div class='card 4'></div>
 				</div>
 			</div>
 
@@ -147,11 +145,11 @@
 				<div class='a_player  not-dealer' id='player5'>
 					<h2 class='username'><?php echo $_SESSION['Username']; ?></h2>
 					<div class='card-total'><h3>Total:</h3><span class='current-total'>##</span></div>
-					<div class='card'></div>
-					<div class='card'></div>
-					<div class='card'></div>
-					<div class='card'></div>
-					<div class='card'></div>
+					<div class='card 3'></div>
+					<div class='card 1'></div>
+					<div class='card 2'></div>
+					<div class='card 4'></div>
+					<div class='card 5'></div>
 					<form action='' method='post'>
 						<input type='submit' id='staybutton' class='button playbutton' style='width:60px;' value='Stay' name='stay'/>
 					</form>
@@ -207,25 +205,6 @@
 
 	});
 
-// 	(function poll() {
-//     setTimeout(function () {
-
-//         $.ajax({
-//             type: 'POST',
-//             dataType: 'html',
-//             url: '<?php echo SITE_URL; ?>/actionlog.php',
-//             success: function (data) {
-
-//             	//$('#side-bar #stats #status-feed').append('Info from server recieved<br />');
-//             	$('#side-bar #stats #status-feed').append(data + '<br />');
-
-//             },
-//             complete: poll
-//         });
-//     }, 2000);
-// })();
-
-
 	(function updateboard() {
     setTimeout(function () {
 
@@ -235,7 +214,6 @@
             url: '<?php echo SITE_URL; ?>/plays<?php echo $_SESSION['GameID'] ?>.php',
             success: function (data) {
 
-            	//updateBoard(JSON.stringify(data));
             	updateBoard(data);
 
             },
@@ -246,45 +224,58 @@
 
 function updateBoard(gamedata){
 
-// 	var obj = jQuery.parseJSON('{"name":"John"}');
-// alert( obj.name === "John" );
-
 	var gameinfo = gamedata;
-	var spot;
+	var total;
+	var cardstr;
+	var cards;
 
-	    $.each(gameinfo, function(index, element) {
+	   	for (var i = 0; i < gameinfo.length; i++) {
 
-	    	
+	    	var player = gameinfo[i];
 
-	        if (element.name = 'dealer') {
+	    	 total = player.count;
+	    	 cardstr = player.cards;
+    		 cards = cardstr.split(',');
 
-	        	$('#player0').children('.card').css({'background-color': 'yellow', 'border': '5px solid red'});
-	        	spot = 0;
-
+	        if (player.name == 'dealer') {
 	        	
+	        	showCards(0, total, cards);
 
 	        }
-	        else if (element.name = '<?php echo $_SESSION['Username']; ?>') {
+	        if (player.name == '<?php echo $_SESSION['Username']; ?>') {
 
-	        	$('#player5').children('.card').css({'background-color': 'blue', 'border': '5px solid red'});
-	        	spot = 5;
+	        	showCards(5, total, cards);
 
-
-	        }else{
 
 	        }
+		}
 
-	        var cardstr = element.cards;
-	        var cards = cardstr.split(',');
-	        for (var i = 0; i < cards.length; i++) {
+}
 
-	        	var cleanCard = cards[i].replace('[','');
-	        	var cleanCard = cleanCard.replace(']','');
-	        	alert(cleanCard);
+function showCards(spot, cardCount, mycards){
 
-	        };
-	    });
+	var spot = spot;
+	var cardSpace = '#player'+spot;
 
+    //Update total
+    
+    $(cardSpace + ' .current-total').text(cardCount);
+
+
+    for (var i = 0; i < mycards.length; i++) {
+
+
+    	var cleanCard = mycards[i].replace('[','');
+    	var cleanCard = cleanCard.replace(']','');
+    	var cleanCard = cleanCard.replace('"','');
+    	var cleanCard = cleanCard.replace('"','');
+    	var j = i+1;
+
+    	var cardurl = 'url("/images/content/cards/'+cleanCard+'.png")';
+    	
+    	$(cardSpace).children('.card.'+j).css({'background-image': cardurl, 'border': '2px solid red'});
+
+	};
 }
 
 </script>

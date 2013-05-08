@@ -64,12 +64,14 @@ class BlackjackGame{
         $this->log   = KLogger::instance(dirname(__FILE__), KLogger::DEBUG);
         $this->log->logInfo('Blackjack Constructed called with id: ', $id);
 
-        $this->deck = new Deck();
+        
 
     }
 
 
     public function newBJG(){
+
+        $this->deck = new Deck();
 
         //Store this game in the database
         $nowActive = 1;
@@ -217,8 +219,6 @@ class BlackjackGame{
 
         $this->dealHand();
 
-        echo "<br />NOW:".time()."<br />";
-
         $time = time();
 
     }
@@ -244,7 +244,7 @@ class BlackjackGame{
         $this->dealer->addToCardTotal( $valueofCard );
 
         $this->update= $this->update + 1;
-        $this->updateGameState();
+        $this->updateGameState1($this->_gid);
         
 
         // Deal another card to each player
@@ -263,47 +263,86 @@ class BlackjackGame{
         $valueofCard = $this->getCardValue( $card );
         $this->dealer->addToCardTotal( $valueofCard );
 
-        print_r($this->deck);
-
         $this->update= $this->update + 1;
-        $this->updateGameState();
+        $this->updateGameState1($this->_gid);
 
     }
-    public function hit( $p ){
+    public function hit( $p, $g ){
 
         $this->log->logInfo('a Hit in the Game from player: ', $p);
 
-        //$player_turn = $this->getPlayerByName( $p );
+         $sql = "SELECT userID
+                FROM users
+                WHERE sessID=:sess
+                LIMIT 1";
+
+            $stmt = $this->_db->prepare($sql);
+            $stmt->bindParam(':sess', $p, PDO::PARAM_STR);
+            $stmt->execute();
+            $row = $stmt->fetch();
+            if($stmt->rowCount()==1)
+            {
+                $user = $row['userID'];
+            }
+
 
         //If player hasn't already finished turn
 
-        $this->log->logInfo('Hmm are we sure this is returning a player: ', $player_turn->played_turn);
+        $this->log->logInfo('Hmm are we sure this is returning a player: ', $user);
 
-        if ($player_turn->played_turn != 1) {
+        //if ($player_turn->played_turn != 1) {
+        if (true) {
 
-            $this->log->logInfo('It is still players turn, player: ', $p);
+            $this->log->logInfo('It is still players turn, player: ', $user);
             
-            $deck = $this->deck;
-            $newCard = $deck->deal();
+            $this->deck = new Deck();
+            $newCard = $this->deck->deal($g);
 
             $this->log->logInfo('Player delt card: ', $newCard);
 
+            if ($user != 0) {
+
+             $sql = "INSERT INTO hand(gameID, userID, card)
+                    VALUES(:gid, :uid, :car)";
+            
+                if($stmt = $this->_db->prepare($sql)) {
+
+                    $stmt->bindParam(":gid", $g, PDO::PARAM_INT);
+                    $stmt->bindParam(":uid", $user, PDO::PARAM_INT);
+                    $stmt->bindParam(":car", $newCard, PDO::PARAM_STR);
+                    $stmt->execute();
+                    $stmt->closeCursor();
+                }          
+            }else{
+                //its the dealer!
+                 $sql = "INSERT INTO dealer(gameID, card)
+                        VALUES(:gid, :car)";
+                
+                if($stmt = $this->_db->prepare($sql)) {
+
+                    $stmt->bindParam(":gid", $g, PDO::PARAM_INT);
+                    $stmt->bindParam(":car", $newCard, PDO::PARAM_STR);
+                    $stmt->execute();
+                    $stmt->closeCursor();
+                }                
+            }
+
             //first check and make sure an object was returned!!
-            $player_turn->addCard( $newCard );
+            //$player_turn->addCard( $newCard );
             $valueofCard = $this->getCardValue( $newCard );
 
             $this->log->logInfo('The value of the new card is ', $valueofCard);
-            $player_turn->addToCardTotal( $valueofCard );
+           // $player_turn->addToCardTotal( $valueofCard );
 
-            $this->log->logInfo('Player now has total: ', $player_turn->card_count);
+           // $this->log->logInfo('Player now has total: ', $player_turn->card_count);
 
         }else{
-            $this->log->logInfo('Players turn was already over, player: ', $p);
+            $this->log->logInfo('Players turn was already over, player: ', $user);
         }
 
-        updateTurn();
+        //updateTurn();
         $this->update= $this->update + 1;
-        updateGameState();
+        $this->updateGameState2($g);
 
         $this->log->logInfo('A Hit in Game.php ');
     }
@@ -363,7 +402,7 @@ class BlackjackGame{
 
         switch ($card_value) {
             case "01":
-                return 1;
+                return 11;
                 break;
             case "02":
                 return 2;
@@ -396,6 +435,9 @@ class BlackjackGame{
                 return 10;
                 break;
             case "12":
+                return 10;
+                break;
+            case "13":
                 return 10;
                 break;
         }
@@ -448,15 +490,12 @@ class BlackjackGame{
             foreach ($row as $player) {
                 
                 array_push($this->players, $player['userID']);
-                echo 'Player: '.$player['userID'].'<br />';
             }
-
-            print_r($row);
         }
 
     }
 
-    public function updateGameState(){
+    public function updateGameState1($gid){
 
 
         $this->log->logInfo('Updating Game State!');
@@ -481,7 +520,9 @@ class BlackjackGame{
                 'count' => $player->card_count,
                 'cards'=> json_encode($player->setUpOrGetHand($gid, $player))
 
-                );
+            );
+
+            $this->log->logInfo('username:', $player->username);
 
             array_push($gamestate, $playerInfo);
         }
@@ -492,13 +533,91 @@ class BlackjackGame{
             fclose($fp);
     }
 
+    // public function updateGameState2($gid){
+
+
+    //     $this->log->logInfo('Updating Game State 22222222!');
+
+    //     $gamestate = array(
+    //             // array(
+
+    //             //     'name'=> 'dealer',
+    //             //     'count' => $this->dealer->card_count,
+    //             //     'cards'=> json_encode($this->dealer->setUpOrGetHand($gid, 0)),
+    //             //     'updateCount' => $this->update
+    //             // )
+    //     );
+
+    //     foreach ($this->players as $player) {
+
+    //         $thisUsername;
+
+    //         $this->log->logInfo('Updating Game State for player: ', $player);
+
+    //         //Get the username
+    //             $sql = "SELECT username AS un
+    //             FROM users
+    //             WHERE userID=:uID";
+
+    //             if($stmt = $this->_db->prepare($sql)) {
+
+    //                 $stmt->bindParam(':uID', $player , PDO::PARAM_INT);
+    //                 $stmt->execute();
+    //                 $row = $stmt->fetch();
+    //                 $thisUsername = $row['un'];
+
+    //                 $stmt->closeCursor();
+    //             }
+
+    //             $this->log->logInfo('in UG2, their username is: ', $thisUsername);
+
+    //             //Get the hand
+    //            $sql = "SELECT card AS cards
+    //                 FROM hand
+    //                 WHERE gameID=:gID AND userID = :uID";
+
+    //             if($stmt = $this->_db->prepare($sql)) {
+
+    //                 $stmt->bindParam(":gID", $gid, PDO::PARAM_INT);
+    //                 $stmt->bindParam(":uID", $player , PDO::PARAM_INT);
+    //                 $stmt->execute();
+    //                 $myCards = $stmt->fetchAll();
+                                
+    //                 $stmt->closeCursor();
+    //             }
+
+    //             $myHand = array();
+    //             $newCount = 0;
+    //             foreach ($myCards as $aCard) {
+
+    //                 $this->log->logInfo('in UG2, their cards are: ', $aCard['cards']);
+    //                 array_push($myHand, $aCard['cards'] );
+    //                 $newCount = $newCount + $this->getCardValue($aCard['cards']);
+
+    //             }
+
+    //             $this->log->logInfo('in UG2, their count is now: ', $newCount);
+
+    //         $playerInfo = array(
+
+    //             'name' =>$thisUsername,
+    //             'count' => $newCount,
+    //             'cards'=> json_encode($myHand)
+
+    //         );
+
+    //         array_push($gamestate, $playerInfo);
+    //     }
+    //         $myGameFile = "plays".$gid.".php";
+
+    //         $fp = fopen($myGameFile, "w");
+    //         fwrite($fp, json_encode($gamestate));
+    //         fclose($fp);
+    // }
+
     private function getUserID(){
 
-        echo 'getUserID called';
-
         $u = session_id();
-
-        echo "Username is the session object is: ". $un;
 
         //Get the Game ID
         $sql = "SELECT userID AS uID

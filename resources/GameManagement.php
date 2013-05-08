@@ -40,14 +40,11 @@ class Game_Manager{
 
         $games = $this->retrieveCurrentGames();
 
-        print_r($games);
-
         foreach ($games as $game) {
 
             $gameid = $game['gameID'];
             //$newGame = new BlackjackGame($this->_db, $gameid);
 
-          //  echo 'Type: '.gettype($newGame). '<br />';
 
             //store the game
         array_push($this->game_holder, $gameid);
@@ -84,7 +81,7 @@ class Game_Manager{
             $newGame->playRound();
 
         }else{
-            echo "Sorry, already the maximum number of games being played";
+            
         }
         
     }
@@ -103,7 +100,6 @@ class Game_Manager{
 
         if ($currentGameCount > 0) {
 
-            print_r($this->game_holder);
 
             $gameid = $this->findGameWithLessThanMaxPlayers();
 
@@ -156,9 +152,6 @@ class Game_Manager{
             $oldGame->removePlayer($old_game_id);
         }
 
-
-
-        //Remove this player from the Game Players
     }
 
 
@@ -204,9 +197,6 @@ class Game_Manager{
             $stmt->execute();
             $row = $stmt->fetch();
             $gameidtoJoin = $row['gameID'];
-
-            echo $row.'<br />array: ';
-            print_r($row);
 
             $stmt->closeCursor();
 

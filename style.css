@@ -181,21 +181,18 @@ html{
 }
 
 .a_player{
-	border: 2px solid purple;
 	width: 95%;
 	margin: 5px;
 	padding: 5px;
 	min-height: 150px;
 }
 #other-players{
-	border: 2px solid orange;
 	overflow: auto;
 }
 .card{
 	width: 80px;
 	height: 120px;
 	margin: 5px;
-	border: 2px solid black;
 	display: inline-block;
 	background-color: white;
 	border-radius: 5px;
@@ -203,11 +200,10 @@ html{
 
 #chat{
 	height: 45%;
-	border: 2px solid red;
 }
 #stats{
 	height: 45%;
-	border: 2px solid green;
+
 }
 @media screen and (min-width: 350px) {
 

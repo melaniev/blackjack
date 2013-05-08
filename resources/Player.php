@@ -35,9 +35,7 @@ class Player{
     //  * @return void
     //  */
     public function __construct($db=NULL, $sessuser, $uid, $gid)
-    {
-
-        echo "<p>Player constructor</p>";        
+    {      
 
         if(is_object($db))
         {
@@ -63,7 +61,7 @@ class Player{
 
     }
 
-    public function addCard($card){
+    public function addCard($card, $user){
 
          $this->log->logInfo('addCard called in Player.php for user: ', $this->uID);
 

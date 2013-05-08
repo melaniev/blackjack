@@ -13,7 +13,7 @@
 
 				<div id='pretty-login'>
 					<span class='login-label'>username: </span><input type='text' name='username' class='login-input' id='login-username'/><br />
-					<span class='login-label'>password: </span><input type='text' name='password' class='login-input' id='login-password'/><br />
+					<span class='login-label'>password: </span><input type='password' name='password' class='login-input' id='login-password'/><br />
 					<a href='signup.php'><span style='font-size:140%;' class='login-label'>No Account? Sign Up! &#62; </span></a>
 
 				</div>

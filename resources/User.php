@@ -86,18 +86,26 @@ class BlackjackUser{
 
                 $returnedHashPass = $row['blackj_pass'];
 
-                echo "Retuned Hashed Password:". $returnedHashPass."<br />";
-
                 $success = $this->checkHashedPassword($returnedHashPass, $thisPassword);
 
                 if ($success) {
 
                     $a = session_id();
                     if(empty($a)) session_start();
-                    echo "SID: ".SID."<br>session_id(): ".session_id()."<br>COOKIE: ".$_COOKIE["PHPSESSID"];
 
                     $_SESSION['Username'] = $thisUsername;
                     $_SESSION['LoggedIn'] = 1;                    
+                }
+                //update session
+                $sql = "UPDATE users
+                        SET sessID = :newSess
+                        WHERE username=:uN";
+
+                if($stmt = $this->_db->prepare($sql)) {    
+                    $stmt->bindParam(":newSess", $a , PDO::PARAM_STR);  
+                    $stmt->bindParam(":uN", $thisUsername , PDO::PARAM_INT);
+                    $stmt->execute();
+                    $stmt->closeCursor();
                 }
 
                 return 1;
@@ -165,8 +173,6 @@ class BlackjackUser{
 
         $hasher = new PasswordHash(8, false);
         $check = $hasher->CheckPassword($pw, $stored_hash);
-
-        echo "check: ".$check."<br />";
 
         return $check;
     }

@@ -1,0 +1,1 @@
+[{"name":"dealer","count":12,"cards":"[\"08_spade\",\"06_heart\",\"10_spade\",\"06_spade\"]","updateCount":2},{"name":"JJ","count":18,"cards":"[]"}]
