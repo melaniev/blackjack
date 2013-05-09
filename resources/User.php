@@ -17,6 +17,7 @@ class BlackjackUser{
      * @var object
      */
     private $_db;
+    public $log;
  
  
     /**
@@ -36,10 +37,15 @@ class BlackjackUser{
             $dsn = "mysql:host=".DB_HOST.";dbname=".DB_NAME;
             $this->_db = new PDO($dsn, DB_USER, DB_PASS);
         }
+
+        $this->log   = KLogger::instance(dirname(__FILE__), KLogger::DEBUG);
+        $this->log->logInfo('User Object Created');
     }
 
 
     public function createUserAccountInfo($un, $pass1){
+
+        $this->log->logInfo('createUserAccountInfo');
 
 
         //$hsh_un = $this->hashUsername($un);
@@ -50,9 +56,11 @@ class BlackjackUser{
 
         if ($checkAlreadyUsed != -1){
 
+            session_regenerate_id(true);
             $sess = session_id();
 
-            $this->insertUserInfoIntoDatabase($un, $hsh_pass, $sess);
+            $userID = $this->insertUserInfoIntoDatabase($un, $hsh_pass, $sess);
+            $this->giveThemABlankRecord($userID);
 
             $_SESSION['Username'] = $un;
             $_SESSION['LoggedIn'] = 1;
@@ -167,8 +175,42 @@ class BlackjackUser{
             $stmt->closeCursor();
         }
 
-    }
+                //Get the Game ID
+        $sql = "SELECT MAX(userID) AS nextID
+                FROM users";
 
+        if($stmt = $this->_db->prepare($sql)) {
+            $stmt->execute();
+            $id = $stmt->fetch();
+            $next_id = $id['nextID'];
+            
+            $stmt->closeCursor();
+
+            return $next_id;
+        }
+
+    }
+    private function giveThemABlankRecord($usnm){
+
+        $this->log->logInfo('giveThemABlankRecord');
+
+        $wins = 0;
+        $losses = 0;
+        $draws = 0;
+
+        $sql = "INSERT INTO records(userID, wins, losses, draws)
+                VALUES(:un, :win, :loss, :drw)";
+        
+        if($stmt = $this->_db->prepare($sql)) {
+            $stmt->bindParam(":un", $usnm, PDO::PARAM_INT);
+            $stmt->bindParam(":win", $wins, PDO::PARAM_INT);
+            $stmt->bindParam(":loss", $losses, PDO::PARAM_INT);
+            $stmt->bindParam(":drw", $draws, PDO::PARAM_INT);
+            $stmt->execute();
+            $stmt->closeCursor();
+        }
+
+    }
     private function checkHashedPassword($stored_hash, $pw){
 
         $hasher = new PasswordHash(8, false);

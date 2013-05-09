@@ -22,7 +22,7 @@ $log->logInfo('Move.php');
             }
             if ($playtype == 'Stay') {
                
-               stay();
+               stay($_SESSION['GameID']);
                $log->logInfo('Stay in Move.php');
 
             }

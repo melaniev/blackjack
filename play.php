@@ -33,7 +33,7 @@
 			
 		}
 		if($gametype == 'join'){
-			
+
 			$_SESSION['gametype'] = "join";
 			header( 'Location:'.SITE_URL.'/play.php' );
 			joinGame();
@@ -188,7 +188,6 @@
 
 		$('#staybutton').click(function(event){
 			event.preventDefault();
-			alert('stay!');
 
 			$.ajax({
 	            type: 'POST',

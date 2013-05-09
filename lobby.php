@@ -2,6 +2,7 @@
 
 	$pageTitle = '';
 	$pageId = 'lobby-page';
+	//$myRecords = getRecord();
 	
 	// load config
 	require_once("/resources/config.php");
@@ -70,7 +71,7 @@
 			<a href='play.php?game=newgame' class='button'>New Game</a>
 			<a href='play.php?game=join' class='button'>Join Game</a>
 			<a href='play.php?game=current' class='button'>Current Game</a>
-			<a href='' class='button'>View Past Games</a>
+			<a href='thepastisthepast.php' class='button'>View Past Games</a>
 
 
 		</div>

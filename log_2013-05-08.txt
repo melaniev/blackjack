@@ -22,3 +22,12 @@
 2013-05-08 15:16:05 - INFO --> Hit in Move.php
 2013-05-08 15:31:12 - INFO --> Move.php
 2013-05-08 15:31:15 - INFO --> Hit in Move.php
+2013-05-08 20:20:17 - INFO --> Move.php
+2013-05-08 21:03:00 - INFO --> Move.php
+2013-05-08 21:03:03 - INFO --> Hit in Move.php
+2013-05-08 21:20:19 - INFO --> Move.php
+2013-05-08 21:20:23 - INFO --> Hit in Move.php
+2013-05-08 22:19:34 - INFO --> Move.php
+2013-05-08 22:19:37 - INFO --> Hit in Move.php
+2013-05-08 22:20:56 - INFO --> Move.php
+2013-05-08 22:20:59 - INFO --> Hit in Move.php

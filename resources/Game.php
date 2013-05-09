@@ -224,6 +224,8 @@ class BlackjackGame{
     }
     public function dealHand(){
 
+        $playtype = "dealt";
+
         $this->log->logInfo('dealHand called');
 
         
@@ -235,6 +237,8 @@ class BlackjackGame{
             $valueofCard = $this->getCardValue( $card );
             $player->addToCardTotal( $valueofCard );
 
+            $this->saveMove($this->_gid, $player->uID, $playtype, $card, $valueofCard);
+
         }
 
         //Deal to the dealer
@@ -242,6 +246,8 @@ class BlackjackGame{
         $this->dealer->addCard($card);
         $valueofCard = $this->getCardValue( $card );
         $this->dealer->addToCardTotal( $valueofCard );
+
+        $this->saveDealerMove($this->_gid, $playtype, $card, $valueofCard);
 
         $this->update= $this->update + 1;
         $this->updateGameState1($this->_gid);
@@ -254,7 +260,10 @@ class BlackjackGame{
             $player->addCard( $card );
             $valueofCard = $this->getCardValue( $card );
             $player->addToCardTotal( $valueofCard );
-            
+
+            $oldTotal = $this->getHandTotal($this->_gid, $player->uID );
+            $newTotal = $oldTotal + $valueofCard;
+            $this->saveMove($this->_gid, $player->uID, $playtype, $card, $newTotal);
         }
 
         //Deal another to the dealer
@@ -263,11 +272,123 @@ class BlackjackGame{
         $valueofCard = $this->getCardValue( $card );
         $this->dealer->addToCardTotal( $valueofCard );
 
+        $oldTotal = $this->getHandTotal($this->_gid, 0 );
+        $newTotal = $oldTotal + $valueofCard;
+        $this->saveDealerMove($this->_gid, $playtype, $card, $newTotal);
+
         $this->update= $this->update + 1;
         $this->updateGameState1($this->_gid);
 
+        $this->updateTurn($g);
+
+    }
+    private function getHandTotal($g, $p){
+
+        $lastMove;
+        $oldTotal;
+
+        if($p != 0){
+
+            $sql = "SELECT MAX(moveID) AS lastMove
+                    FROM moves
+                    WHERE gameID=:gID AND userID=:uID";
+
+            if($stmt = $this->_db->prepare($sql)) {
+
+                $stmt->bindParam(":gID", $g, PDO::PARAM_INT);
+                $stmt->bindParam(":uID", $p, PDO::PARAM_INT);
+                $stmt->execute();
+                $last = $stmt->fetch();
+
+                $lastMove = $last['lastMove'];
+
+                $stmt->closeCursor();
+            }
+
+            $sql = "SELECT newTotal
+                    FROM moves
+                    WHERE moveID=:mID";
+
+            if($stmt = $this->_db->prepare($sql)) {
+
+                $stmt->bindParam(":mID", $lastMove, PDO::PARAM_INT);
+                $stmt->execute();
+                $total = $stmt->fetch();
+
+                $oldTotal = $total['newTotal'];
+
+                $stmt->closeCursor();
+            }
+
+        }else{
+            
+                $sql = "SELECT MAX(moveID) AS lastMove
+                    FROM dealerMoves
+                    WHERE gameID=:gID";
+
+            if($stmt = $this->_db->prepare($sql)) {
+
+                $stmt->bindParam(":gID", $g, PDO::PARAM_INT);
+                $stmt->execute();
+                $last = $stmt->fetch();
+
+                $lastMove = $last['lastMove'];
+
+                $stmt->closeCursor();
+            }
+
+            $sql = "SELECT newTotal
+                    FROM dealerMoves
+                    WHERE moveID=:mID";
+
+            if($stmt = $this->_db->prepare($sql)) {
+
+                $stmt->bindParam(":mID", $lastMove, PDO::PARAM_INT);
+                $stmt->execute();
+                $total = $stmt->fetch();
+
+                $oldTotal = $total['newTotal'];
+
+                $stmt->closeCursor();
+            }
+
+        }
+        return $oldTotal;
+    }
+    private function saveMove($g, $user, $type, $newCard, $newTotal){
+
+        $sql = "INSERT INTO moves(gameID, userID, playtype, card, newTotal)
+            VALUES(:gid, :uid, :pt, :car, :tot)";
+    
+        if($stmt = $this->_db->prepare($sql)) {
+
+            $stmt->bindParam(":gid", $g, PDO::PARAM_INT);
+            $stmt->bindParam(":uid", $user, PDO::PARAM_INT);
+            $stmt->bindParam(":pt", $type, PDO::PARAM_STR);
+            $stmt->bindParam(":car", $newCard, PDO::PARAM_STR);
+            $stmt->bindParam(":tot", $newTotal, PDO::PARAM_INT);
+            $stmt->execute();
+            $stmt->closeCursor();
+        }   
+    }
+    public function saveDealerMove($g, $type, $newCard, $newTotal){
+
+        $sql = "INSERT INTO dealerMoves(gameID, playtype, card, newTotal)
+            VALUES(:gid, :pt, :car, :tot)";
+    
+        if($stmt = $this->_db->prepare($sql)) {
+
+            $stmt->bindParam(":gid", $g, PDO::PARAM_INT);
+            $stmt->bindParam(":pt", $type, PDO::PARAM_STR);
+            $stmt->bindParam(":car", $newCard, PDO::PARAM_STR);
+            $stmt->bindParam(":tot", $newTotal, PDO::PARAM_INT);
+            $stmt->execute();
+            $stmt->closeCursor();
+        }   
     }
     public function hit( $p, $g ){
+
+        $playtype = 'hit';
 
         $this->log->logInfo('a Hit in the Game from player: ', $p);
 
@@ -283,15 +404,12 @@ class BlackjackGame{
             if($stmt->rowCount()==1)
             {
                 $user = $row['userID'];
+            }else{
+                $user = 0;
             }
 
 
-        //If player hasn't already finished turn
-
-        $this->log->logInfo('Hmm are we sure this is returning a player: ', $user);
-
-        //if ($player_turn->played_turn != 1) {
-        if (true) {
+        if (!$this->isTurnOver($g, $user) || $p == 0) {
 
             $this->log->logInfo('It is still players turn, player: ', $user);
             
@@ -299,6 +417,7 @@ class BlackjackGame{
             $newCard = $this->deck->deal($g);
 
             $this->log->logInfo('Player delt card: ', $newCard);
+            $valueofCard = $this->getCardValue( $newCard );
 
             if ($user != 0) {
 
@@ -312,7 +431,12 @@ class BlackjackGame{
                     $stmt->bindParam(":car", $newCard, PDO::PARAM_STR);
                     $stmt->execute();
                     $stmt->closeCursor();
-                }          
+                }  
+
+                $oldTotal = $this->getHandTotal($g, $user );
+                $newTotal = $oldTotal + $valueofCard;
+                $this->saveMove($g, $user, $playtype, $newCard, $newTotal);
+
             }else{
                 //its the dealer!
                  $sql = "INSERT INTO dealer(gameID, card)
@@ -324,75 +448,169 @@ class BlackjackGame{
                     $stmt->bindParam(":car", $newCard, PDO::PARAM_STR);
                     $stmt->execute();
                     $stmt->closeCursor();
-                }                
+                }
+                $oldTotal = $this->getHandTotal($g, 0);
+                $newTotal = $oldTotal + $valueofCard;
+                $this->saveDealerMove($g, 0, $playtype, $newCard, $newTotal);                
             }
 
-            //first check and make sure an object was returned!!
-            //$player_turn->addCard( $newCard );
-            $valueofCard = $this->getCardValue( $newCard );
-
             $this->log->logInfo('The value of the new card is ', $valueofCard);
-           // $player_turn->addToCardTotal( $valueofCard );
-
-           // $this->log->logInfo('Player now has total: ', $player_turn->card_count);
 
         }else{
+
             $this->log->logInfo('Players turn was already over, player: ', $user);
         }
 
-        //updateTurn();
+        $this->updateTurn($g);
         $this->update= $this->update + 1;
         $this->updateGameState2($g);
 
         $this->log->logInfo('A Hit in Game.php ');
     }
-    public function stay( $p ){
 
-        $this->log->logInfo('Blackjack Constructed called with id: ', $id);
+    public function stay( $p , $g){
 
-        $player_turn = getPlayerByName($p);
+         $sql = "SELECT userID
+        FROM users
+        WHERE sessID=:sess
+        LIMIT 1";
 
-        if ($player_turn->played_turn != 1) {
-        //first check and make sure an object was returned!!
-            $player_turn->played_turn = 1;
-            updateTurn();
+        $stmt = $this->_db->prepare($sql);
+        $stmt->bindParam(':sess', $p, PDO::PARAM_STR);
+        $stmt->execute();
+        $row = $stmt->fetch();
+        if($stmt->rowCount()==1)
+        {
+            $user = $row['userID'];
         }
 
-        $this->log->logInfo('A Stay in Game.php ');
+        $this->makeTurnOver($g, $user);
+
+        $this->updateGameState2($g);
 
     }
-    public function updateTurn(){
+    public function updateTurn($g){
 
-        $playsmade = 0;
+        $allGamePlayers = $this->getPlayersInGame($g);
 
-        foreach ($this->players as $player) {
-
-            if($player->played_turn == 1){
-                
-                $playsmade++;
-            }
-
-            if ($playsmade == count($this->players)) {
-                
-                finishRound();
-            }
-
-        } 
-    }
-
-    private function finishRound(){
-
-        while ( $this->dealer->card_count < 17) {
+        foreach ($allGamePlayers as $player) {
             
-            //Deal another to the dealer
-            $card = $this->deck->deal();
-            $this->dealer->addCard( $card );
-            $valueofCard = $this->getCardValue( $card );
-            $this->dealer->addToCardTotal( $valueofCard );
+            $oldTotal = $this->getHandTotal($g, $player);
+
+            if ($oldTotal > 21) {
+                //bust
+                $this->makeTurnOver($g, $player);
+            }
+
+            $cardCount = $this->numberOfMoves($g, $player);
+            if ($cardCount == 4) {
+               //maxCards
+
+                $this->makeTurnOver($g, $player);
+
+            }
         }
 
+        $this->finishRound($g);
 
     }
+
+    private function makeTurnOver($g, $player){
+
+        $turndone = 1;
+
+        $sql = "INSERT INTO turns(gameID, userID, turnOver )
+        VALUES(:gID, :uID, :to)";
+        
+        if($stmt = $this->_db->prepare($sql)) {
+            $stmt->bindParam(":gID", $g, PDO::PARAM_INT);
+            $stmt->bindParam(":uID", $player, PDO::PARAM_INT);
+            $stmt->bindParam(":to", $turndone, PDO::PARAM_INT);
+            $stmt->execute();
+            $stmt->closeCursor();
+        }
+    }
+    private function isTurnOver($g, $player){
+
+        $turndone = 1;
+
+        $sql = "SELECT turnOver
+        FROM turns
+        WHERE userID=:uID AND gameID=:gID";
+
+        if($stmt = $this->_db->prepare($sql)) {
+            $stmt->bindParam(":uID", $player, PDO::PARAM_INT);
+            $stmt->bindParam(":gID", $g, PDO::PARAM_INT);
+            $stmt->execute();
+            $row = $stmt->fetch();
+
+            $turn = $row['turnOver'];
+
+            $stmt->closeCursor();
+
+            if ($turn == $turndone) {
+                return 1;
+            }else{
+                return 0;
+            }
+        }
+    }
+    private function numberOfMoves($g, $player){
+
+        $sql = "SELECT COUNT(moveID) AS cardCount
+        FROM moves
+        WHERE userID=:uID AND gameID=:gID";
+
+        if($stmt = $this->_db->prepare($sql)) {
+            $stmt->bindParam(":uID", $player, PDO::PARAM_INT);
+            $stmt->bindParam(":gID", $g, PDO::PARAM_INT);
+            $stmt->execute();
+            $row = $stmt->fetch();
+
+            $moveCount = $row['cardCount'];
+
+            $stmt->closeCursor();
+        }
+
+        return $moveCount;
+    }
+
+    private function finishRound($g){
+
+        $turnOverCount= 0;
+        //Check if all the players are done with this hand
+        $allGamePlayers = $this->getPlayersInGame($g);
+        $numberOfPlayers = count($allGamePlayers);
+
+        foreach ($allGamePlayers as $player) {
+           
+           if ($this->isTurnOver($g, $player)) {
+               $turnOverCount++;
+           }
+
+        }
+
+        if ($turnOverCount == $numberOfPlayers) {
+            //Hand Done, Dealers Turn
+            $this->playDealer($g);
+        }
+
+    }
+    public function playDealer($g){
+
+        // //dealer stands on 17s
+        // if(($this->getHandTotal($g, 0)) < 17) {
+        //     //dealer hits
+        //    $this->hit( 0, $g );
+        // }
+        // //one more card allowed
+        // if(($this->getHandTotal($g, 0)) < 17) {
+        //     //dealer hits
+        //    $this->hit( 0, $g );
+        // }
+
+    }
+
     public function getCardValue($card_delt){
 
         $this->log->logInfo('Checking for the value of the card in getCardValue in Game.php');
@@ -445,36 +663,38 @@ class BlackjackGame{
         return 0;
 
     }
-    private function getPlayerByName($p){
+    // private function getPlayerByName($p){
 
-        $this->log->logInfo('Checking for player in getPlayerByName in Game.php, player: ', $p );
+    //     $this->log->logInfo('Checking for player in getPlayerByName in Game.php, player: ', $p );
 
-        $myGameFile = "plays".$this->_gid.".php";
+    //     $myGameFile = "plays".$this->_gid.".php";
 
-        $fp = fopen($myGameFile, "w");
-            fwrite($fp, json_encode($this->players));
-            fclose($fp);
+    //     $fp = fopen($myGameFile, "w");
+    //         fwrite($fp, json_encode($this->players));
+    //         fclose($fp);
  
 
-        foreach ($this->players as $player) {
+    //     foreach ($this->players as $player) {
 
-            $this->log->logInfo('Inside the for each loop' );
+    //         $this->log->logInfo('Inside the for each loop' );
 
-            if($player->username == $p){
+    //         if($player->username == $p){
 
-                $this->log->logInfo('Inside the if loop' );
+    //             $this->log->logInfo('Inside the if loop' );
 
-            $this->log->logInfo('correct player found');
+    //         $this->log->logInfo('correct player found');
 
 
-                return $player;
+    //             return $player;
                 
-            }
+    //         }
 
-        } 
-    }
+    //     } 
+    // }
 
     private function getPlayersInGame($g){
+
+        $returnplayers = array();
 
        $sql = "SELECT userID
         FROM gameplayers
@@ -490,9 +710,10 @@ class BlackjackGame{
             foreach ($row as $player) {
                 
                 array_push($this->players, $player['userID']);
+                array_push($returnplayers, $player['userID']);
             }
         }
-
+            return $returnplayers;
     }
 
     public function updateGameState1($gid){
@@ -533,87 +754,87 @@ class BlackjackGame{
             fclose($fp);
     }
 
-    // public function updateGameState2($gid){
+    public function updateGameState2($gid){
 
 
-    //     $this->log->logInfo('Updating Game State 22222222!');
+        $this->log->logInfo('Updating Game State 22222222!');
 
-    //     $gamestate = array(
-    //             // array(
+        $gamestate = array(
+                // array(
 
-    //             //     'name'=> 'dealer',
-    //             //     'count' => $this->dealer->card_count,
-    //             //     'cards'=> json_encode($this->dealer->setUpOrGetHand($gid, 0)),
-    //             //     'updateCount' => $this->update
-    //             // )
-    //     );
+                //     'name'=> 'dealer',
+                //     'count' => $this->dealer->card_count,
+                //     'cards'=> json_encode($this->dealer->setUpOrGetHand($gid, 0)),
+                //     'updateCount' => $this->update
+                // )
+        );
 
-    //     foreach ($this->players as $player) {
+        foreach ($this->players as $player) {
 
-    //         $thisUsername;
+            $thisUsername;
 
-    //         $this->log->logInfo('Updating Game State for player: ', $player);
+            $this->log->logInfo('Updating Game State for player: ', $player);
 
-    //         //Get the username
-    //             $sql = "SELECT username AS un
-    //             FROM users
-    //             WHERE userID=:uID";
+            //Get the username
+                $sql = "SELECT username AS un
+                FROM users
+                WHERE userID=:uID";
 
-    //             if($stmt = $this->_db->prepare($sql)) {
+                if($stmt = $this->_db->prepare($sql)) {
 
-    //                 $stmt->bindParam(':uID', $player , PDO::PARAM_INT);
-    //                 $stmt->execute();
-    //                 $row = $stmt->fetch();
-    //                 $thisUsername = $row['un'];
+                    $stmt->bindParam(':uID', $player , PDO::PARAM_INT);
+                    $stmt->execute();
+                    $row = $stmt->fetch();
+                    $thisUsername = $row['un'];
 
-    //                 $stmt->closeCursor();
-    //             }
+                    $stmt->closeCursor();
+                }
 
-    //             $this->log->logInfo('in UG2, their username is: ', $thisUsername);
+                $this->log->logInfo('in UG2, their username is: ', $thisUsername);
 
-    //             //Get the hand
-    //            $sql = "SELECT card AS cards
-    //                 FROM hand
-    //                 WHERE gameID=:gID AND userID = :uID";
+                //Get the hand
+               $sql = "SELECT card AS cards
+                    FROM hand
+                    WHERE gameID=:gID AND userID = :uID";
 
-    //             if($stmt = $this->_db->prepare($sql)) {
+                if($stmt = $this->_db->prepare($sql)) {
 
-    //                 $stmt->bindParam(":gID", $gid, PDO::PARAM_INT);
-    //                 $stmt->bindParam(":uID", $player , PDO::PARAM_INT);
-    //                 $stmt->execute();
-    //                 $myCards = $stmt->fetchAll();
+                    $stmt->bindParam(":gID", $gid, PDO::PARAM_INT);
+                    $stmt->bindParam(":uID", $player , PDO::PARAM_INT);
+                    $stmt->execute();
+                    $myCards = $stmt->fetchAll();
                                 
-    //                 $stmt->closeCursor();
-    //             }
+                    $stmt->closeCursor();
+                }
 
-    //             $myHand = array();
-    //             $newCount = 0;
-    //             foreach ($myCards as $aCard) {
+                $myHand = array();
+                $newCount = 0;
+                foreach ($myCards as $aCard) {
 
-    //                 $this->log->logInfo('in UG2, their cards are: ', $aCard['cards']);
-    //                 array_push($myHand, $aCard['cards'] );
-    //                 $newCount = $newCount + $this->getCardValue($aCard['cards']);
+                    $this->log->logInfo('in UG2, their cards are: ', $aCard['cards']);
+                    array_push($myHand, $aCard['cards'] );
+                    $newCount = $newCount + $this->getCardValue($aCard['cards']);
 
-    //             }
+                }
 
-    //             $this->log->logInfo('in UG2, their count is now: ', $newCount);
+                $this->log->logInfo('in UG2, their count is now: ', $newCount);
 
-    //         $playerInfo = array(
+            $playerInfo = array(
 
-    //             'name' =>$thisUsername,
-    //             'count' => $newCount,
-    //             'cards'=> json_encode($myHand)
+                'name' =>$thisUsername,
+                'count' => $newCount,
+                'cards'=> json_encode($myHand)
 
-    //         );
+            );
 
-    //         array_push($gamestate, $playerInfo);
-    //     }
-    //         $myGameFile = "plays".$gid.".php";
+            array_push($gamestate, $playerInfo);
+        }
+            $myGameFile = "plays".$gid.".php";
 
-    //         $fp = fopen($myGameFile, "w");
-    //         fwrite($fp, json_encode($gamestate));
-    //         fclose($fp);
-    // }
+            $fp = fopen($myGameFile, "w");
+            fwrite($fp, json_encode($gamestate));
+            fclose($fp);
+    }
 
     private function getUserID(){
 

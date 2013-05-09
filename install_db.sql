@@ -25,7 +25,9 @@ CREATE TABLE swe_blackjack_db.moves(
 	moveID	INT AUTO_INCREMENT UNIQUE,
 	gameID  INT,
 	userID  INT,
-	currentPlayerGroup INT,
+	playtype VARCHAR(20),
+	card VARCHAR(20),
+	newTotal  INT,
 	PRIMARY KEY (moveID),
 	FOREIGN KEY (userID) REFERENCES users(userID),
 	FOREIGN KEY (gameID) REFERENCES games(gameID));
@@ -51,3 +53,30 @@ CREATE TABLE swe_blackjack_db.dealer(
 	gameID  INT,
 	card VARCHAR(20),
 	FOREIGN KEY (gameID) REFERENCES games(gameID));
+
+/* Dealer Moves*/
+CREATE TABLE swe_blackjack_db.dealerMoves(
+	moveID	INT AUTO_INCREMENT UNIQUE,
+	gameID  INT,
+	playtype VARCHAR(20),
+	card VARCHAR(20),
+	newTotal  INT,
+	FOREIGN KEY (gameID) REFERENCES games(gameID));
+
+/* Records */
+CREATE TABLE swe_blackjack_db.records(
+	userID  INT,
+	wins INT,
+	losses INT,
+	draws INT,
+	FOREIGN KEY (userID) REFERENCES users(userID));
+
+/* Turn Table */
+CREATE TABLE swe_blackjack_db.turns(
+	handID	INT AUTO_INCREMENT UNIQUE,
+	gameID  INT,
+	userID  INT,
+	turnOver INT,
+	FOREIGN KEY (userID) REFERENCES users(userID),
+	FOREIGN KEY (gameID) REFERENCES games(gameID));
+

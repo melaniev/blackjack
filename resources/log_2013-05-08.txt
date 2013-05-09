@@ -1,35 +1,912 @@
-2013-05-08 17:04:13 - INFO --> Blackjack Constructed called with id: ; NULL
-2013-05-08 17:04:14 - INFO --> Blackjack Constructed called with id: ; NULL
-2013-05-08 17:04:16 - INFO --> New Player Created for game; '53'
-2013-05-08 17:04:16 - INFO --> and with User ID; 0
-2013-05-08 17:04:17 - INFO --> New Player Created for game; '53'
-2013-05-08 17:04:17 - INFO --> and with User ID; NULL
-2013-05-08 17:04:17 - INFO --> playRound called
-2013-05-08 17:04:17 - INFO --> dealHand called
-2013-05-08 17:04:17 - INFO --> addCard called in Player.php for user: ; NULL
-2013-05-08 17:04:17 - INFO --> Checking for the value of the card in getCardValue in Game.php
-2013-05-08 17:04:17 - INFO --> String version of card value: ; '08'
-2013-05-08 17:04:17 - INFO --> addCard called in Player.php for user: ; 0
-2013-05-08 17:04:17 - INFO --> Checking for the value of the card in getCardValue in Game.php
-2013-05-08 17:04:17 - INFO --> String version of card value: ; '06'
-2013-05-08 17:04:17 - INFO --> Updating Game State!
-2013-05-08 17:04:17 - INFO -->  setUpOrGetHand user ID:; 0
-2013-05-08 17:04:17 - INFO -->  setUpOrGetHand and game ID:; '53'
-2013-05-08 17:04:17 - INFO --> Updating Game State for player: ; Player::__set_state(array(
+2013-05-08 18:31:27 - INFO --> User Object Created
+2013-05-08 18:31:27 - INFO --> createUserAccountInfo
+2013-05-08 18:31:27 - INFO --> giveThemABlankRecord
+2013-05-08 19:20:03 - INFO --> User Object Created
+2013-05-08 19:20:03 - INFO --> createUserAccountInfo
+2013-05-08 19:20:03 - INFO --> giveThemABlankRecord
+2013-05-08 20:13:15 - INFO --> User Object Created
+2013-05-08 20:13:27 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-08 20:13:29 - INFO --> New Player Created for game; '54'
+2013-05-08 20:13:29 - INFO --> and with User ID; 0
+2013-05-08 20:13:30 - INFO --> New Player Created for game; '54'
+2013-05-08 20:13:30 - INFO --> and with User ID; '8'
+2013-05-08 20:13:30 - INFO --> playRound called
+2013-05-08 20:13:30 - INFO --> dealHand called
+2013-05-08 20:13:30 - INFO --> addCard called in Player.php for user: ; '8'
+2013-05-08 20:13:30 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 20:13:30 - INFO --> String version of card value: ; '04'
+2013-05-08 20:13:30 - INFO --> addCard called in Player.php for user: ; 0
+2013-05-08 20:13:30 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 20:13:30 - INFO --> String version of card value: ; '09'
+2013-05-08 20:13:30 - INFO --> Updating Game State!
+2013-05-08 20:13:30 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-08 20:13:30 - INFO -->  setUpOrGetHand and game ID:; '54'
+2013-05-08 20:13:30 - INFO --> Updating Game State for player: ; Player::__set_state(array(
    '_db' => 
   PDO::__set_state(array(
   )),
    'hand' => 
   array (
-    0 => '08_spade',
+    0 => '04_club',
+  ),
+   'bankroll' => 0,
+   'username' => 'Danielle',
+   'played_turn' => 0,
+   'card_count' => 4,
+   'has_ace' => NULL,
+   'uID' => '8',
+   'gID' => '54',
+   'log' => 
+  KLogger::__set_state(array(
+     '_logStatus' => 1,
+     '_messageQueue' => 
+    array (
+      0 => 'The log file was opened successfully.',
+    ),
+     '_logFilePath' => 'C:\\Users\\vanhornm\\Blackjack\\resources\\log_2013-05-08.txt',
+     '_severityThreshold' => 7,
+     '_fileHandle' => NULL,
+     '_messages' => 
+    array (
+      'writefail' => 'The file could not be written to. Check that appropriate permissions have been set.',
+      'opensuccess' => 'The log file was opened successfully.',
+      'openfail' => 'The file could not be opened. Check permissions.',
+    ),
+  )),
+))
+2013-05-08 20:13:30 - INFO -->  setUpOrGetHand user ID:; '8'
+2013-05-08 20:13:30 - INFO -->  setUpOrGetHand and game ID:; '54'
+2013-05-08 20:13:30 - INFO --> username:; 'Danielle'
+2013-05-08 20:13:30 - INFO --> addCard called in Player.php for user: ; '8'
+2013-05-08 20:13:30 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 20:13:30 - INFO --> String version of card value: ; '01'
+2013-05-08 20:13:30 - INFO --> addCard called in Player.php for user: ; 0
+2013-05-08 20:13:30 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 20:13:30 - INFO --> String version of card value: ; '07'
+2013-05-08 20:13:30 - INFO --> Updating Game State!
+2013-05-08 20:13:30 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-08 20:13:30 - INFO -->  setUpOrGetHand and game ID:; '54'
+2013-05-08 20:13:30 - INFO --> Updating Game State for player: ; Player::__set_state(array(
+   '_db' => 
+  PDO::__set_state(array(
+  )),
+   'hand' => 
+  array (
+    0 => '04_club',
+    1 => '01_spade',
+  ),
+   'bankroll' => 0,
+   'username' => 'Danielle',
+   'played_turn' => 0,
+   'card_count' => 15,
+   'has_ace' => NULL,
+   'uID' => '8',
+   'gID' => '54',
+   'log' => 
+  KLogger::__set_state(array(
+     '_logStatus' => 1,
+     '_messageQueue' => 
+    array (
+      0 => 'The log file was opened successfully.',
+    ),
+     '_logFilePath' => 'C:\\Users\\vanhornm\\Blackjack\\resources\\log_2013-05-08.txt',
+     '_severityThreshold' => 7,
+     '_fileHandle' => NULL,
+     '_messages' => 
+    array (
+      'writefail' => 'The file could not be written to. Check that appropriate permissions have been set.',
+      'opensuccess' => 'The log file was opened successfully.',
+      'openfail' => 'The file could not be opened. Check permissions.',
+    ),
+  )),
+))
+2013-05-08 20:13:30 - INFO -->  setUpOrGetHand user ID:; '8'
+2013-05-08 20:13:30 - INFO -->  setUpOrGetHand and game ID:; '54'
+2013-05-08 20:13:30 - INFO --> username:; 'Danielle'
+2013-05-08 20:13:30 - INFO --> createANewGame in GameController 
+2013-05-08 20:13:34 - INFO --> New Player Created for game; '54'
+2013-05-08 20:13:34 - INFO --> and with User ID; 0
+2013-05-08 20:13:34 - INFO --> Blackjack Constructed called with id: ; '54'
+2013-05-08 20:13:47 - INFO --> New Player Created for game; '54'
+2013-05-08 20:13:47 - INFO --> and with User ID; 0
+2013-05-08 20:13:47 - INFO --> Blackjack Constructed called with id: ; '54'
+2013-05-08 20:13:54 - INFO --> New Player Created for game; '54'
+2013-05-08 20:13:54 - INFO --> and with User ID; 0
+2013-05-08 20:13:54 - INFO --> Blackjack Constructed called with id: ; '54'
+2013-05-08 20:15:01 - INFO --> New Player Created for game; '54'
+2013-05-08 20:15:01 - INFO --> and with User ID; 0
+2013-05-08 20:15:01 - INFO --> Blackjack Constructed called with id: ; '54'
+2013-05-08 20:15:07 - INFO --> New Player Created for game; '54'
+2013-05-08 20:15:07 - INFO --> and with User ID; 0
+2013-05-08 20:15:07 - INFO --> Blackjack Constructed called with id: ; '54'
+2013-05-08 20:18:28 - INFO --> New Player Created for game; '54'
+2013-05-08 20:18:28 - INFO --> and with User ID; 0
+2013-05-08 20:18:28 - INFO --> Blackjack Constructed called with id: ; '54'
+2013-05-08 20:18:37 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-08 20:18:38 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-08 20:18:40 - INFO --> New Player Created for game; '55'
+2013-05-08 20:18:40 - INFO --> and with User ID; 0
+2013-05-08 20:18:41 - INFO --> New Player Created for game; '55'
+2013-05-08 20:18:41 - INFO --> and with User ID; '8'
+2013-05-08 20:18:41 - INFO --> playRound called
+2013-05-08 20:18:41 - INFO --> dealHand called
+2013-05-08 20:18:41 - INFO --> addCard called in Player.php for user: ; '8'
+2013-05-08 20:18:41 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 20:18:41 - INFO --> String version of card value: ; '10'
+2013-05-08 20:18:41 - INFO --> addCard called in Player.php for user: ; 0
+2013-05-08 20:18:41 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 20:18:41 - INFO --> String version of card value: ; '03'
+2013-05-08 20:18:41 - INFO --> Updating Game State!
+2013-05-08 20:18:41 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-08 20:18:41 - INFO -->  setUpOrGetHand and game ID:; '55'
+2013-05-08 20:18:41 - INFO --> Updating Game State for player: ; Player::__set_state(array(
+   '_db' => 
+  PDO::__set_state(array(
+  )),
+   'hand' => 
+  array (
+    0 => '10_club',
+  ),
+   'bankroll' => 0,
+   'username' => 'Danielle',
+   'played_turn' => 0,
+   'card_count' => 10,
+   'has_ace' => NULL,
+   'uID' => '8',
+   'gID' => '55',
+   'log' => 
+  KLogger::__set_state(array(
+     '_logStatus' => 1,
+     '_messageQueue' => 
+    array (
+      0 => 'The log file was opened successfully.',
+    ),
+     '_logFilePath' => 'C:\\Users\\vanhornm\\Blackjack\\resources\\log_2013-05-08.txt',
+     '_severityThreshold' => 7,
+     '_fileHandle' => NULL,
+     '_messages' => 
+    array (
+      'writefail' => 'The file could not be written to. Check that appropriate permissions have been set.',
+      'opensuccess' => 'The log file was opened successfully.',
+      'openfail' => 'The file could not be opened. Check permissions.',
+    ),
+  )),
+))
+2013-05-08 20:18:41 - INFO -->  setUpOrGetHand user ID:; '8'
+2013-05-08 20:18:41 - INFO -->  setUpOrGetHand and game ID:; '55'
+2013-05-08 20:18:41 - INFO --> username:; 'Danielle'
+2013-05-08 20:18:41 - INFO --> addCard called in Player.php for user: ; '8'
+2013-05-08 20:18:41 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 20:18:41 - INFO --> String version of card value: ; '01'
+2013-05-08 20:18:41 - INFO --> addCard called in Player.php for user: ; 0
+2013-05-08 20:18:41 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 20:18:41 - INFO --> String version of card value: ; '07'
+2013-05-08 20:18:41 - INFO --> Updating Game State!
+2013-05-08 20:18:41 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-08 20:18:41 - INFO -->  setUpOrGetHand and game ID:; '55'
+2013-05-08 20:18:41 - INFO --> Updating Game State for player: ; Player::__set_state(array(
+   '_db' => 
+  PDO::__set_state(array(
+  )),
+   'hand' => 
+  array (
+    0 => '10_club',
+    1 => '01_club',
+  ),
+   'bankroll' => 0,
+   'username' => 'Danielle',
+   'played_turn' => 0,
+   'card_count' => 21,
+   'has_ace' => NULL,
+   'uID' => '8',
+   'gID' => '55',
+   'log' => 
+  KLogger::__set_state(array(
+     '_logStatus' => 1,
+     '_messageQueue' => 
+    array (
+      0 => 'The log file was opened successfully.',
+    ),
+     '_logFilePath' => 'C:\\Users\\vanhornm\\Blackjack\\resources\\log_2013-05-08.txt',
+     '_severityThreshold' => 7,
+     '_fileHandle' => NULL,
+     '_messages' => 
+    array (
+      'writefail' => 'The file could not be written to. Check that appropriate permissions have been set.',
+      'opensuccess' => 'The log file was opened successfully.',
+      'openfail' => 'The file could not be opened. Check permissions.',
+    ),
+  )),
+))
+2013-05-08 20:18:41 - INFO -->  setUpOrGetHand user ID:; '8'
+2013-05-08 20:18:41 - INFO -->  setUpOrGetHand and game ID:; '55'
+2013-05-08 20:18:41 - INFO --> username:; 'Danielle'
+2013-05-08 20:18:41 - INFO --> createANewGame in GameController 
+2013-05-08 20:18:45 - INFO --> New Player Created for game; '55'
+2013-05-08 20:18:45 - INFO --> and with User ID; 0
+2013-05-08 20:18:45 - INFO --> Blackjack Constructed called with id: ; '55'
+2013-05-08 20:18:51 - INFO --> New Player Created for game; '55'
+2013-05-08 20:18:51 - INFO --> and with User ID; 0
+2013-05-08 20:18:51 - INFO --> Blackjack Constructed called with id: ; '55'
+2013-05-08 20:20:17 - INFO --> a Hit in GameController with gameid; '55'
+2013-05-08 20:20:17 - INFO --> a Hit in GameController from player; 'sffaavn4f39qgoh660lo73ln12'
+2013-05-08 20:20:19 - INFO --> New Player Created for game; '55'
+2013-05-08 20:20:19 - INFO --> and with User ID; 0
+2013-05-08 20:20:19 - INFO --> Blackjack Constructed called with id: ; '55'
+2013-05-08 20:20:19 - INFO --> a Hit in the Game from player: ; 'sffaavn4f39qgoh660lo73ln12'
+2013-05-08 20:20:19 - INFO --> Hmm are we sure this is returning a player: ; '8'
+2013-05-08 20:20:19 - INFO --> It is still players turn, player: ; '8'
+2013-05-08 20:20:20 - INFO --> Deal called from a hit with game id: ; '55'
+2013-05-08 20:20:20 - INFO --> There are this many cards remaining in the deck ; 48
+2013-05-08 20:20:20 - INFO --> Player delt card: ; '02_club'
+2013-05-08 20:20:20 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 20:20:20 - INFO --> String version of card value: ; '02'
+2013-05-08 20:20:20 - INFO --> The value of the new card is ; 2
+2013-05-08 21:02:43 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-08 21:02:44 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-08 21:02:46 - INFO --> New Player Created for game; '56'
+2013-05-08 21:02:46 - INFO --> and with User ID; 0
+2013-05-08 21:02:47 - INFO --> New Player Created for game; '56'
+2013-05-08 21:02:47 - INFO --> and with User ID; '8'
+2013-05-08 21:02:47 - INFO --> playRound called
+2013-05-08 21:02:47 - INFO --> dealHand called
+2013-05-08 21:02:47 - INFO --> addCard called in Player.php for user: ; '8'
+2013-05-08 21:02:47 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 21:02:47 - INFO --> String version of card value: ; '04'
+2013-05-08 21:02:47 - INFO --> addCard called in Player.php for user: ; 0
+2013-05-08 21:02:47 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 21:02:47 - INFO --> String version of card value: ; '05'
+2013-05-08 21:02:47 - INFO --> Updating Game State!
+2013-05-08 21:02:47 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-08 21:02:47 - INFO -->  setUpOrGetHand and game ID:; '56'
+2013-05-08 21:02:47 - INFO --> Updating Game State for player: ; Player::__set_state(array(
+   '_db' => 
+  PDO::__set_state(array(
+  )),
+   'hand' => 
+  array (
+    0 => '04_diamond',
+  ),
+   'bankroll' => 0,
+   'username' => 'Danielle',
+   'played_turn' => 0,
+   'card_count' => 4,
+   'has_ace' => NULL,
+   'uID' => '8',
+   'gID' => '56',
+   'log' => 
+  KLogger::__set_state(array(
+     '_logStatus' => 1,
+     '_messageQueue' => 
+    array (
+      0 => 'The log file was opened successfully.',
+    ),
+     '_logFilePath' => 'C:\\Users\\vanhornm\\Blackjack\\resources\\log_2013-05-08.txt',
+     '_severityThreshold' => 7,
+     '_fileHandle' => NULL,
+     '_messages' => 
+    array (
+      'writefail' => 'The file could not be written to. Check that appropriate permissions have been set.',
+      'opensuccess' => 'The log file was opened successfully.',
+      'openfail' => 'The file could not be opened. Check permissions.',
+    ),
+  )),
+))
+2013-05-08 21:02:47 - INFO -->  setUpOrGetHand user ID:; '8'
+2013-05-08 21:02:47 - INFO -->  setUpOrGetHand and game ID:; '56'
+2013-05-08 21:02:47 - INFO --> username:; 'Danielle'
+2013-05-08 21:02:47 - INFO --> addCard called in Player.php for user: ; '8'
+2013-05-08 21:02:48 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 21:02:48 - INFO --> String version of card value: ; '06'
+2013-05-08 21:02:48 - INFO --> addCard called in Player.php for user: ; 0
+2013-05-08 21:02:48 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 21:02:48 - INFO --> String version of card value: ; '06'
+2013-05-08 21:02:48 - INFO --> Updating Game State!
+2013-05-08 21:02:48 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-08 21:02:48 - INFO -->  setUpOrGetHand and game ID:; '56'
+2013-05-08 21:02:48 - INFO --> Updating Game State for player: ; Player::__set_state(array(
+   '_db' => 
+  PDO::__set_state(array(
+  )),
+   'hand' => 
+  array (
+    0 => '04_diamond',
+    1 => '06_club',
+  ),
+   'bankroll' => 0,
+   'username' => 'Danielle',
+   'played_turn' => 0,
+   'card_count' => 10,
+   'has_ace' => NULL,
+   'uID' => '8',
+   'gID' => '56',
+   'log' => 
+  KLogger::__set_state(array(
+     '_logStatus' => 1,
+     '_messageQueue' => 
+    array (
+      0 => 'The log file was opened successfully.',
+    ),
+     '_logFilePath' => 'C:\\Users\\vanhornm\\Blackjack\\resources\\log_2013-05-08.txt',
+     '_severityThreshold' => 7,
+     '_fileHandle' => NULL,
+     '_messages' => 
+    array (
+      'writefail' => 'The file could not be written to. Check that appropriate permissions have been set.',
+      'opensuccess' => 'The log file was opened successfully.',
+      'openfail' => 'The file could not be opened. Check permissions.',
+    ),
+  )),
+))
+2013-05-08 21:02:48 - INFO -->  setUpOrGetHand user ID:; '8'
+2013-05-08 21:02:48 - INFO -->  setUpOrGetHand and game ID:; '56'
+2013-05-08 21:02:48 - INFO --> username:; 'Danielle'
+2013-05-08 21:02:48 - INFO --> createANewGame in GameController 
+2013-05-08 21:02:52 - INFO --> New Player Created for game; '56'
+2013-05-08 21:02:52 - INFO --> and with User ID; 0
+2013-05-08 21:02:52 - INFO --> Blackjack Constructed called with id: ; '56'
+2013-05-08 21:03:00 - INFO --> a Hit in GameController with gameid; '56'
+2013-05-08 21:03:00 - INFO --> a Hit in GameController from player; 'sffaavn4f39qgoh660lo73ln12'
+2013-05-08 21:03:02 - INFO --> New Player Created for game; '56'
+2013-05-08 21:03:02 - INFO --> and with User ID; 0
+2013-05-08 21:03:02 - INFO --> Blackjack Constructed called with id: ; '56'
+2013-05-08 21:03:02 - INFO --> a Hit in the Game from player: ; 'sffaavn4f39qgoh660lo73ln12'
+2013-05-08 21:03:02 - INFO --> Hmm are we sure this is returning a player: ; '8'
+2013-05-08 21:03:02 - INFO --> It is still players turn, player: ; '8'
+2013-05-08 21:03:03 - INFO --> Deal called from a hit with game id: ; '56'
+2013-05-08 21:03:03 - INFO --> There are this many cards remaining in the deck ; 48
+2013-05-08 21:03:03 - INFO --> Player delt card: ; '01_club'
+2013-05-08 21:03:03 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 21:03:03 - INFO --> String version of card value: ; '01'
+2013-05-08 21:03:03 - INFO --> The value of the new card is ; 11
+2013-05-08 21:03:03 - INFO --> Updating Game State 22222222!
+2013-05-08 21:03:03 - INFO --> Updating Game State for player: ; '8'
+2013-05-08 21:03:03 - INFO --> in UG2, their username is: ; 'Danielle'
+2013-05-08 21:03:03 - INFO --> in UG2, their cards are: ; '04_diamond'
+2013-05-08 21:03:03 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 21:03:03 - INFO --> String version of card value: ; '04'
+2013-05-08 21:03:03 - INFO --> in UG2, their cards are: ; '06_club'
+2013-05-08 21:03:03 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 21:03:03 - INFO --> String version of card value: ; '06'
+2013-05-08 21:03:03 - INFO --> in UG2, their cards are: ; '01_club'
+2013-05-08 21:03:03 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 21:03:03 - INFO --> String version of card value: ; '01'
+2013-05-08 21:03:03 - INFO --> in UG2, their count is now: ; 21
+2013-05-08 21:03:03 - INFO --> A Hit in Game.php 
+2013-05-08 21:19:53 - INFO --> User Object Created
+2013-05-08 21:20:01 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-08 21:20:03 - INFO --> New Player Created for game; '57'
+2013-05-08 21:20:03 - INFO --> and with User ID; 0
+2013-05-08 21:20:04 - INFO --> New Player Created for game; '57'
+2013-05-08 21:20:04 - INFO --> and with User ID; '1'
+2013-05-08 21:20:05 - INFO --> playRound called
+2013-05-08 21:20:05 - INFO --> dealHand called
+2013-05-08 21:20:05 - INFO --> addCard called in Player.php for user: ; '1'
+2013-05-08 21:20:05 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 21:20:05 - INFO --> String version of card value: ; '01'
+2013-05-08 21:20:05 - INFO --> addCard called in Player.php for user: ; 0
+2013-05-08 21:20:05 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 21:20:05 - INFO --> String version of card value: ; '06'
+2013-05-08 21:20:05 - INFO --> Updating Game State!
+2013-05-08 21:20:05 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-08 21:20:05 - INFO -->  setUpOrGetHand and game ID:; '57'
+2013-05-08 21:20:05 - INFO --> Updating Game State for player: ; Player::__set_state(array(
+   '_db' => 
+  PDO::__set_state(array(
+  )),
+   'hand' => 
+  array (
+    0 => '01_spade',
+  ),
+   'bankroll' => 0,
+   'username' => 'JJ',
+   'played_turn' => 0,
+   'card_count' => 11,
+   'has_ace' => NULL,
+   'uID' => '1',
+   'gID' => '57',
+   'log' => 
+  KLogger::__set_state(array(
+     '_logStatus' => 1,
+     '_messageQueue' => 
+    array (
+      0 => 'The log file was opened successfully.',
+    ),
+     '_logFilePath' => 'C:\\Users\\vanhornm\\Blackjack\\resources\\log_2013-05-08.txt',
+     '_severityThreshold' => 7,
+     '_fileHandle' => NULL,
+     '_messages' => 
+    array (
+      'writefail' => 'The file could not be written to. Check that appropriate permissions have been set.',
+      'opensuccess' => 'The log file was opened successfully.',
+      'openfail' => 'The file could not be opened. Check permissions.',
+    ),
+  )),
+))
+2013-05-08 21:20:05 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-08 21:20:05 - INFO -->  setUpOrGetHand and game ID:; '57'
+2013-05-08 21:20:05 - INFO --> username:; 'JJ'
+2013-05-08 21:20:05 - INFO --> addCard called in Player.php for user: ; '1'
+2013-05-08 21:20:05 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 21:20:05 - INFO --> String version of card value: ; '13'
+2013-05-08 21:20:05 - INFO --> addCard called in Player.php for user: ; 0
+2013-05-08 21:20:05 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 21:20:05 - INFO --> String version of card value: ; '08'
+2013-05-08 21:20:05 - INFO --> Updating Game State!
+2013-05-08 21:20:05 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-08 21:20:05 - INFO -->  setUpOrGetHand and game ID:; '57'
+2013-05-08 21:20:05 - INFO --> Updating Game State for player: ; Player::__set_state(array(
+   '_db' => 
+  PDO::__set_state(array(
+  )),
+   'hand' => 
+  array (
+    0 => '01_spade',
+    1 => '13_heart',
+  ),
+   'bankroll' => 0,
+   'username' => 'JJ',
+   'played_turn' => 0,
+   'card_count' => 21,
+   'has_ace' => NULL,
+   'uID' => '1',
+   'gID' => '57',
+   'log' => 
+  KLogger::__set_state(array(
+     '_logStatus' => 1,
+     '_messageQueue' => 
+    array (
+      0 => 'The log file was opened successfully.',
+    ),
+     '_logFilePath' => 'C:\\Users\\vanhornm\\Blackjack\\resources\\log_2013-05-08.txt',
+     '_severityThreshold' => 7,
+     '_fileHandle' => NULL,
+     '_messages' => 
+    array (
+      'writefail' => 'The file could not be written to. Check that appropriate permissions have been set.',
+      'opensuccess' => 'The log file was opened successfully.',
+      'openfail' => 'The file could not be opened. Check permissions.',
+    ),
+  )),
+))
+2013-05-08 21:20:05 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-08 21:20:05 - INFO -->  setUpOrGetHand and game ID:; '57'
+2013-05-08 21:20:05 - INFO --> username:; 'JJ'
+2013-05-08 21:20:05 - INFO --> createANewGame in GameController 
+2013-05-08 21:20:09 - INFO --> New Player Created for game; '57'
+2013-05-08 21:20:09 - INFO --> and with User ID; 0
+2013-05-08 21:20:09 - INFO --> Blackjack Constructed called with id: ; '57'
+2013-05-08 21:20:19 - INFO --> a Hit in GameController with gameid; '57'
+2013-05-08 21:20:19 - INFO --> a Hit in GameController from player; 'oc5s687it7a5ddenp1qd57pa60'
+2013-05-08 21:20:22 - INFO --> New Player Created for game; '57'
+2013-05-08 21:20:22 - INFO --> and with User ID; 0
+2013-05-08 21:20:22 - INFO --> Blackjack Constructed called with id: ; '57'
+2013-05-08 21:20:22 - INFO --> a Hit in the Game from player: ; 'oc5s687it7a5ddenp1qd57pa60'
+2013-05-08 21:20:22 - INFO --> Hmm are we sure this is returning a player: ; '1'
+2013-05-08 21:20:22 - INFO --> It is still players turn, player: ; '1'
+2013-05-08 21:20:23 - INFO --> Deal called from a hit with game id: ; '57'
+2013-05-08 21:20:23 - INFO --> There are this many cards remaining in the deck ; 48
+2013-05-08 21:20:23 - INFO --> Player delt card: ; '01_club'
+2013-05-08 21:20:23 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 21:20:23 - INFO --> String version of card value: ; '01'
+2013-05-08 21:20:23 - INFO --> The value of the new card is ; 11
+2013-05-08 21:20:23 - INFO --> Updating Game State 22222222!
+2013-05-08 21:20:23 - INFO --> Updating Game State for player: ; '1'
+2013-05-08 21:20:23 - INFO --> in UG2, their username is: ; 'JJ'
+2013-05-08 21:20:23 - INFO --> in UG2, their cards are: ; '01_spade'
+2013-05-08 21:20:23 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 21:20:23 - INFO --> String version of card value: ; '01'
+2013-05-08 21:20:23 - INFO --> in UG2, their cards are: ; '13_heart'
+2013-05-08 21:20:23 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 21:20:23 - INFO --> String version of card value: ; '13'
+2013-05-08 21:20:23 - INFO --> in UG2, their cards are: ; '01_club'
+2013-05-08 21:20:23 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 21:20:23 - INFO --> String version of card value: ; '01'
+2013-05-08 21:20:23 - INFO --> in UG2, their count is now: ; 32
+2013-05-08 21:20:23 - INFO --> A Hit in Game.php 
+2013-05-08 22:04:22 - INFO --> User Object Created
+2013-05-08 22:04:29 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-08 22:04:31 - INFO --> New Player Created for game; '58'
+2013-05-08 22:04:31 - INFO --> and with User ID; 0
+2013-05-08 22:04:32 - INFO --> New Player Created for game; '58'
+2013-05-08 22:04:32 - INFO --> and with User ID; '1'
+2013-05-08 22:04:32 - INFO --> playRound called
+2013-05-08 22:04:32 - INFO --> dealHand called
+2013-05-08 22:04:32 - INFO --> addCard called in Player.php for user: ; '1'
+2013-05-08 22:04:32 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:04:32 - INFO --> String version of card value: ; '07'
+2013-05-08 22:04:32 - INFO --> addCard called in Player.php for user: ; 0
+2013-05-08 22:04:32 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:04:32 - INFO --> String version of card value: ; '09'
+2013-05-08 22:04:32 - INFO --> Updating Game State!
+2013-05-08 22:04:32 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-08 22:04:32 - INFO -->  setUpOrGetHand and game ID:; '58'
+2013-05-08 22:04:32 - INFO --> Updating Game State for player: ; Player::__set_state(array(
+   '_db' => 
+  PDO::__set_state(array(
+  )),
+   'hand' => 
+  array (
+    0 => '07_spade',
+  ),
+   'bankroll' => 0,
+   'username' => 'JJ',
+   'played_turn' => 0,
+   'card_count' => 7,
+   'has_ace' => NULL,
+   'uID' => '1',
+   'gID' => '58',
+   'log' => 
+  KLogger::__set_state(array(
+     '_logStatus' => 1,
+     '_messageQueue' => 
+    array (
+      0 => 'The log file was opened successfully.',
+    ),
+     '_logFilePath' => 'C:\\Users\\vanhornm\\Blackjack\\resources\\log_2013-05-08.txt',
+     '_severityThreshold' => 7,
+     '_fileHandle' => NULL,
+     '_messages' => 
+    array (
+      'writefail' => 'The file could not be written to. Check that appropriate permissions have been set.',
+      'opensuccess' => 'The log file was opened successfully.',
+      'openfail' => 'The file could not be opened. Check permissions.',
+    ),
+  )),
+))
+2013-05-08 22:04:32 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-08 22:04:32 - INFO -->  setUpOrGetHand and game ID:; '58'
+2013-05-08 22:04:32 - INFO --> username:; 'JJ'
+2013-05-08 22:04:32 - INFO --> addCard called in Player.php for user: ; '1'
+2013-05-08 22:04:32 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:04:32 - INFO --> String version of card value: ; '06'
+2013-05-08 22:04:32 - INFO --> addCard called in Player.php for user: ; 0
+2013-05-08 22:04:33 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:04:33 - INFO --> String version of card value: ; '06'
+2013-05-08 22:04:33 - INFO --> Updating Game State!
+2013-05-08 22:04:33 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-08 22:04:33 - INFO -->  setUpOrGetHand and game ID:; '58'
+2013-05-08 22:04:33 - INFO --> Updating Game State for player: ; Player::__set_state(array(
+   '_db' => 
+  PDO::__set_state(array(
+  )),
+   'hand' => 
+  array (
+    0 => '07_spade',
+    1 => '06_spade',
+  ),
+   'bankroll' => 0,
+   'username' => 'JJ',
+   'played_turn' => 0,
+   'card_count' => 13,
+   'has_ace' => NULL,
+   'uID' => '1',
+   'gID' => '58',
+   'log' => 
+  KLogger::__set_state(array(
+     '_logStatus' => 1,
+     '_messageQueue' => 
+    array (
+      0 => 'The log file was opened successfully.',
+    ),
+     '_logFilePath' => 'C:\\Users\\vanhornm\\Blackjack\\resources\\log_2013-05-08.txt',
+     '_severityThreshold' => 7,
+     '_fileHandle' => NULL,
+     '_messages' => 
+    array (
+      'writefail' => 'The file could not be written to. Check that appropriate permissions have been set.',
+      'opensuccess' => 'The log file was opened successfully.',
+      'openfail' => 'The file could not be opened. Check permissions.',
+    ),
+  )),
+))
+2013-05-08 22:04:33 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-08 22:04:33 - INFO -->  setUpOrGetHand and game ID:; '58'
+2013-05-08 22:04:33 - INFO --> username:; 'JJ'
+2013-05-08 22:04:33 - INFO --> createANewGame in GameController 
+2013-05-08 22:04:37 - INFO --> New Player Created for game; '58'
+2013-05-08 22:04:37 - INFO --> and with User ID; 0
+2013-05-08 22:04:37 - INFO --> Blackjack Constructed called with id: ; '58'
+2013-05-08 22:11:24 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-08 22:11:25 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-08 22:11:27 - INFO --> New Player Created for game; '59'
+2013-05-08 22:11:27 - INFO --> and with User ID; 0
+2013-05-08 22:11:28 - INFO --> New Player Created for game; '59'
+2013-05-08 22:11:28 - INFO --> and with User ID; '1'
+2013-05-08 22:11:28 - INFO --> playRound called
+2013-05-08 22:11:28 - INFO --> dealHand called
+2013-05-08 22:11:28 - INFO --> addCard called in Player.php for user: ; '1'
+2013-05-08 22:11:28 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:11:28 - INFO --> String version of card value: ; '10'
+2013-05-08 22:11:28 - INFO --> addCard called in Player.php for user: ; 0
+2013-05-08 22:11:28 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:11:28 - INFO --> String version of card value: ; '09'
+2013-05-08 22:11:28 - INFO --> Updating Game State!
+2013-05-08 22:11:28 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-08 22:11:28 - INFO -->  setUpOrGetHand and game ID:; '59'
+2013-05-08 22:11:28 - INFO --> Updating Game State for player: ; Player::__set_state(array(
+   '_db' => 
+  PDO::__set_state(array(
+  )),
+   'hand' => 
+  array (
+    0 => '10_club',
+  ),
+   'bankroll' => 0,
+   'username' => 'JJ',
+   'played_turn' => 0,
+   'card_count' => 10,
+   'has_ace' => NULL,
+   'uID' => '1',
+   'gID' => '59',
+   'log' => 
+  KLogger::__set_state(array(
+     '_logStatus' => 1,
+     '_messageQueue' => 
+    array (
+      0 => 'The log file was opened successfully.',
+    ),
+     '_logFilePath' => 'C:\\Users\\vanhornm\\Blackjack\\resources\\log_2013-05-08.txt',
+     '_severityThreshold' => 7,
+     '_fileHandle' => NULL,
+     '_messages' => 
+    array (
+      'writefail' => 'The file could not be written to. Check that appropriate permissions have been set.',
+      'opensuccess' => 'The log file was opened successfully.',
+      'openfail' => 'The file could not be opened. Check permissions.',
+    ),
+  )),
+))
+2013-05-08 22:11:28 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-08 22:11:28 - INFO -->  setUpOrGetHand and game ID:; '59'
+2013-05-08 22:11:28 - INFO --> username:; 'JJ'
+2013-05-08 22:11:28 - INFO --> addCard called in Player.php for user: ; '1'
+2013-05-08 22:11:28 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:11:28 - INFO --> String version of card value: ; '13'
+2013-05-08 22:11:28 - INFO --> addCard called in Player.php for user: ; 0
+2013-05-08 22:11:28 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:11:28 - INFO --> String version of card value: ; '11'
+2013-05-08 22:11:28 - INFO --> Updating Game State!
+2013-05-08 22:11:28 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-08 22:11:28 - INFO -->  setUpOrGetHand and game ID:; '59'
+2013-05-08 22:11:28 - INFO --> Updating Game State for player: ; Player::__set_state(array(
+   '_db' => 
+  PDO::__set_state(array(
+  )),
+   'hand' => 
+  array (
+    0 => '10_club',
+    1 => '13_diamond',
+  ),
+   'bankroll' => 0,
+   'username' => 'JJ',
+   'played_turn' => 0,
+   'card_count' => 20,
+   'has_ace' => NULL,
+   'uID' => '1',
+   'gID' => '59',
+   'log' => 
+  KLogger::__set_state(array(
+     '_logStatus' => 1,
+     '_messageQueue' => 
+    array (
+      0 => 'The log file was opened successfully.',
+    ),
+     '_logFilePath' => 'C:\\Users\\vanhornm\\Blackjack\\resources\\log_2013-05-08.txt',
+     '_severityThreshold' => 7,
+     '_fileHandle' => NULL,
+     '_messages' => 
+    array (
+      'writefail' => 'The file could not be written to. Check that appropriate permissions have been set.',
+      'opensuccess' => 'The log file was opened successfully.',
+      'openfail' => 'The file could not be opened. Check permissions.',
+    ),
+  )),
+))
+2013-05-08 22:11:28 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-08 22:11:28 - INFO -->  setUpOrGetHand and game ID:; '59'
+2013-05-08 22:11:28 - INFO --> username:; 'JJ'
+2013-05-08 22:11:28 - INFO --> createANewGame in GameController 
+2013-05-08 22:11:32 - INFO --> New Player Created for game; '59'
+2013-05-08 22:11:32 - INFO --> and with User ID; 0
+2013-05-08 22:11:32 - INFO --> Blackjack Constructed called with id: ; '59'
+2013-05-08 22:14:43 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-08 22:14:44 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-08 22:14:46 - INFO --> New Player Created for game; '60'
+2013-05-08 22:14:46 - INFO --> and with User ID; 0
+2013-05-08 22:14:47 - INFO --> New Player Created for game; '60'
+2013-05-08 22:14:47 - INFO --> and with User ID; '1'
+2013-05-08 22:14:47 - INFO --> playRound called
+2013-05-08 22:14:47 - INFO --> dealHand called
+2013-05-08 22:14:47 - INFO --> addCard called in Player.php for user: ; '1'
+2013-05-08 22:14:47 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:14:47 - INFO --> String version of card value: ; '01'
+2013-05-08 22:14:47 - INFO --> addCard called in Player.php for user: ; 0
+2013-05-08 22:14:48 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:14:48 - INFO --> String version of card value: ; '01'
+2013-05-08 22:14:48 - INFO --> Updating Game State!
+2013-05-08 22:14:48 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-08 22:14:48 - INFO -->  setUpOrGetHand and game ID:; '60'
+2013-05-08 22:14:48 - INFO --> Updating Game State for player: ; Player::__set_state(array(
+   '_db' => 
+  PDO::__set_state(array(
+  )),
+   'hand' => 
+  array (
+    0 => '01_spade',
+  ),
+   'bankroll' => 0,
+   'username' => 'JJ',
+   'played_turn' => 0,
+   'card_count' => 11,
+   'has_ace' => NULL,
+   'uID' => '1',
+   'gID' => '60',
+   'log' => 
+  KLogger::__set_state(array(
+     '_logStatus' => 1,
+     '_messageQueue' => 
+    array (
+      0 => 'The log file was opened successfully.',
+    ),
+     '_logFilePath' => 'C:\\Users\\vanhornm\\Blackjack\\resources\\log_2013-05-08.txt',
+     '_severityThreshold' => 7,
+     '_fileHandle' => NULL,
+     '_messages' => 
+    array (
+      'writefail' => 'The file could not be written to. Check that appropriate permissions have been set.',
+      'opensuccess' => 'The log file was opened successfully.',
+      'openfail' => 'The file could not be opened. Check permissions.',
+    ),
+  )),
+))
+2013-05-08 22:14:48 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-08 22:14:48 - INFO -->  setUpOrGetHand and game ID:; '60'
+2013-05-08 22:14:48 - INFO --> username:; 'JJ'
+2013-05-08 22:14:48 - INFO --> addCard called in Player.php for user: ; '1'
+2013-05-08 22:14:48 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:14:48 - INFO --> String version of card value: ; '03'
+2013-05-08 22:14:48 - INFO --> addCard called in Player.php for user: ; 0
+2013-05-08 22:14:48 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:14:48 - INFO --> String version of card value: ; '10'
+2013-05-08 22:14:48 - INFO --> Updating Game State!
+2013-05-08 22:14:48 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-08 22:14:48 - INFO -->  setUpOrGetHand and game ID:; '60'
+2013-05-08 22:14:48 - INFO --> Updating Game State for player: ; Player::__set_state(array(
+   '_db' => 
+  PDO::__set_state(array(
+  )),
+   'hand' => 
+  array (
+    0 => '01_spade',
+    1 => '03_spade',
+  ),
+   'bankroll' => 0,
+   'username' => 'JJ',
+   'played_turn' => 0,
+   'card_count' => 14,
+   'has_ace' => NULL,
+   'uID' => '1',
+   'gID' => '60',
+   'log' => 
+  KLogger::__set_state(array(
+     '_logStatus' => 1,
+     '_messageQueue' => 
+    array (
+      0 => 'The log file was opened successfully.',
+    ),
+     '_logFilePath' => 'C:\\Users\\vanhornm\\Blackjack\\resources\\log_2013-05-08.txt',
+     '_severityThreshold' => 7,
+     '_fileHandle' => NULL,
+     '_messages' => 
+    array (
+      'writefail' => 'The file could not be written to. Check that appropriate permissions have been set.',
+      'opensuccess' => 'The log file was opened successfully.',
+      'openfail' => 'The file could not be opened. Check permissions.',
+    ),
+  )),
+))
+2013-05-08 22:14:48 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-08 22:14:48 - INFO -->  setUpOrGetHand and game ID:; '60'
+2013-05-08 22:14:48 - INFO --> username:; 'JJ'
+2013-05-08 22:14:48 - INFO --> createANewGame in GameController 
+2013-05-08 22:14:52 - INFO --> New Player Created for game; '60'
+2013-05-08 22:14:52 - INFO --> and with User ID; 0
+2013-05-08 22:14:52 - INFO --> Blackjack Constructed called with id: ; '60'
+2013-05-08 22:19:26 - INFO --> New Player Created for game; '60'
+2013-05-08 22:19:26 - INFO --> and with User ID; 0
+2013-05-08 22:19:26 - INFO --> Blackjack Constructed called with id: ; '60'
+2013-05-08 22:19:34 - INFO --> a Hit in GameController with gameid; '60'
+2013-05-08 22:19:34 - INFO --> a Hit in GameController from player; 'eks982v8065567pikgdtjjj9d1'
+2013-05-08 22:19:36 - INFO --> New Player Created for game; '60'
+2013-05-08 22:19:36 - INFO --> and with User ID; 0
+2013-05-08 22:19:36 - INFO --> Blackjack Constructed called with id: ; '60'
+2013-05-08 22:19:36 - INFO --> a Hit in the Game from player: ; 'eks982v8065567pikgdtjjj9d1'
+2013-05-08 22:19:36 - INFO --> Hmm are we sure this is returning a player: ; '1'
+2013-05-08 22:19:36 - INFO --> It is still players turn, player: ; '1'
+2013-05-08 22:19:37 - INFO --> Deal called from a hit with game id: ; '60'
+2013-05-08 22:19:37 - INFO --> There are this many cards remaining in the deck ; 48
+2013-05-08 22:19:37 - INFO --> Player delt card: ; '02_club'
+2013-05-08 22:19:37 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:19:37 - INFO --> String version of card value: ; '02'
+2013-05-08 22:19:37 - INFO --> The value of the new card is ; 2
+2013-05-08 22:19:37 - INFO --> Updating Game State 22222222!
+2013-05-08 22:19:37 - INFO --> Updating Game State for player: ; '1'
+2013-05-08 22:19:37 - INFO --> in UG2, their username is: ; 'JJ'
+2013-05-08 22:19:37 - INFO --> in UG2, their cards are: ; '01_spade'
+2013-05-08 22:19:37 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:19:37 - INFO --> String version of card value: ; '01'
+2013-05-08 22:19:37 - INFO --> in UG2, their cards are: ; '03_spade'
+2013-05-08 22:19:37 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:19:37 - INFO --> String version of card value: ; '03'
+2013-05-08 22:19:37 - INFO --> in UG2, their cards are: ; '02_club'
+2013-05-08 22:19:37 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:19:37 - INFO --> String version of card value: ; '02'
+2013-05-08 22:19:37 - INFO --> in UG2, their count is now: ; 16
+2013-05-08 22:19:37 - INFO --> A Hit in Game.php 
+2013-05-08 22:20:56 - INFO --> a Hit in GameController with gameid; '60'
+2013-05-08 22:20:56 - INFO --> a Hit in GameController from player; 'eks982v8065567pikgdtjjj9d1'
+2013-05-08 22:20:58 - INFO --> New Player Created for game; '60'
+2013-05-08 22:20:58 - INFO --> and with User ID; 0
+2013-05-08 22:20:58 - INFO --> Blackjack Constructed called with id: ; '60'
+2013-05-08 22:20:58 - INFO --> a Hit in the Game from player: ; 'eks982v8065567pikgdtjjj9d1'
+2013-05-08 22:20:58 - INFO --> Hmm are we sure this is returning a player: ; '1'
+2013-05-08 22:20:58 - INFO --> It is still players turn, player: ; '1'
+2013-05-08 22:20:59 - INFO --> Deal called from a hit with game id: ; '60'
+2013-05-08 22:20:59 - INFO --> There are this many cards remaining in the deck ; 47
+2013-05-08 22:20:59 - INFO --> Player delt card: ; '03_club'
+2013-05-08 22:20:59 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:20:59 - INFO --> String version of card value: ; '03'
+2013-05-08 22:20:59 - INFO --> The value of the new card is ; 3
+2013-05-08 22:20:59 - INFO --> Updating Game State 22222222!
+2013-05-08 22:20:59 - INFO --> Updating Game State for player: ; '1'
+2013-05-08 22:20:59 - INFO --> in UG2, their username is: ; 'JJ'
+2013-05-08 22:20:59 - INFO --> in UG2, their cards are: ; '01_spade'
+2013-05-08 22:20:59 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:20:59 - INFO --> String version of card value: ; '01'
+2013-05-08 22:20:59 - INFO --> in UG2, their cards are: ; '03_spade'
+2013-05-08 22:20:59 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:20:59 - INFO --> String version of card value: ; '03'
+2013-05-08 22:20:59 - INFO --> in UG2, their cards are: ; '02_club'
+2013-05-08 22:20:59 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:20:59 - INFO --> String version of card value: ; '02'
+2013-05-08 22:20:59 - INFO --> in UG2, their cards are: ; '03_club'
+2013-05-08 22:20:59 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:20:59 - INFO --> String version of card value: ; '03'
+2013-05-08 22:20:59 - INFO --> in UG2, their count is now: ; 19
+2013-05-08 22:20:59 - INFO --> A Hit in Game.php 
+2013-05-08 22:22:02 - INFO --> User Object Created
+2013-05-08 22:22:15 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-08 22:22:17 - INFO --> New Player Created for game; '61'
+2013-05-08 22:22:17 - INFO --> and with User ID; 0
+2013-05-08 22:22:18 - INFO --> New Player Created for game; '61'
+2013-05-08 22:22:18 - INFO --> and with User ID; '1'
+2013-05-08 22:22:18 - INFO --> playRound called
+2013-05-08 22:22:18 - INFO --> dealHand called
+2013-05-08 22:22:18 - INFO --> addCard called in Player.php for user: ; '1'
+2013-05-08 22:22:18 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:22:18 - INFO --> String version of card value: ; '08'
+2013-05-08 22:22:18 - INFO --> addCard called in Player.php for user: ; 0
+2013-05-08 22:22:18 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:22:18 - INFO --> String version of card value: ; '11'
+2013-05-08 22:22:18 - INFO --> Updating Game State!
+2013-05-08 22:22:18 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-08 22:22:18 - INFO -->  setUpOrGetHand and game ID:; '61'
+2013-05-08 22:22:18 - INFO --> Updating Game State for player: ; Player::__set_state(array(
+   '_db' => 
+  PDO::__set_state(array(
+  )),
+   'hand' => 
+  array (
+    0 => '08_club',
   ),
    'bankroll' => 0,
    'username' => 'JJ',
    'played_turn' => 0,
    'card_count' => 8,
    'has_ace' => NULL,
-   'uID' => NULL,
-   'gID' => '53',
+   'uID' => '1',
+   'gID' => '61',
    'log' => 
   KLogger::__set_state(array(
      '_logStatus' => 1,
@@ -48,34 +925,34 @@
     ),
   )),
 ))
-2013-05-08 17:04:17 - INFO -->  setUpOrGetHand user ID:; NULL
-2013-05-08 17:04:17 - INFO -->  setUpOrGetHand and game ID:; '53'
-2013-05-08 17:04:17 - INFO --> username:; 'JJ'
-2013-05-08 17:04:17 - INFO --> addCard called in Player.php for user: ; NULL
-2013-05-08 17:04:17 - INFO --> Checking for the value of the card in getCardValue in Game.php
-2013-05-08 17:04:17 - INFO --> String version of card value: ; '10'
-2013-05-08 17:04:17 - INFO --> addCard called in Player.php for user: ; 0
-2013-05-08 17:04:17 - INFO --> Checking for the value of the card in getCardValue in Game.php
-2013-05-08 17:04:17 - INFO --> String version of card value: ; '06'
-2013-05-08 17:04:17 - INFO --> Updating Game State!
-2013-05-08 17:04:17 - INFO -->  setUpOrGetHand user ID:; 0
-2013-05-08 17:04:17 - INFO -->  setUpOrGetHand and game ID:; '53'
-2013-05-08 17:04:17 - INFO --> Updating Game State for player: ; Player::__set_state(array(
+2013-05-08 22:22:18 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-08 22:22:18 - INFO -->  setUpOrGetHand and game ID:; '61'
+2013-05-08 22:22:18 - INFO --> username:; 'JJ'
+2013-05-08 22:22:18 - INFO --> addCard called in Player.php for user: ; '1'
+2013-05-08 22:22:18 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:22:18 - INFO --> String version of card value: ; '03'
+2013-05-08 22:22:18 - INFO --> addCard called in Player.php for user: ; 0
+2013-05-08 22:22:18 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 22:22:18 - INFO --> String version of card value: ; '12'
+2013-05-08 22:22:18 - INFO --> Updating Game State!
+2013-05-08 22:22:18 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-08 22:22:18 - INFO -->  setUpOrGetHand and game ID:; '61'
+2013-05-08 22:22:18 - INFO --> Updating Game State for player: ; Player::__set_state(array(
    '_db' => 
   PDO::__set_state(array(
   )),
    'hand' => 
   array (
-    0 => '08_spade',
-    1 => '10_spade',
+    0 => '08_club',
+    1 => '03_club',
   ),
    'bankroll' => 0,
    'username' => 'JJ',
    'played_turn' => 0,
-   'card_count' => 18,
+   'card_count' => 11,
    'has_ace' => NULL,
-   'uID' => NULL,
-   'gID' => '53',
+   'uID' => '1',
+   'gID' => '61',
    'log' => 
   KLogger::__set_state(array(
      '_logStatus' => 1,
@@ -94,10 +971,122 @@
     ),
   )),
 ))
-2013-05-08 17:04:17 - INFO -->  setUpOrGetHand user ID:; NULL
-2013-05-08 17:04:17 - INFO -->  setUpOrGetHand and game ID:; '53'
-2013-05-08 17:04:17 - INFO --> username:; 'JJ'
-2013-05-08 17:04:17 - INFO --> createANewGame in GameController 
-2013-05-08 17:04:21 - INFO --> New Player Created for game; '53'
-2013-05-08 17:04:21 - INFO --> and with User ID; 0
-2013-05-08 17:04:21 - INFO --> Blackjack Constructed called with id: ; '53'
+2013-05-08 22:22:18 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-08 22:22:18 - INFO -->  setUpOrGetHand and game ID:; '61'
+2013-05-08 22:22:18 - INFO --> username:; 'JJ'
+2013-05-08 22:22:18 - INFO --> createANewGame in GameController 
+2013-05-08 22:22:22 - INFO --> New Player Created for game; '61'
+2013-05-08 22:22:22 - INFO --> and with User ID; 0
+2013-05-08 22:22:22 - INFO --> Blackjack Constructed called with id: ; '61'
+2013-05-08 22:53:30 - INFO --> New Player Created for game; '61'
+2013-05-08 22:53:30 - INFO --> and with User ID; 0
+2013-05-08 22:53:30 - INFO --> Blackjack Constructed called with id: ; '61'
+2013-05-08 22:53:34 - INFO --> New Player Created for game; '61'
+2013-05-08 22:53:34 - INFO --> and with User ID; 0
+2013-05-08 22:53:34 - INFO --> Blackjack Constructed called with id: ; '61'
+2013-05-08 23:23:13 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-08 23:23:14 - INFO --> Blackjack Constructed called with id: ; NULL
+2013-05-08 23:23:16 - INFO --> New Player Created for game; '62'
+2013-05-08 23:23:16 - INFO --> and with User ID; 0
+2013-05-08 23:23:17 - INFO --> New Player Created for game; '62'
+2013-05-08 23:23:17 - INFO --> and with User ID; '1'
+2013-05-08 23:23:17 - INFO --> playRound called
+2013-05-08 23:23:17 - INFO --> dealHand called
+2013-05-08 23:23:17 - INFO --> addCard called in Player.php for user: ; '1'
+2013-05-08 23:23:17 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 23:23:17 - INFO --> String version of card value: ; '06'
+2013-05-08 23:23:17 - INFO --> addCard called in Player.php for user: ; 0
+2013-05-08 23:23:17 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 23:23:17 - INFO --> String version of card value: ; '09'
+2013-05-08 23:23:17 - INFO --> Updating Game State!
+2013-05-08 23:23:17 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-08 23:23:17 - INFO -->  setUpOrGetHand and game ID:; '62'
+2013-05-08 23:23:17 - INFO --> Updating Game State for player: ; Player::__set_state(array(
+   '_db' => 
+  PDO::__set_state(array(
+  )),
+   'hand' => 
+  array (
+    0 => '06_diamond',
+  ),
+   'bankroll' => 0,
+   'username' => 'JJ',
+   'played_turn' => 0,
+   'card_count' => 6,
+   'has_ace' => NULL,
+   'uID' => '1',
+   'gID' => '62',
+   'log' => 
+  KLogger::__set_state(array(
+     '_logStatus' => 1,
+     '_messageQueue' => 
+    array (
+      0 => 'The log file was opened successfully.',
+    ),
+     '_logFilePath' => 'C:\\Users\\vanhornm\\Blackjack\\resources\\log_2013-05-08.txt',
+     '_severityThreshold' => 7,
+     '_fileHandle' => NULL,
+     '_messages' => 
+    array (
+      'writefail' => 'The file could not be written to. Check that appropriate permissions have been set.',
+      'opensuccess' => 'The log file was opened successfully.',
+      'openfail' => 'The file could not be opened. Check permissions.',
+    ),
+  )),
+))
+2013-05-08 23:23:17 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-08 23:23:17 - INFO -->  setUpOrGetHand and game ID:; '62'
+2013-05-08 23:23:17 - INFO --> username:; 'JJ'
+2013-05-08 23:23:17 - INFO --> addCard called in Player.php for user: ; '1'
+2013-05-08 23:23:17 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 23:23:17 - INFO --> String version of card value: ; '07'
+2013-05-08 23:23:17 - INFO --> addCard called in Player.php for user: ; 0
+2013-05-08 23:23:17 - INFO --> Checking for the value of the card in getCardValue in Game.php
+2013-05-08 23:23:17 - INFO --> String version of card value: ; '09'
+2013-05-08 23:23:17 - INFO --> Updating Game State!
+2013-05-08 23:23:17 - INFO -->  setUpOrGetHand user ID:; 0
+2013-05-08 23:23:17 - INFO -->  setUpOrGetHand and game ID:; '62'
+2013-05-08 23:23:17 - INFO --> Updating Game State for player: ; Player::__set_state(array(
+   '_db' => 
+  PDO::__set_state(array(
+  )),
+   'hand' => 
+  array (
+    0 => '06_diamond',
+    1 => '07_diamond',
+  ),
+   'bankroll' => 0,
+   'username' => 'JJ',
+   'played_turn' => 0,
+   'card_count' => 13,
+   'has_ace' => NULL,
+   'uID' => '1',
+   'gID' => '62',
+   'log' => 
+  KLogger::__set_state(array(
+     '_logStatus' => 1,
+     '_messageQueue' => 
+    array (
+      0 => 'The log file was opened successfully.',
+    ),
+     '_logFilePath' => 'C:\\Users\\vanhornm\\Blackjack\\resources\\log_2013-05-08.txt',
+     '_severityThreshold' => 7,
+     '_fileHandle' => NULL,
+     '_messages' => 
+    array (
+      'writefail' => 'The file could not be written to. Check that appropriate permissions have been set.',
+      'opensuccess' => 'The log file was opened successfully.',
+      'openfail' => 'The file could not be opened. Check permissions.',
+    ),
+  )),
+))
+2013-05-08 23:23:17 - INFO -->  setUpOrGetHand user ID:; '1'
+2013-05-08 23:23:17 - INFO -->  setUpOrGetHand and game ID:; '62'
+2013-05-08 23:23:17 - INFO --> username:; 'JJ'
+2013-05-08 23:23:17 - INFO --> createANewGame in GameController 
+2013-05-08 23:23:21 - INFO --> New Player Created for game; '62'
+2013-05-08 23:23:21 - INFO --> and with User ID; 0
+2013-05-08 23:23:21 - INFO --> Blackjack Constructed called with id: ; '62'
+2013-05-08 23:43:13 - INFO --> New Player Created for game; '62'
+2013-05-08 23:43:13 - INFO --> and with User ID; 0
+2013-05-08 23:43:13 - INFO --> Blackjack Constructed called with id: ; '62'

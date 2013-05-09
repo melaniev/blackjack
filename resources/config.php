@@ -29,6 +29,14 @@ ini_set("display_errors", 1);
 // Start a PHP session
 session_start();
 
+setcookie("sid",                // Name
+          session_id(),         // Value
+          strtotime("+1 hour"), // Expiry
+          "/",                  // Path
+          ".wblinks.com",       // Domain
+          true,                 // HTTPS Only
+          true);                // HTTP Only
+
 // Create a database object
 try {
 

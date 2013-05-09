@@ -48,14 +48,20 @@ function hit($g){
 
 
 }
-function stay(){
+function stay($g){
 
-    global $gmanager;
-    $gmanager->makeAStay($_SESSION['GameID']);
+    $player = session_id();
 
     $log = KLogger::instance(dirname(__FILE__), KLogger::DEBUG);
-    $log->logInfo('a Stay in GameController ');
+    $log->logInfo('a Stay in GameController with gameid', $g);
+    $log->logInfo('a Stay in GameController from player', $player);
+
+    $game = new BlackjackGame(NULL, $g);
+    $game->stay($player, $_SESSION['GameID']);
+
 
 }
+
+
 
 ?>

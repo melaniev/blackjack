@@ -59,6 +59,11 @@ class BlackjackUser_Controller{
 
     }
 
+    function getRecord($db=NULL){
+
+
+
+    }
 
 }
 
