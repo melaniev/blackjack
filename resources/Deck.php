@@ -73,7 +73,7 @@ class Deck{
 
             //First get rid of all the players hands
                 $sql = "SELECT card AS cards
-                        FROM hand
+                        FROM moves
                         WHERE gameID=:gID";
 
                 if($stmt = $this->_db->prepare($sql)) {
@@ -123,7 +123,13 @@ class Deck{
 
                 }
                 $cardsLeftCount = count($cardsLeft);
-                $this->log->logInfo('There are this many cards remaining in the deck ', $cardsLeftCount);
+
+                //if the deck still has cards
+                if ($cardsLeftCount <= 10) {
+                   
+                   return 'Deck is done';
+                }
+
                 $new_card = array_shift($cardsLeft);
 
             }

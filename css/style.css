@@ -86,6 +86,12 @@ html{
 	
 }
 
+#othersRecords a{
+	color: white;
+}
+#othersRecords a:hover{
+	color: yellow;
+}
 .login-label{
 	width: 10%;
 	font-size: 38px;
@@ -169,13 +175,9 @@ html{
 }
 #table-top{
 	height: 100%;
-	width: 84%;
-	float: right;
-}
-#side-bar{
-	height: 100%;
-	width: 12%;
-	float: right;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .a_player{
@@ -196,18 +198,6 @@ html{
 	border-radius: 5px;
 	background-size: cover;
     background-repeat: no-repeat;
-}
-
-#chat{
-	height: 45%;
-	min-height: 400px;
-
-}
-#stats{
-	height: 45%;
-	min-height: 400px;
-	height: 400px;
-	overflow-y: scroll;
 }
 .text-panels{
 	background: rgba(0,0,0,0.60); 
@@ -293,7 +283,7 @@ html{
 	}
 	#player5 .card, #player0 .card{
 		width: 100px;
-		height: 150px;
+		height: 140px;
 	}
 
 }

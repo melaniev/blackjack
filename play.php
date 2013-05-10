@@ -72,30 +72,16 @@
 			<a href='lobby.php'>lobby</a>
 		</div>
 
-		<div id='side-bar'>
-			<div id='chat' class='text-panels'>
-				<h2>Chat</h2>
+				<p style='float:right'>Game: <?php echo $_SESSION['GameID'] ?></p>
 
-				<p>Game: <?php echo $_SESSION['GameID'] ?></p>
-			</div>
-			<div id='stats' class='text-panels'>
-				<h2>Stats or Whatever</h2>
-				<div id='status-feed'>
-
-				</div>
-
-			</div>
-
-
-		</div>
 		<div id='table-top'>
 			<div class='a_player' id='player0'>
 				<h2 class='username'>Dealer</h2>
 				<div class='card-total'><h3>Total:</h3><span class='current-total'>##</span></div>
-					<div class='card 3'></div>
-					<div class='card 1'></div>
-					<div class='card 2'></div>
 					<div class='card 4'></div>
+					<div class='card 2'></div>
+					<div class='card 1'></div>
+					<div class='card 3'></div>
 					<div class='card 5'></div>
 			</div>
 			<div id='other-players'>
@@ -104,40 +90,40 @@
 				<div class='a_player not-dealer' id='player1'>
 					<h2 class='username'>Player 1</h2>
 					<div class='card-total'><h3>Total:</h3><span class='current-total'>##</span></div>
-					<div class='card 3'></div>
-					<div class='card 1'></div>
-					<div class='card 2'></div>
 					<div class='card 4'></div>
+					<div class='card 2'></div>
+					<div class='card 1'></div>
+					<div class='card 3'></div>
 				</div>
 
 				<!-- Player 2 -->
 				<div class='a_player  not-dealer' id='player2'>
 					<h2 class='username'>Player 2</h2>
 					<div class='card-total'><h3>Total:</h3><span class='current-total'>##</span></div>
-					<div class='card 3'></div>
-					<div class='card 1'></div>
-					<div class='card 2'></div>
 					<div class='card 4'></div>
+					<div class='card 2'></div>
+					<div class='card 1'></div>
+					<div class='card 3'></div>
 				</div>
 
 				<!-- Player 3 -->
 				<div class='a_player  not-dealer' id='player3'>
 					<h2 class='username'>Player 3</h2>
 					<div class='card-total'><h3>Total:</h3><span class='current-total'>##</span></div>
-					<div class='card 3'></div>
-					<div class='card 1'></div>
-					<div class='card 2'></div>
 					<div class='card 4'></div>
+					<div class='card 2'></div>
+					<div class='card 1'></div>
+					<div class='card 3'></div>
 				</div>
 
 				<!-- Player 4 -->
 				<div class='a_player  not-dealer' id='player4'>
 					<h2 class='username'>Player 4</h2>
 					<div class='card-total'><h3>Total:</h3><span class='current-total'>##</span></div>
-					<div class='card 3'></div>
-					<div class='card 1'></div>
-					<div class='card 2'></div>
 					<div class='card 4'></div>
+					<div class='card 2'></div>
+					<div class='card 1'></div>
+					<div class='card 3'></div>
 				</div>
 			</div>
 
@@ -145,18 +131,19 @@
 				<div class='a_player  not-dealer' id='player5'>
 					<h2 class='username'><?php echo $_SESSION['Username']; ?></h2>
 					<div class='card-total'><h3>Total:</h3><span class='current-total'>##</span></div>
-					<div class='card 3'></div>
-					<div class='card 1'></div>
-					<div class='card 2'></div>
 					<div class='card 4'></div>
+					<div class='card 2'></div>
+					<div class='card 1'></div>
+					<div class='card 3'></div>
 					<div class='card 5'></div>
-					<form action='' method='post'>
-						<input type='submit' id='staybutton' class='button playbutton' style='width:60px;' value='Stay' name='stay'/>
-					</form>
-					<form action='' method='post'>
-						<input type='submit' id='hitbutton' class='button' style='width:60px;' value='Hit' name='hit' />
-						<input type='text' />
-					</form>
+					<div>
+						<form action='' method='post'  style='display:inline'>
+							<input type='submit' id='staybutton' class='button playbutton' style='width:100px; display:inline' value='Stay' name='stay'/>
+						</form>
+						<form action='' method='post'  style='display:inline'>
+							<input type='submit' id='hitbutton' class='button' style='width:100px;display:inline;' value='Hit' name='hit' />
+						</form>
+					</div>
 				</div>
 
 		</div>
@@ -167,19 +154,19 @@
 
 <script type="text/javascript">
 
+	var lasttime = '';
+
 	$(document).ready(function(){
 
 		$('#hitbutton').click(function(event){
 			event.preventDefault();
-			alert('hit!');
 
 			$.ajax({
 	            type: 'POST',
-	            data: { name: "Hit", bet: "$50" },
+	            data: { name: "Hit"},
 	            url: '<?php echo SITE_URL; ?>/move.php',
 	            success: function (data) {
 
-	            	alert('yes!');
 
 	            },
 	            
@@ -191,11 +178,10 @@
 
 			$.ajax({
 	            type: 'POST',
-	            data: { name: "Stay", bet: "$50" },
+	            data: { name: "Stay" },
 	            url: '<?php echo SITE_URL; ?>/move.php',
 	            success: function (data) {
 
-	            	alert('yes!');
 
 	            },
 	            
@@ -213,42 +199,50 @@
             url: '<?php echo SITE_URL; ?>/plays<?php echo $_SESSION['GameID'] ?>.php',
             success: function (data) {
 
-            	updateBoard(data);
+
+
+            	updateMyBoard(data);
 
             },
             complete: updateboard
         });
-    }, 2000);
+    }, 500);
 })();
 
-function updateBoard(gamedata){
+function updateMyBoard(gamedata){
+
 
 	var gameinfo = gamedata;
 	var total;
 	var cardstr;
 	var cards;
 
-	   	for (var i = 0; i < gameinfo.length; i++) {
+		if(gameinfo != lasttime){
 
-	    	var player = gameinfo[i];
+		   	for (var i = 0; i < gameinfo.length; i++) {
 
-	    	 total = player.count;
-	    	 cardstr = player.cards;
-    		 cards = cardstr.split(',');
+		    	var player = gameinfo[i];
 
-	        if (player.name == 'dealer') {
-	        	
-	        	showCards(0, total, cards);
+		    	 total = player.count;
+		    	 cardstr = player.cards;
+	    		 cards = cardstr.split(',');
 
-	        }
-	        if (player.name == '<?php echo $_SESSION['Username']; ?>') {
+		        if (player.name == 'dealer') {
+		        	
+		        	showCards(0, total, cards);
 
-	        	showCards(5, total, cards);
+		        }
+		        if (player.name == '<?php echo $_SESSION['Username']; ?>') {
+
+		        	showCards(5, total, cards);
 
 
-	        }
+		        }
+			}
+
 		}
 
+		lasttime = gameinfo;
 }
 
 function showCards(spot, cardCount, mycards){
@@ -272,7 +266,17 @@ function showCards(spot, cardCount, mycards){
 
     	var cardurl = 'url("/images/content/cards/'+cleanCard+'.png")';
     	
-    	$(cardSpace).children('.card.'+j).css({'background-image': cardurl, 'border': '2px solid red'});
+    	$(cardSpace).children('.card.'+j).css({'background-image': cardurl});
+
+	};
+
+	var numOfCards = mycards.length;
+	var k = mycards.length + 1;
+
+    for (k; k < 6; k++) {
+
+    	
+    	$(cardSpace).children('.card.'+k).css({'background-image': 'none', 'border': 'none'});
 
 	};
 }

@@ -24,7 +24,7 @@ defined("STYLE_PATH")
 */
 ini_set("error_reporting", "true");
 error_reporting(E_ALL|E_STRCT);
-ini_set("display_errors", 1);
+ini_set("display_errors", 0);
 
 // Start a PHP session
 session_start();

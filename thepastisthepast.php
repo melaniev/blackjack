@@ -22,7 +22,7 @@
 ?>
 		<div class='lobby-container' id='welcome'>
 
-			<span>Logged in as, <?php echo $_SESSION['Username']; ?></span><a href='lobby.php'>Lobby</a> | <a href='logout.php' id='log-out'>Log out</a>  <!-- SANITIZE THIS DATAAA!!! -->
+			<span>Logged in as, <?php echo $_SESSION['Username']; ?></span><span id='log-out'><a href='lobby.php' style='color:white;'>Lobby</a> | <a href='logout.php' style='color:white;' >Log out</a></span>
 		</div>	
 
 		<div class='lobby-container' id='pastgames'>
@@ -45,6 +45,7 @@
 		            foreach ($row as $aGame) {
 
 		            	$thisGameID = $aGame['gameID'];
+		            	$moveStuff;
 
 		            	$sql = "SELECT *
 		                FROM moves
@@ -57,8 +58,43 @@
 
 				            $stmt->closeCursor();
 
-				            print_r($moveStuff);
 		            	}
+
+		            	echo "<h3>Game ".$aGame['gameID']."</h3>";
+		            	echo '<h4>Total Moves: '. count($moveStuff);
+
+		            	foreach ($moveStuff as $move) {
+
+		            		$username;
+
+					        $sql = "SELECT username AS uname
+					                FROM users
+					                WHERE userID=:uID";
+
+					        if($stmt = $db->prepare($sql)) {
+					            $stmt->bindParam(':uID', $move['userID'] , PDO::PARAM_STR);
+					            $stmt->execute();
+					            $id = $stmt->fetch();
+					            $username = $id['uname'];
+
+					            $stmt->closeCursor();
+					        }
+					        echo "<div id='a-move-list'>";
+		            		echo "<p><span>Hand: ".$move['handID']."</span>";
+		            		echo "<span>User: ".$username."</span>";
+		            		echo "<span>Play: ".$move['playtype']."</span>";
+
+		            		if ($move['card'] != NULL) {
+		            			echo "<span>Card: ".$move['card']."</span>";
+		            		}
+
+		            		echo "<span>Count Total: ".$move['newTotal']."</span></p>";
+		            		echo "</div>";
+		            	}
+
+		            	
+		            	
+
 
 		            }
 		        }

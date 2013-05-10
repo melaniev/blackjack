@@ -88,9 +88,6 @@ class Game_Manager{
 
    public function joinExistingGame(){
 
-        $this->log->logInfo('joinExistingGame() in GameManagement.php');
-
-
         $this->removePlayerFromGame();
 
         //Find the first game with an available spot
@@ -105,7 +102,8 @@ class Game_Manager{
 
             $game = new BlackjackGame( NULL, $gameid );
             //add player to this game
-            $game->addPlayer( $gameid );
+            $uID = $game->addPlayer( $gameid );
+            //$game->joiner( $gameid , $uID );
 
             //Add this player to the game
             $_SESSION['GameID'] = $gameid;

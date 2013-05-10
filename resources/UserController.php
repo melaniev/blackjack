@@ -41,7 +41,6 @@ class BlackjackUser_Controller{
         //COMPARE THE PASSWORDS TO MAKE SURE THEY ARE THE SAME
         if ($pass1 == $pass2) {
             
-            //preg_match("/^[A-Za-z][A-Za-z0-9!@#$%_]{8,20}$/", $newUsername);
             if(preg_match("/^[A-Za-z][A-Za-z0-9!@#$%_]{8,20}$/", $pass1)){
 
                 //Create a new User
@@ -56,12 +55,6 @@ class BlackjackUser_Controller{
         }
 
         return 0;
-
-    }
-
-    function getRecord($db=NULL){
-
-
 
     }
 

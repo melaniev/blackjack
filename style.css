@@ -13,7 +13,16 @@ a {text-decoration:none;}
 html{
 	height: 100%;
 }
-
+#a-move-list span{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#othersRecords a{
+	color: white;
+}
+#othersRecords a:hover{
+	color: yellow;
+}
 .button{
 	cursor: pointer;
 	display: inline-block;
@@ -127,7 +136,7 @@ html{
 	float: right;
 	font-weight: normal;
 }
-#welcome a#log-out{
+#welcome #log-out a{
 	color: white;
 }
 /* TABLE VIEW *****************************************************************************************/

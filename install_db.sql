@@ -16,6 +16,7 @@ CREATE TABLE swe_blackjack_db.users(
 /* Game Table */
 CREATE TABLE swe_blackjack_db.games(
 	gameID  INT AUTO_INCREMENT UNIQUE,
+	handID INT,
 	gameState BOOLEAN NOT NULL default 0,
 	playerCount INT,
 	PRIMARY KEY (gameID));
@@ -24,6 +25,7 @@ CREATE TABLE swe_blackjack_db.games(
 CREATE TABLE swe_blackjack_db.moves(
 	moveID	INT AUTO_INCREMENT UNIQUE,
 	gameID  INT,
+	handID  INT,
 	userID  INT,
 	playtype VARCHAR(20),
 	card VARCHAR(20),
@@ -58,6 +60,7 @@ CREATE TABLE swe_blackjack_db.dealer(
 CREATE TABLE swe_blackjack_db.dealerMoves(
 	moveID	INT AUTO_INCREMENT UNIQUE,
 	gameID  INT,
+	handID  INT,
 	playtype VARCHAR(20),
 	card VARCHAR(20),
 	newTotal  INT,
@@ -73,7 +76,6 @@ CREATE TABLE swe_blackjack_db.records(
 
 /* Turn Table */
 CREATE TABLE swe_blackjack_db.turns(
-	handID	INT AUTO_INCREMENT UNIQUE,
 	gameID  INT,
 	userID  INT,
 	turnOver INT,

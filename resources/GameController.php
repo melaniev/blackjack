@@ -62,6 +62,102 @@ function stay($g){
 
 }
 
+function getRecord($db){
 
+        $us_id;
+        $u = session_id();
+
+        //Get the Game ID
+        $sql = "SELECT userID AS uID
+                FROM users
+                WHERE sessID=:sID";
+
+        if($stmt = $db->prepare($sql)) {
+            $stmt->bindParam(':sID', $u , PDO::PARAM_STR);
+            $stmt->execute();
+            $id = $stmt->fetch();
+            $us_id = $id['uID'];
+
+            $stmt->closeCursor();
+        }
+
+        $sql = "SELECT *
+                FROM records
+                WHERE userID=:uID";
+
+        if($stmt = $db->prepare($sql)) {
+            $stmt->bindParam(':uID', $us_id , PDO::PARAM_STR);
+            $stmt->execute();
+            $record = $stmt->fetch();
+
+            $wins = $record['wins'];
+            $losses = $record['losses'];
+            $draws = $record['draws'];
+
+            $stmt->closeCursor();
+
+            return array($wins, $losses, $draws);
+        }
+}
+
+function getRecord2($db, $un){
+
+    $us_id;
+
+       $sql = "SELECT userID
+                FROM users
+                WHERE username=:user
+                LIMIT 1";
+
+           if($stmt = $db->prepare($sql)) {
+            $stmt->bindParam(':user',$un, PDO::PARAM_STR);
+            $stmt->execute();
+            $row = $stmt->fetch();
+
+            $us_id = $row['userID'];
+
+            $stmt->closeCursor();
+        }
+
+        $sql = "SELECT *
+                FROM records
+                WHERE userID=:uID";
+
+        if($stmt = $db->prepare($sql)) {
+            $stmt->bindParam(':uID', $us_id , PDO::PARAM_STR);
+            $stmt->execute();
+            $record = $stmt->fetch();
+
+            $wins = $record['wins'];
+            $losses = $record['losses'];
+            $draws = $record['draws'];
+
+            $stmt->closeCursor();
+
+            return array($wins, $losses, $draws);
+        }
+}
+
+function getOthersRecord($db){
+
+        $otherUsers = array();
+
+        $sql = "SELECT username
+                FROM users";
+
+        if($stmt = $db->prepare($sql)) {
+            $stmt->execute();
+            $record = $stmt->fetchAll();
+
+            foreach ($record as $anotherUser) {
+                
+                array_push($otherUsers, $anotherUser['username']);
+            }
+
+            $stmt->closeCursor();
+
+            return $otherUsers;
+        }
+}
 
 ?>

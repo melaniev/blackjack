@@ -2,13 +2,16 @@
 
 	$pageTitle = '';
 	$pageId = 'lobby-page';
-	//$myRecords = getRecord();
+
 	
 	// load config
 	require_once("/resources/config.php");
 	require_once("/resources/UserController.php");
 	require_once("/resources/GameController.php");
 	require_once(TEMPLATES_PATH . "/header.php");
+
+	$myRecord = getRecord($db);
+	$othersRecord = getOthersRecord($db);
 
 ?>
 
@@ -77,16 +80,37 @@
 		</div>
 
 		<!-- Lobby Section - Recored-->
-		<div class='lobby-container' id='my-record'>
-			<h2>Records</h2>
-			<h3>Wins</h3>
-			<p>XX</p>
-			<h3>Losses</h3>
-			<p>XX</p>
-			<h3>Draws</h3>
-			<p>XX</p>
-			<h3>$$</h3>
-			<p>XX</p>
+		<div class='lobby-container' id='my-record' style='overflow:auto;'>
+
+			<div style='width:20%; float:left;'>
+				<h2>My Record</h2>
+				<h3>Wins</h3>
+				<p><?php echo $myRecord[0]; ?></p>
+				<h3>Losses</h3>
+				<p><?php echo $myRecord[1]; ?></p>
+				<h3>Draws</h3>
+				<p><?php echo $myRecord[2]; ?></p>
+			</div>
+			<div style='width:70%; float:right;'>
+				<h2>Other Player Records</h2>
+
+				<?php
+
+					echo "<p id='othersRecords'>";
+					foreach ($othersRecord as $username) {
+
+						if (strcmp($_SESSION['Username'], $username)) {
+
+							echo "<a href='records.php?user=".urlencode( $username )."'>";
+							echo $username;
+							echo "</a>,&nbsp;";
+						}
+
+					}
+					echo "</p>";
+				?>
+
+			</div>
 		</div>
 
 <?php
